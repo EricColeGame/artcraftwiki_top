@@ -38,27 +38,27 @@
     },
     "start": {
       "eyebrow": "Start Here",
-      "title": "Your ArtCraft Journey",
+      "title": "Your ArtCraft Wiki Journey",
       "cards": [
         {
           "number": "1",
           "title": "Beginner Guide",
-          "description": "Master the Spirit World from day one with our comprehensive beginner guide covering controls, combat, and early progression."
+          "description": "Install the ArtCraft desktop app, generate your first AI image, and learn the generate-look-adjust loop behind every later workflow."
         },
         {
           "number": "2",
-          "title": "Fastest Leveling",
-          "description": "Dominate early game and max your progression with the most efficient leveling routes and strategies."
+          "title": "Best Model Picks",
+          "description": "Compare the image, video, and 3D models in ArtCraft and pick the right one for stills, animation, or multi-angle references."
         },
         {
           "number": "3",
-          "title": "Best Farming Spots",
-          "description": "Maximize your Soul Essence and EXP gains with optimal farming locations for every stage."
+          "title": "Image to Video",
+          "description": "Turn a finished still into motion with Seedance 2.0, motion prompts, and frame-by-frame control inside the desktop app."
         },
         {
           "number": "4",
-          "title": "How to Extract",
-          "description": "Learn the best methods and locations for extracting resources in ArtCraft."
+          "title": "Download & Setup",
+          "description": "Get ArtCraft running on Windows, macOS, or Linux with the official installer, model downloads, and a first-project checklist."
         }
       ]
     },
@@ -66,265 +66,331 @@
       "eyebrow": "Popular Pages",
       "title": "Trending Now",
       "quickLinks": [
-        "Hollow Progression",
-        "Fastest Leveling",
-        "Spirit Charms",
-        "All Boss Guides"
+        "Beginner Guide",
+        "Model Picks",
+        "Image to Video",
+        "Community"
       ],
       "cards": [
         {
           "badge": "Beginner",
           "title": "Beginner Guide",
-          "description": "Everything you need from your first login to mastering the basics of combat and progression.",
-          "href": "/beginner-guide"
+          "description": "Install ArtCraft and generate your first AI image with a guided walkthrough.",
+          "href": "/guide/artcraft-beginner-guide"
         },
         {
-          "badge": "Updated",
-          "title": "Active Codes",
-          "description": "All working codes with rewards redeem before they expire.",
-          "href": "/codes"
+          "badge": "Start",
+          "title": "Getting Started",
+          "description": "Checklists, prompt frameworks, and fixes for your first week with the app.",
+          "href": "/guide/artcraft-getting-started"
         },
         {
-          "badge": "Updated",
-          "title": "Equipment Database",
-          "description": "94 items across 5 slots complete gear database with stats, rarity, and sources.",
-          "href": "/equipment"
+          "badge": "Guide",
+          "title": "How to Use ArtCraft",
+          "description": "A practical tour of the desktop workspace, prompts, and reference inputs.",
+          "href": "/guide/artcraft-how-to-use"
         },
         {
-          "badge": "Popular",
-          "title": "Which Race Should You Pick?",
-          "description": "Shinigami, Quincy, or Hollow compare all three and find your perfect playstyle.",
-          "href": "/races/best-race"
+          "badge": "Download",
+          "title": "Download Guide",
+          "description": "Official installers, platform notes, and setup troubleshooting in one place.",
+          "href": "/downloads/artcraft-download"
         },
         {
-          "badge": "New",
-          "title": "Enemies & Monsters",
-          "description": "23 enemy types across 5 regions drops, locations, and farming tips.",
-          "href": "/enemies"
+          "badge": "Windows",
+          "title": "Windows Install",
+          "description": "Install and tune the open-source AI studio on a Windows PC.",
+          "href": "/downloads/artcraft-windows"
         },
         {
-          "badge": "Popular",
-          "title": "Boss Locations & Drops",
-          "description": "Every boss location, drop table, and respawn timer in one reference.",
-          "href": "/boss-locations-drops-respawn-times"
+          "badge": "2D",
+          "title": "2D Editor Guide",
+          "description": "Layers, drawing tools, and scene composition for generated stills.",
+          "href": "/guide/artcraft-2d-editor"
         },
         {
-          "badge": "Popular",
-          "title": "Best Builds",
-          "description": "Optimal stat allocation, skill tree picks, and Charm combos for every playstyle.",
-          "href": "/builds/best-builds"
+          "badge": "3D",
+          "title": "3D Objects",
+          "description": "Use dimensional references to keep subjects consistent across angles.",
+          "href": "/features/artcraft-3d-objects"
         },
         {
-          "badge": "New",
-          "title": "Shikai Tier List",
-          "description": "All 6 Shinigami Shikai types ranked by PvP and PvE performance.",
-          "href": "/tier-list/shikai"
+          "badge": "Video",
+          "title": "Image to Video",
+          "description": "Animate stills into motion with prompt control and Seedance 2.0.",
+          "href": "/features/artcraft-image-to-video"
         },
         {
-          "badge": "New",
-          "title": "World Events Guide",
-          "description": "Supply Caches, Raids, and endgame world events with rare rewards.",
-          "href": "/world-events"
+          "badge": "Compare",
+          "title": "ArtCraft vs ComfyUI",
+          "description": "How the desktop crafting engine compares with a node-based pipeline.",
+          "href": "/comparisons/artcraft-vs-comfyui"
         }
       ]
     },
     "aboutGame": {
       "title": "What is ArtCraft?",
       "paragraphs": [
-        "ArtCraft is a stylized fighting RPG on Roblox inspired by the Bleach anime universe. Choose from three playable races Shinigami, Quincy, or Hollow each with unique progression systems, unlockable abilities, and evolution paths. Master over 130 skills as you fight your way to the level 100 cap.",
-        "Whether you're unlocking your first Shikai, evolving from a base Hollow into an Arrancar, or grinding Quincy Lieutenant missions, our wiki covers every system with detailed guides, data tables, and step-by-step walkthroughs."
+        "ArtCraft is an open-source desktop application for generating AI images and video, built for artists, designers, and filmmakers who want visible control instead of a black box. Instead of running in a browser tab, it installs locally and writes every render to your own drive, so prompts, references, and finished frames stay inside your pipeline.",
+        "The project describes itself as an intentional crafting engine: you steer results with detailed prompts and reference images, animate stills into motion with models such as Seedance 2.0, and extend the app because the source code is public. ArtCraft Wiki collects the guides, model notes, and workflows that help new users move from a first generation to a repeatable creative process."
       ],
       "stats": [
         {
           "label": "Developer",
-          "value": "ArtCraft Studios"
+          "value": "Open-Source Project"
         },
         {
-          "label": "Platform",
-          "value": "Roblox"
+          "label": "Platforms",
+          "value": "Windows, macOS, Linux"
         },
         {
-          "label": "Genre",
-          "value": "Fighting RPG"
+          "label": "License",
+          "value": "Open Source"
         },
         {
-          "label": "Visits",
-          "value": "12.6M+"
+          "label": "AI Models",
+          "value": "62+"
         },
         {
-          "label": "Favorites",
-          "value": "243K+"
+          "label": "GitHub Stars",
+          "value": "2.7K+"
         },
         {
-          "label": "Total Skills",
-          "value": "130+"
-        },
-        {
-          "label": "Level Cap",
-          "value": "100"
+          "label": "Core Output",
+          "value": "AI Image & Video"
         }
       ],
-      "cta": "Explore All Guides"
+      "cta": "Read the Getting Started Guide"
     },
     "explore": {
       "title": "Explore ArtCraft Wiki",
-      "description": "Master your seafood restaurant on Roblox with essential progression guides, active codes, complete fish & recipe catalogs, and optimal upgrade strategies.",
+      "description": "Eight guide hubs cover everything from your first install to models, image generation, video animation, the 2D and 3D editors, feature workflows, and the community around ArtCraft.",
       "modules": [
         {
           "order": 1,
-          "name": "ArtCraft Working Codes",
-          "description": "Redeem the latest working codes to claim free coins, gems, exclusive cosmetics, and boost items before they expire.",
-          "href": "/codes",
-          "displayType": "code-box",
+          "name": "ArtCraft Wiki Beginner Guide",
+          "description": "A step-by-step introduction for new users covering installation, workspace navigation, first project creation, and the basic AI generation workflow.",
+          "href": "/guide/artcraft-beginner-guide",
+          "displayType": "step-by-step",
           "highlights": [
             {
-              "label": "Code",
-              "detail": "FULLRELEASE — Free Cash & Rewards"
+              "label": "1",
+              "detail": "Install the ArtCraft desktop app and download your first model"
             },
             {
-              "label": "Code",
-              "detail": "75KLIKES — Exclusive Ability Reroll"
+              "label": "2",
+              "detail": "Write a clear prompt and generate your first AI image"
             },
             {
-              "label": "Tip",
-              "detail": "Codes are case-sensitive; enter them in the Settings menu"
+              "label": "3",
+              "detail": "Add a reference image to anchor the style you want"
+            },
+            {
+              "label": "4",
+              "detail": "Adjust one variable at a time and export the result"
             }
           ]
         },
         {
           "order": 2,
-          "name": "Beginner Guide: How to Start & Serve Customers",
-          "description": "Step-by-step beginner guide covering customer ordering, food prep, station management, and cashier checkout mechanics.",
-          "href": "/guide",
-          "displayType": "feature-cards",
+          "name": "ArtCraft Wiki Download Guide",
+          "description": "Official downloads, supported platforms, installation steps, and how to keep the open-source app up to date.",
+          "href": "/downloads/artcraft-download",
+          "displayType": "card-list",
           "highlights": [
             {
-              "label": "Step 1",
-              "detail": "Take customer order at the stall front"
+              "label": "Windows",
+              "detail": "Install ArtCraft on Windows with the official desktop build"
             },
             {
-              "label": "Step 2",
-              "detail": "Cook seafood on the grill or boil station"
+              "label": "macOS",
+              "detail": "Run the app on Apple silicon and Intel Macs"
             },
             {
-              "label": "Step 3",
-              "detail": "Serve warm food promptly for maximum customer tips"
+              "label": "Linux",
+              "detail": "Choose a package and tune performance on Linux"
+            },
+            {
+              "label": "GitHub",
+              "detail": "Pull the latest release straight from the open-source repository"
             }
           ]
         },
         {
           "order": 3,
-          "name": "Seafood & Fish Tier List",
-          "description": "Complete breakdown of all catchable fish and seafood ranked by market value, customer demand, and profit margins.",
-          "href": "/tier-list",
-          "displayType": "tier-grid",
+          "name": "ArtCraft Wiki AI Models Guide",
+          "description": "A comparison of the AI models ArtCraft supports, the providers behind them, and the creative tasks each one handles best.",
+          "href": "/tools/artcraft-ai",
+          "displayType": "code-cards",
           "highlights": [
             {
-              "label": "S Tier",
-              "detail": "King Crab · Lobster Boil — Highest profit per customer"
+              "label": "Seedance 2.0",
+              "detail": "Flagship video model for image-to-video and animation",
+              "badge": "Video"
             },
             {
-              "label": "A Tier",
-              "detail": "Salmon · Jumbo Shrimp · Tuna Steak — Reliable fast earners"
+              "label": "Image Models",
+              "detail": "Diffusion models for stills, concept art, and style references",
+              "badge": "Image"
             },
             {
-              "label": "B Tier",
-              "detail": "Clams · Oysters · Squid — Great mid-game margin"
+              "label": "3D References",
+              "detail": "Dimensional inputs for consistent multi-angle renders",
+              "badge": "3D"
             },
             {
-              "label": "C Tier",
-              "detail": "Common Sardines · Small Crab — Starter seafood"
+              "label": "Pixelator",
+              "detail": "Utility pass that converts renders into clean pixel art",
+              "badge": "Utility"
             }
           ]
         },
         {
           "order": 4,
-          "name": "Best Upgrades Progression",
-          "description": "Optimal order to spend your cash: expand kitchen stations, hire waitstaff, speed up grills, and upgrade seating.",
-          "href": "/skills",
-          "displayType": "feature-cards",
+          "name": "ArtCraft Wiki Image Generation Guide",
+          "description": "A workflow guide for AI image creation covering prompting, references, compositing, and how to improve each generation.",
+          "href": "/guide/artcraft-how-to-use",
+          "displayType": "step-by-step",
           "highlights": [
             {
-              "label": "Priority 1",
-              "detail": "Cooking Speed & Extra Burners — Clears customer backlog"
+              "label": "1",
+              "detail": "Describe the subject, style, and lighting in your prompt"
             },
             {
-              "label": "Priority 2",
-              "detail": "Customer Seating Capacity — Increases simultaneous diners"
+              "label": "2",
+              "detail": "Attach reference images to lock in composition and color"
             },
             {
-              "label": "Priority 3",
-              "detail": "Auto-Chef / Waiter Staff — Passive hands-free revenue"
+              "label": "3",
+              "detail": "Generate a batch of variations and compare them side by side"
+            },
+            {
+              "label": "4",
+              "detail": "Refine the strongest result and export it to your drive"
             }
           ]
         },
         {
           "order": 5,
-          "name": "How to Get Cash Fast",
-          "description": "Top money-making strategies, VIP evaluation, tip maximization, and high-efficiency serving tips.",
-          "href": "/guide",
-          "displayType": "feature-cards",
+          "name": "ArtCraft Wiki 2D Editor Guide",
+          "description": "The 2D workspace explained: layers, drawing tools, scene composition, and the editing techniques that shape a final frame.",
+          "href": "/guide/artcraft-2d-editor",
+          "displayType": "card-list",
           "highlights": [
             {
-              "label": "Combo",
-              "detail": "Chain orders quickly to build the Customer Happiness multiplier"
+              "label": "Layers",
+              "detail": "Stack and mask elements without destroying the original"
             },
             {
-              "label": "High Margin",
-              "detail": "Focus high-tier seafood boils during peak customer rush hours"
+              "label": "Brush",
+              "detail": "Draw and paint directly on top of generated images"
             },
             {
-              "label": "Reinvest",
-              "detail": "Keep 20% cash reserve for fresh ingredient replenishment"
+              "label": "Scene",
+              "detail": "Arrange composition, color, and depth before export"
+            },
+            {
+              "label": "Export",
+              "detail": "Save stills at the resolution your pipeline needs"
             }
           ]
         },
         {
           "order": 6,
-          "name": "Plot Expansion & Stand Customization",
-          "description": "Unlock bigger land plots, arrange optimal cooking layouts, and add high-value decorative upgrades.",
-          "href": "/maps",
-          "displayType": "feature-cards",
+          "name": "ArtCraft Wiki 3D Editor Guide",
+          "description": "How to build 3D scenes, place objects, control the camera, and use image-to-3D references inside ArtCraft.",
+          "href": "/features/artcraft-3d-objects",
+          "displayType": "step-by-step",
           "highlights": [
             {
-              "label": "Plot 1",
-              "detail": "Starter Beach Stand (3 Tables, 1 Grill)"
+              "label": "1",
+              "detail": "Import or build a 3D object to use as a reference"
             },
             {
-              "label": "Plot 2",
-              "detail": "Boardwalk Restaurant (6 Tables, 2 Grills, Boil Station)"
+              "label": "2",
+              "detail": "Position, scale, and light the object in the scene"
             },
             {
-              "label": "Plot 3",
-              "detail": "Luxury Pier Seafood Pavilion (Full Automation & VIP Seating)"
+              "label": "3",
+              "detail": "Match the camera angle you want the render to keep"
+            },
+            {
+              "label": "4",
+              "detail": "Generate consistent frames across multiple angles"
+            }
+          ]
+        },
+        {
+          "order": 7,
+          "name": "ArtCraft Wiki Features Guide",
+          "description": "A ranked overview of the ArtCraft workflows that matter most, from prompt control to animation and open-source extension.",
+          "href": "/features/artcraft-open-source",
+          "displayType": "tier-grid",
+          "highlights": [
+            {
+              "label": "S",
+              "detail": "Image-to-video animation with motion prompts and Seedance 2.0"
+            },
+            {
+              "label": "A",
+              "detail": "Reference-driven image generation for a repeatable style"
+            },
+            {
+              "label": "B",
+              "detail": "3D object references for consistent multi-angle shots"
+            },
+            {
+              "label": "C",
+              "detail": "Pixelator and glitch passes for stylized output"
+            }
+          ]
+        },
+        {
+          "order": 8,
+          "name": "ArtCraft Wiki Community Guide",
+          "description": "Official support channels, tutorials, announcements, and creator resources for the ArtCraft community.",
+          "href": "/community/artcraft-community",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Discord",
+              "detail": "Debug prompts and compare models with other creators"
+            },
+            {
+              "label": "Reddit",
+              "detail": "Read honest reviews and recommended workflows"
+            },
+            {
+              "label": "YouTube",
+              "detail": "Follow video tutorials and workflow breakdowns"
             }
           ]
         }
       ]
     },
     "faq": {
-      "title": "Frequently Asked Questions",
-      "description": "Quick answers to the most common questions about ArtCraft.",
+      "title": "ArtCraft Wiki FAQ",
+      "description": "Quick answers to the most common questions about ArtCraft Wiki and the open-source ArtCraft desktop app.",
       "items": [
         {
           "question": "What is ArtCraft?",
-          "answer": "ArtCraft is a free-to-play fighting RPG on Roblox based on the Bleach anime. You choose one of game mechanics Shinigami (Soul Reaper), Quincy, or Hollow each with unique progression, combat abilities, and evolution systems. The game features 130+ skills, a level 100 cap, boss fights, and deep build customization."
+          "answer": "ArtCraft is an open-source desktop application for generating AI images and video, built for artists, designers, and filmmakers who want control over prompts, references, and output files. ArtCraft Wiki collects the guides that help you learn it."
         },
         {
-          "question": "Which race should beginners pick?",
-          "answer": "Shinigami is the most straightforward starter race, while Hollow and Quincy offer more specialized progression routes. Compare their abilities before committing."
+          "question": "Is ArtCraft free and open source?",
+          "answer": "Yes. ArtCraft is an open-source project, so the source code is public and the desktop app can be inspected, forked, and extended. ArtCraft Wiki documents how to download it and where the repository lives."
         },
         {
-          "question": "What is the current level cap?",
-          "answer": "The current level cap is 100, with more than 130 skills available across trees and race progression systems."
+          "question": "Which platforms does ArtCraft support?",
+          "answer": "ArtCraft runs as a native desktop app on Windows, macOS, and Linux. ArtCraft Wiki keeps platform-specific install notes so you can set it up on your own machine."
         },
         {
-          "question": "Where do I find active codes?",
-          "answer": "Use the Codes page for working codes, rewards, expiration notes, and redeem instructions."
+          "question": "What AI models does ArtCraft include?",
+          "answer": "ArtCraft supports a large library of models for image, video, and 3D work, including the Seedance 2.0 video model. ArtCraft Wiki explains which model fits stills, animation, or multi-angle references."
         },
         {
-          "question": "Are boss guides updated?",
-          "answer": "Boss pages are organized with spawn notes, attack patterns, strategies, drop tables, and related next steps for progression."
+          "question": "Where can I get help with ArtCraft?",
+          "answer": "The ArtCraft community shares prompt tips and workflows on Discord, Reddit, and YouTube. ArtCraft Wiki links each channel and adds step-by-step guides for common problems."
         }
       ]
     },
