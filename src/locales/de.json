@@ -1,1 +1,471 @@
-{}
+{
+  "site": {
+    "name": "ArtCraft Wiki",
+    "shortName": "ArtCraft",
+    "tagline": "Leitfäden für KI-Bilder, Videos & 3D-Design",
+    "description": "ArtCraft Wiki bietet Anleitungen, Tutorials, Informationen zu KI-Modellen und Workflow-Ressourcen für die Open-Source-Plattform für KI-Bilder, Videos und 3D-Design.",
+    "legalNotice": "Unabhängiges, inoffizielles Fan-Wiki. Nicht mit ArtCraft Studios verbunden."
+  },
+  "nav": {
+    "home": "Startseite",
+    "menu": "Menü",
+    "toggleTheme": "Design wechseln",
+    "guide": "Anleitungen",
+    "tools": "Tools",
+    "features": "Funktionen",
+    "downloads": "Downloads",
+    "community": "Community",
+    "comparisons": "Vergleiche"
+  },
+  "home": {
+    "meta": {
+      "title": "ArtCraft Wiki – KI-Modelle, Tutorials & Kreativ-Tools",
+      "description": "Entdecke im ArtCraft Wiki Anleitungen für KI-Bilder, Videos und 3D-Design, Modell-Tutorials, Workflows und Ressourcen für Open-Source-Kreativtools."
+    },
+    "hero": {
+      "eyebrow": "Open-Source-KI-Kreativstudio",
+      "title": "ArtCraft Wiki",
+      "description": "ArtCraft Wiki bietet Anleitungen, Tutorials, Informationen zu KI-Modellen und Workflow-Ressourcen für die Open-Source-Plattform für KI-Bilder, Videos und 3D-Design.",
+      "stats": [
+        "62+ KI-Modelle",
+        "2,7K+ GitHub-Sterne",
+        "Windows & macOS",
+        "Open Source"
+      ],
+      "primaryCta": "Erste-Schritte-Anleitung",
+      "secondaryCta": "KI-Modell-Anleitungen",
+      "tertiaryCta": "ArtCraft herunterladen",
+      "videoLabel": "Offizielle Medien"
+    },
+    "updates": {
+      "title": "Neueste Updates",
+      "browse": "Alle Anleitungen durchsuchen",
+      "viewAll": "Alle anzeigen"
+    },
+    "start": {
+      "eyebrow": "Hier starten",
+      "title": "Deine ArtCraft-Wiki-Reise",
+      "cards": [
+        {
+          "number": "1",
+          "title": "Einsteiger-Anleitung",
+          "description": "Installiere die ArtCraft-Desktop-App, erzeuge dein erstes KI-Bild und lerne die Schleife aus Generieren, Prüfen und Anpassen kennen, die allen späteren Workflows zugrunde liegt."
+        },
+        {
+          "number": "2",
+          "title": "Beste Modellwahl",
+          "description": "Vergleiche die Bild-, Video- und 3D-Modelle in ArtCraft und wähle das richtige für Standbilder, Animationen oder Mehrwinkel-Referenzen."
+        },
+        {
+          "number": "3",
+          "title": "Bild zu Video",
+          "description": "Verwandle ein fertiges Standbild mit Seedance 2.0, Bewegungs-Prompts und Bild-für-Bild-Steuerung in der Desktop-App in Bewegung."
+        },
+        {
+          "number": "4",
+          "title": "Download & Einrichtung",
+          "description": "Bringe ArtCraft mit dem offiziellen Installer, Modell-Downloads und einer Checkliste für das erste Projekt auf Windows, macOS oder Linux zum Laufen."
+        }
+      ]
+    },
+    "popular": {
+      "eyebrow": "Beliebte Seiten",
+      "title": "Gerade im Trend",
+      "quickLinks": [
+        "Einsteiger-Anleitung",
+        "Modellwahl",
+        "Bild zu Video",
+        "Community"
+      ],
+      "cards": [
+        {
+          "badge": "Einsteiger",
+          "title": "Einsteiger-Anleitung",
+          "description": "Installiere ArtCraft und erzeuge dein erstes KI-Bild mit einer geführten Tour.",
+          "href": "/guide/artcraft-beginner-guide"
+        },
+        {
+          "badge": "Start",
+          "title": "Erste Schritte",
+          "description": "Checklisten, Prompt-Vorlagen und Lösungen für deine erste Woche mit der App.",
+          "href": "/guide/artcraft-getting-started"
+        },
+        {
+          "badge": "Anleitung",
+          "title": "ArtCraft verwenden",
+          "description": "Ein praktischer Rundgang durch den Desktop-Arbeitsbereich, Prompts und Referenzeingaben.",
+          "href": "/guide/artcraft-how-to-use"
+        },
+        {
+          "badge": "Download",
+          "title": "Download-Anleitung",
+          "description": "Offizielle Installer, Plattformhinweise und Setup-Fehlerbehebung an einem Ort.",
+          "href": "/downloads/artcraft-download"
+        },
+        {
+          "badge": "Windows",
+          "title": "Windows-Installation",
+          "description": "Installiere und optimiere das Open-Source-KI-Studio auf einem Windows-PC.",
+          "href": "/downloads/artcraft-windows"
+        },
+        {
+          "badge": "2D",
+          "title": "2D-Editor-Anleitung",
+          "description": "Ebenen, Zeichenwerkzeuge und Szenenkomposition für generierte Standbilder.",
+          "href": "/guide/artcraft-2d-editor"
+        },
+        {
+          "badge": "3D",
+          "title": "3D-Objekte",
+          "description": "Nutze dimensionale Referenzen, um Motive über verschiedene Winkel hinweg konsistent zu halten.",
+          "href": "/features/artcraft-3d-objects"
+        },
+        {
+          "badge": "Video",
+          "title": "Bild zu Video",
+          "description": "Animiere Standbilder mit Prompt-Steuerung und Seedance 2.0 zu Bewegung.",
+          "href": "/features/artcraft-image-to-video"
+        },
+        {
+          "badge": "Vergleich",
+          "title": "ArtCraft vs. ComfyUI",
+          "description": "Wie sich die Desktop-Crafting-Engine mit einer knotenbasierten Pipeline vergleicht.",
+          "href": "/comparisons/artcraft-vs-comfyui"
+        }
+      ]
+    },
+    "aboutGame": {
+      "title": "Was ist ArtCraft?",
+      "paragraphs": [
+        "ArtCraft ist eine Open-Source-Desktop-Anwendung zum Erzeugen von KI-Bildern und -Videos, gebaut für Künstler, Designer und Filmemacher, die sichtbare Kontrolle statt einer Blackbox wollen. Statt in einem Browser-Tab zu laufen, wird sie lokal installiert und schreibt jedes Rendering auf deine eigene Festplatte, sodass Prompts, Referenzen und fertige Frames in deiner Pipeline bleiben.",
+        "Das Projekt beschreibt sich selbst als intentionale Crafting-Engine: Du steuerst Ergebnisse mit detaillierten Prompts und Referenzbildern, animierst Standbilder mit Modellen wie Seedance 2.0 und erweiterst die App, weil der Quellcode öffentlich ist. ArtCraft Wiki sammelt die Anleitungen, Modellhinweise und Workflows, die neuen Nutzern den Weg von der ersten Generierung zu einem wiederholbaren kreativen Prozess ebnen."
+      ],
+      "stats": [
+        {
+          "label": "Entwickler",
+          "value": "Open-Source-Projekt"
+        },
+        {
+          "label": "Plattformen",
+          "value": "Windows, macOS, Linux"
+        },
+        {
+          "label": "Lizenz",
+          "value": "Open Source"
+        },
+        {
+          "label": "KI-Modelle",
+          "value": "62+"
+        },
+        {
+          "label": "GitHub-Sterne",
+          "value": "2,7K+"
+        },
+        {
+          "label": "Kernausgabe",
+          "value": "KI-Bild & Video"
+        }
+      ],
+      "cta": "Lies die Erste-Schritte-Anleitung"
+    },
+    "explore": {
+      "title": "ArtCraft Wiki entdecken",
+      "description": "Acht Anleitungs-Hubs decken alles ab, von der ersten Installation über Modelle, Bildgenerierung, Videoanimation, die 2D- und 3D-Editoren, Funktions-Workflows bis hin zur Community rund um ArtCraft.",
+      "modules": [
+        {
+          "order": 1,
+          "name": "ArtCraft Wiki Einsteiger-Anleitung",
+          "description": "Eine schrittweise Einführung für neue Nutzer zu Installation, Workspace-Navigation, erstem Projekt und grundlegendem KI-Generierungs-Workflow.",
+          "href": "/guide/artcraft-beginner-guide",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "Installiere die ArtCraft-Desktop-App und lade dein erstes Modell herunter"
+            },
+            {
+              "label": "2",
+              "detail": "Schreibe einen klaren Prompt und erzeuge dein erstes KI-Bild"
+            },
+            {
+              "label": "3",
+              "detail": "Füge ein Referenzbild hinzu, um den gewünschten Stil zu verankern"
+            },
+            {
+              "label": "4",
+              "detail": "Ändere jeweils nur eine Variable und exportiere das Ergebnis"
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "name": "ArtCraft Wiki Download-Anleitung",
+          "description": "Offizielle Downloads, unterstützte Plattformen, Installationsschritte und wie du die Open-Source-App aktuell hältst.",
+          "href": "/downloads/artcraft-download",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Windows",
+              "detail": "Installiere ArtCraft unter Windows mit dem offiziellen Desktop-Build"
+            },
+            {
+              "label": "macOS",
+              "detail": "Führe die App auf Apple-Silicon- und Intel-Macs aus"
+            },
+            {
+              "label": "Linux",
+              "detail": "Wähle ein Paket und optimiere die Leistung unter Linux"
+            },
+            {
+              "label": "GitHub",
+              "detail": "Hole dir das neueste Release direkt aus dem Open-Source-Repository"
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "name": "ArtCraft Wiki KI-Modelle-Anleitung",
+          "description": "Ein Vergleich der von ArtCraft unterstützten KI-Modelle, ihrer Anbieter und der kreativen Aufgaben, die jedes am besten bewältigt.",
+          "href": "/tools/artcraft-ai",
+          "displayType": "code-cards",
+          "highlights": [
+            {
+              "label": "Seedance 2.0",
+              "detail": "Flaggschiff-Videomodell für Bild-zu-Video und Animation",
+              "badge": "Video"
+            },
+            {
+              "label": "Bildmodelle",
+              "detail": "Diffusionsmodelle für Standbilder, Konzeptkunst und Stilreferenzen",
+              "badge": "Bild"
+            },
+            {
+              "label": "3D-Referenzen",
+              "detail": "Dimensionale Eingaben für konsistente Mehrwinkel-Renderings",
+              "badge": "3D"
+            },
+            {
+              "label": "Pixelator",
+              "detail": "Utility-Durchlauf, der Renderings in saubere Pixelkunst verwandelt",
+              "badge": "Utility"
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "name": "ArtCraft Wiki Bildgenerierungs-Anleitung",
+          "description": "Ein Workflow-Leitfaden für KI-Bilder zu Prompts, Referenzen, Compositing und der Verbesserung jeder Generierung.",
+          "href": "/guide/artcraft-how-to-use",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "Beschreibe Motiv, Stil und Beleuchtung in deinem Prompt"
+            },
+            {
+              "label": "2",
+              "detail": "Hänge Referenzbilder an, um Komposition und Farbe zu fixieren"
+            },
+            {
+              "label": "3",
+              "detail": "Erzeuge eine Reihe von Varianten und vergleiche sie nebeneinander"
+            },
+            {
+              "label": "4",
+              "detail": "Verfeinere das stärkste Ergebnis und exportiere es auf deine Festplatte"
+            }
+          ]
+        },
+        {
+          "order": 5,
+          "name": "ArtCraft Wiki 2D-Editor-Anleitung",
+          "description": "Der 2D-Workspace erklärt: Ebenen, Zeichenwerkzeuge, Szenenkomposition und die Bearbeitungstechniken, die einen finalen Frame formen.",
+          "href": "/guide/artcraft-2d-editor",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Ebenen",
+              "detail": "Elemente stapeln und maskieren, ohne das Original zu zerstören"
+            },
+            {
+              "label": "Pinsel",
+              "detail": "Direkt über generierten Bildern zeichnen und malen"
+            },
+            {
+              "label": "Szene",
+              "detail": "Komposition, Farbe und Tiefe vor dem Export anordnen"
+            },
+            {
+              "label": "Export",
+              "detail": "Standbilder in der Auflösung speichern, die deine Pipeline braucht"
+            }
+          ]
+        },
+        {
+          "order": 6,
+          "name": "ArtCraft Wiki 3D-Editor-Anleitung",
+          "description": "Wie du in ArtCraft 3D-Szenen baust, Objekte platzierst, die Kamera steuerst und Bild-zu-3D-Referenzen nutzt.",
+          "href": "/features/artcraft-3d-objects",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "Importiere oder baue ein 3D-Objekt als Referenz"
+            },
+            {
+              "label": "2",
+              "detail": "Positioniere, skaliere und beleuchte das Objekt in der Szene"
+            },
+            {
+              "label": "3",
+              "detail": "Passe den Kamerawinkel an, den das Rendering beibehalten soll"
+            },
+            {
+              "label": "4",
+              "detail": "Erzeuge konsistente Frames über mehrere Winkel"
+            }
+          ]
+        },
+        {
+          "order": 7,
+          "name": "ArtCraft Wiki Funktions-Anleitung",
+          "description": "Ein gerankter Überblick über die wichtigsten ArtCraft-Workflows, von Prompt-Steuerung über Animation bis zur Open-Source-Erweiterung.",
+          "href": "/features/artcraft-open-source",
+          "displayType": "tier-grid",
+          "highlights": [
+            {
+              "label": "S",
+              "detail": "Bild-zu-Video-Animation mit Bewegungs-Prompts und Seedance 2.0"
+            },
+            {
+              "label": "A",
+              "detail": "Referenzgesteuerte Bildgenerierung für einen wiederholbaren Stil"
+            },
+            {
+              "label": "B",
+              "detail": "3D-Objekt-Referenzen für konsistente Mehrwinkel-Aufnahmen"
+            },
+            {
+              "label": "C",
+              "detail": "Pixelator- und Glitch-Durchläufe für stilisierten Output"
+            }
+          ]
+        },
+        {
+          "order": 8,
+          "name": "ArtCraft Wiki Community-Anleitung",
+          "description": "Offizielle Support-Kanäle, Tutorials, Ankündigungen und Creator-Ressourcen für die ArtCraft-Community.",
+          "href": "/community/artcraft-community",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Discord",
+              "detail": "Prompts debuggen und Modelle mit anderen Creators vergleichen"
+            },
+            {
+              "label": "Reddit",
+              "detail": "Ehrliche Reviews und empfohlene Workflows lesen"
+            },
+            {
+              "label": "YouTube",
+              "detail": "Video-Tutorials und Workflow-Analysen verfolgen"
+            }
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "title": "ArtCraft Wiki FAQ",
+      "description": "Schnelle Antworten auf die häufigsten Fragen zu ArtCraft Wiki und der Open-Source-Desktop-App ArtCraft.",
+      "items": [
+        {
+          "question": "Was ist ArtCraft?",
+          "answer": "ArtCraft ist eine Open-Source-Desktop-Anwendung zum Erzeugen von KI-Bildern und -Videos, gebaut für Künstler, Designer und Filmemacher, die Kontrolle über Prompts, Referenzen und Ausgabedateien wollen. ArtCraft Wiki sammelt die Anleitungen, die dir beim Lernen helfen."
+        },
+        {
+          "question": "Ist ArtCraft kostenlos und Open Source?",
+          "answer": "Ja. ArtCraft ist ein Open-Source-Projekt, der Quellcode ist öffentlich und die Desktop-App kann geprüft, geforkt und erweitert werden. ArtCraft Wiki dokumentiert, wie du sie herunterlädst und wo das Repository liegt."
+        },
+        {
+          "question": "Welche Plattformen unterstützt ArtCraft?",
+          "answer": "ArtCraft läuft als native Desktop-App auf Windows, macOS und Linux. ArtCraft Wiki hält plattformspezifische Installationshinweise bereit, damit du es auf deinem eigenen Rechner einrichten kannst."
+        },
+        {
+          "question": "Welche KI-Modelle enthält ArtCraft?",
+          "answer": "ArtCraft unterstützt eine große Bibliothek von Modellen für Bild-, Video- und 3D-Arbeit, darunter das Videomodell Seedance 2.0. ArtCraft Wiki erklärt, welches Modell zu Standbildern, Animationen oder Mehrwinkel-Referenzen passt."
+        },
+        {
+          "question": "Wo bekomme ich Hilfe zu ArtCraft?",
+          "answer": "Die ArtCraft-Community teilt Prompt-Tipps und Workflows auf Discord, Reddit und YouTube. ArtCraft Wiki verlinkt jeden Kanal und ergänzt Schritt-für-Schritt-Anleitungen für häufige Probleme."
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Beginne mit ArtCraft zu gestalten",
+      "description": "Von deinem ersten KI-Bild bis zur fertigen 3D-Szene deckt ArtCraft Wiki die Modelle, Workflows und Tutorials ab, mit denen du schneller gestaltest.",
+      "primary": "Lies die Erste-Schritte-Anleitung",
+      "secondary": "Für Windows & macOS herunterladen"
+    }
+  },
+  "guide": {
+    "overviewTitle": "ArtCraft Wiki Einsteiger-Anleitung",
+    "overviewDescription": "Schritt-für-Schritt-ArtCraft-Tutorials zu Installation, Prompting, Bildgenerierung und Video-Workflows für neue Nutzer."
+  },
+  "tools": {
+    "overviewTitle": "ArtCraft Wiki Tools & Software",
+    "overviewDescription": "Anleitungen zur ArtCraft-KI-Suite und dazu, wie ihre Tools neben Photoshop-, Premiere- und Illustrator-Workflows passen."
+  },
+  "features": {
+    "overviewTitle": "ArtCraft Wiki Funktionen",
+    "overviewDescription": "Entdecke ArtCraft-Funktionen wie 3D-Objekte, Bild zu Video, den Pixelator, Glitch-Art und die Open-Source-Engine."
+  },
+  "downloads": {
+    "overviewTitle": "ArtCraft Wiki Downloads",
+    "overviewDescription": "Lade ArtCraft für Windows, macOS und Linux herunter, plus App-, GitHub- und Release-Details zum Open-Source-Studio."
+  },
+  "community": {
+    "overviewTitle": "ArtCraft Wiki Community",
+    "overviewDescription": "Tritt der ArtCraft-Community auf Discord, Reddit und YouTube bei und lies Reviews, Showcases und Diskussionen."
+  },
+  "comparisons": {
+    "overviewTitle": "ArtCraft Wiki Vergleiche",
+    "overviewDescription": "Vergleiche ArtCraft vs. Photoshop, ComfyUI und Higgsfield, plus Analysen zu Open-Source- und Adobe-Alternativen."
+  },
+  "shared": {
+    "wikiNavigation": "Wiki-Navigation",
+    "gettingStarted": "Erste Schritte",
+    "beginnerGuideLink": "Lies die Einsteiger-Anleitung",
+    "downloadLink": "ArtCraft herunterladen",
+    "updated": "Aktualisiert",
+    "playOnRoblox": "Auf Roblox spielen",
+    "inThisSection": "In diesem Abschnitt",
+    "tableOfContents": "Inhaltsverzeichnis",
+    "nextSteps": "Nächste Schritte",
+    "needHelp": "Brauchst du Hilfe?",
+    "relatedReading": "Verwandte Lektüre",
+    "relatedGuides": "Verwandte Anleitungen",
+    "readMore": "Mehr lesen",
+    "officialMedia": "Offizielle Medien",
+    "home": "Startseite",
+    "noGuidesAvailable": "Noch keine Anleitungen verfügbar. Schau bald wieder vorbei!"
+  },
+  "footer": {
+    "aboutTitle": "ArtCraft Wiki",
+    "about": "ArtCraft Wiki ist ein unabhängiger, von Fans erstellter Anleitungs-Hub für Workflows zu KI-Bildern, Videos und 3D-Design, Modell-Tutorials und Ressourcen für Open-Source-Kreativtools.",
+    "quickLinks": "Quicklinks",
+    "guides": "Anleitungen",
+    "legal": "Rechtliches",
+    "copyright": "2026 ArtCraft Wiki. Nicht mit ArtCraft Studios verbunden.",
+    "description": "Open-Source-KI-Studio für Bild-, Video- und 3D-Design. 62+ Modelle auf Windows & macOS.",
+    "playGame": "ArtCraft herunterladen",
+    "officialDiscord": "Offizieller Discord",
+    "officialYoutube": "Offizielles YouTube",
+    "vvBuilder": "ArtCraft GitHub (Open Source)",
+    "beginnerGuide": "Einsteiger-Anleitung",
+    "privacyPolicy": "Datenschutzerklärung",
+    "termsOfService": "Nutzungsbedingungen",
+    "toolsGuide": "Tools & Software",
+    "featuresGuide": "Funktionen",
+    "downloadsGuide": "Downloads"
+  }
+}

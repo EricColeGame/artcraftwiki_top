@@ -1,1 +1,471 @@
-{}
+{
+  "site": {
+    "name": "ArtCraft Wiki",
+    "shortName": "ArtCraft",
+    "tagline": "AI画像・動画・3D制作ガイド",
+    "description": "ArtCraft Wikiは、オープンソースのAI画像・動画・3D制作プラットフォーム向けのガイド、チュートリアル、AIモデル情報、ワークフロー資料を提供します。",
+    "legalNotice": "非公式の独立ファンWikiです。ArtCraft Studiosとは提携していません。"
+  },
+  "nav": {
+    "home": "ホーム",
+    "menu": "メニュー",
+    "toggleTheme": "テーマを切り替え",
+    "guide": "ガイド",
+    "tools": "ツール",
+    "features": "機能",
+    "downloads": "ダウンロード",
+    "community": "コミュニティ",
+    "comparisons": "比較"
+  },
+  "home": {
+    "meta": {
+      "title": "ArtCraft Wiki - AIモデル、チュートリアル、制作ツール",
+      "description": "ArtCraft Wikiでは、AI画像・動画・3D制作のガイド、モデルのチュートリアル、ワークフロー、オープンソース制作ツールの資料を紹介します。"
+    },
+    "hero": {
+      "eyebrow": "オープンソースAI制作スタジオ",
+      "title": "ArtCraft Wiki",
+      "description": "ArtCraft Wikiは、オープンソースのAI画像・動画・3D制作プラットフォーム向けのガイド、チュートリアル、AIモデル情報、ワークフロー資料を提供します。",
+      "stats": [
+        "62以上のAIモデル",
+        "GitHubスター2.7K+",
+        "Windows & macOS",
+        "オープンソース"
+      ],
+      "primaryCta": "はじめてのガイド",
+      "secondaryCta": "AIモデルガイド",
+      "tertiaryCta": "ArtCraftをダウンロード",
+      "videoLabel": "公式メディア"
+    },
+    "updates": {
+      "title": "最新アップデート",
+      "browse": "すべてのガイドを見る",
+      "viewAll": "すべて表示"
+    },
+    "start": {
+      "eyebrow": "ここから始める",
+      "title": "ArtCraft Wikiの歩き方",
+      "cards": [
+        {
+          "number": "1",
+          "title": "初心者ガイド",
+          "description": "ArtCraftデスクトップアプリをインストールし、最初のAI画像を生成して、以後のすべてのワークフローの土台となる「生成・確認・調整」のループを学びます。"
+        },
+        {
+          "number": "2",
+          "title": "おすすめモデル選び",
+          "description": "ArtCraftの画像・動画・3Dモデルを比較し、静止画、アニメーション、多角度リファレンスに適したものを選びます。"
+        },
+        {
+          "number": "3",
+          "title": "画像から動画へ",
+          "description": "Seedance 2.0、モーションプロンプト、デスクトップアプリ内のフレーム単位のコントロールで、完成した静止画を動きに変えます。"
+        },
+        {
+          "number": "4",
+          "title": "ダウンロードとセットアップ",
+          "description": "公式インストーラー、モデルのダウンロード、初回プロジェクトのチェックリストで、Windows・macOS・LinuxでArtCraftを動かします。"
+        }
+      ]
+    },
+    "popular": {
+      "eyebrow": "人気ページ",
+      "title": "いま話題の記事",
+      "quickLinks": [
+        "初心者ガイド",
+        "モデル選び",
+        "画像から動画",
+        "コミュニティ"
+      ],
+      "cards": [
+        {
+          "badge": "初心者",
+          "title": "初心者ガイド",
+          "description": "ArtCraftをインストールし、ガイド付きの手順で最初のAI画像を生成します。",
+          "href": "/guide/artcraft-beginner-guide"
+        },
+        {
+          "badge": "はじめる",
+          "title": "はじめに",
+          "description": "アプリでの最初の1週間に向けたチェックリスト、プロンプトの型、トラブル対処。",
+          "href": "/guide/artcraft-getting-started"
+        },
+        {
+          "badge": "ガイド",
+          "title": "ArtCraftの使い方",
+          "description": "デスクトップ作業スペース、プロンプト、リファレンス入力の実践的なツアー。",
+          "href": "/guide/artcraft-how-to-use"
+        },
+        {
+          "badge": "ダウンロード",
+          "title": "ダウンロードガイド",
+          "description": "公式インストーラー、プラットフォーム別の注意点、セットアップのトラブル対処を一か所に。",
+          "href": "/downloads/artcraft-download"
+        },
+        {
+          "badge": "Windows",
+          "title": "Windowsへのインストール",
+          "description": "Windows PCでオープンソースAIスタジオをインストールして調整します。",
+          "href": "/downloads/artcraft-windows"
+        },
+        {
+          "badge": "2D",
+          "title": "2Dエディターガイド",
+          "description": "生成した静止画のためのレイヤー、描画ツール、シーン構成。",
+          "href": "/guide/artcraft-2d-editor"
+        },
+        {
+          "badge": "3D",
+          "title": "3Dオブジェクト",
+          "description": "立体的なリファレンスを使い、角度をまたいで被写体の一貫性を保ちます。",
+          "href": "/features/artcraft-3d-objects"
+        },
+        {
+          "badge": "動画",
+          "title": "画像から動画",
+          "description": "プロンプト制御とSeedance 2.0で静止画を動きにアニメーション化します。",
+          "href": "/features/artcraft-image-to-video"
+        },
+        {
+          "badge": "比較",
+          "title": "ArtCraft vs ComfyUI",
+          "description": "デスクトップ制作エンジンとノードベースのパイプラインの違い。",
+          "href": "/comparisons/artcraft-vs-comfyui"
+        }
+      ]
+    },
+    "aboutGame": {
+      "title": "ArtCraftとは何か",
+      "paragraphs": [
+        "ArtCraftは、AI画像と動画を生成するためのオープンソースのデスクトップアプリケーションで、ブラックボックスではなく目に見えるコントロールを求めるアーティスト、デザイナー、映像制作者のために作られています。ブラウザタブで動くのではなくローカルにインストールされ、すべてのレンダリングを自分のドライブに書き出すため、プロンプト、リファレンス、完成したフレームは自分のパイプラインの中に残ります。",
+        "このプロジェクトは自らを「意図的な制作エンジン」と説明しています。詳細なプロンプトとリファレンス画像で結果を導き、Seedance 2.0などのモデルで静止画を動きにアニメーション化し、ソースコードが公開されているためアプリを拡張できます。ArtCraft Wikiは、新しいユーザーが最初の生成から再現可能な制作プロセスへ進むためのガイド、モデルのメモ、ワークフローをまとめています。"
+      ],
+      "stats": [
+        {
+          "label": "開発元",
+          "value": "オープンソースプロジェクト"
+        },
+        {
+          "label": "対応プラットフォーム",
+          "value": "Windows, macOS, Linux"
+        },
+        {
+          "label": "ライセンス",
+          "value": "オープンソース"
+        },
+        {
+          "label": "AIモデル",
+          "value": "62+"
+        },
+        {
+          "label": "GitHubスター",
+          "value": "2.7K+"
+        },
+        {
+          "label": "主な出力",
+          "value": "AI画像・動画"
+        }
+      ],
+      "cta": "はじめてのガイドを読む"
+    },
+    "explore": {
+      "title": "ArtCraft Wikiを探る",
+      "description": "8つのガイドハブが、最初のインストールからモデル、画像生成、動画アニメーション、2D・3Dエディター、機能ワークフロー、ArtCraftをめぐるコミュニティまでをカバーします。",
+      "modules": [
+        {
+          "order": 1,
+          "name": "ArtCraft Wiki 初心者ガイド",
+          "description": "インストール、ワークスペースの操作、最初のプロジェクト作成、基本的なAI生成ワークフローを扱う、新規ユーザー向けの段階的な入門。",
+          "href": "/guide/artcraft-beginner-guide",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "ArtCraftデスクトップアプリをインストールし、最初のモデルをダウンロードする"
+            },
+            {
+              "label": "2",
+              "detail": "明確なプロンプトを書いて最初のAI画像を生成する"
+            },
+            {
+              "label": "3",
+              "detail": "リファレンス画像を追加して狙ったスタイルを固定する"
+            },
+            {
+              "label": "4",
+              "detail": "一度に1つの変数だけを調整して結果を書き出す"
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "name": "ArtCraft Wiki ダウンロードガイド",
+          "description": "公式ダウンロード、対応プラットフォーム、インストール手順、オープンソースアプリを最新に保つ方法。",
+          "href": "/downloads/artcraft-download",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Windows",
+              "detail": "公式デスクトップビルドでWindowsにArtCraftをインストールする"
+            },
+            {
+              "label": "macOS",
+              "detail": "AppleシリコンとIntel Macでアプリを実行する"
+            },
+            {
+              "label": "Linux",
+              "detail": "パッケージを選びLinuxでパフォーマンスを調整する"
+            },
+            {
+              "label": "GitHub",
+              "detail": "オープンソースリポジトリから最新リリースを取得する"
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "name": "ArtCraft Wiki AIモデルガイド",
+          "description": "ArtCraftが対応するAIモデル、その提供元、それぞれが最も得意とする制作タスクの比較。",
+          "href": "/tools/artcraft-ai",
+          "displayType": "code-cards",
+          "highlights": [
+            {
+              "label": "Seedance 2.0",
+              "detail": "画像から動画、アニメーション向けの主力動画モデル",
+              "badge": "動画"
+            },
+            {
+              "label": "画像モデル",
+              "detail": "静止画、コンセプトアート、スタイルリファレンス向けの拡散モデル",
+              "badge": "画像"
+            },
+            {
+              "label": "3Dリファレンス",
+              "detail": "一貫した多角度レンダリングのための立体的な入力",
+              "badge": "3D"
+            },
+            {
+              "label": "Pixelator",
+              "detail": "レンダリングをクリーンなピクセルアートに変換するユーティリティ処理",
+              "badge": "ユーティリティ"
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "name": "ArtCraft Wiki 画像生成ガイド",
+          "description": "プロンプト、リファレンス、コンポジット、各生成の改善方法を扱うAI画像制作のワークフローガイド。",
+          "href": "/guide/artcraft-how-to-use",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "プロンプトで被写体、スタイル、ライティングを描写する"
+            },
+            {
+              "label": "2",
+              "detail": "リファレンス画像を添付して構図と色を固定する"
+            },
+            {
+              "label": "3",
+              "detail": "複数のバリエーションを生成して並べて比較する"
+            },
+            {
+              "label": "4",
+              "detail": "最も良い結果を磨き上げてドライブに書き出す"
+            }
+          ]
+        },
+        {
+          "order": 5,
+          "name": "ArtCraft Wiki 2Dエディターガイド",
+          "description": "レイヤー、描画ツール、シーン構成、最終フレームを形作る編集テクニックを解説する2Dワークスペース。",
+          "href": "/guide/artcraft-2d-editor",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "レイヤー",
+              "detail": "元を壊さずに要素を重ねてマスクする"
+            },
+            {
+              "label": "ブラシ",
+              "detail": "生成画像の上に直接描いて塗る"
+            },
+            {
+              "label": "シーン",
+              "detail": "書き出す前に構図、色、奥行きを整える"
+            },
+            {
+              "label": "エクスポート",
+              "detail": "パイプラインに必要な解像度で静止画を保存する"
+            }
+          ]
+        },
+        {
+          "order": 6,
+          "name": "ArtCraft Wiki 3Dエディターガイド",
+          "description": "ArtCraft内で3Dシーンを構築し、オブジェクトを配置し、カメラを操作し、画像から3Dへのリファレンスを使う方法。",
+          "href": "/features/artcraft-3d-objects",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "リファレンスとして使う3Dオブジェクトを読み込むか作成する"
+            },
+            {
+              "label": "2",
+              "detail": "シーン内でオブジェクトの位置、大きさ、ライティングを調整する"
+            },
+            {
+              "label": "3",
+              "detail": "レンダリングで保持したいカメラアングルに合わせる"
+            },
+            {
+              "label": "4",
+              "detail": "複数の角度で一貫したフレームを生成する"
+            }
+          ]
+        },
+        {
+          "order": 7,
+          "name": "ArtCraft Wiki 機能ガイド",
+          "description": "プロンプト制御からアニメーション、オープンソース拡張まで、最も重要なArtCraftワークフローのランキング形式の概要。",
+          "href": "/features/artcraft-open-source",
+          "displayType": "tier-grid",
+          "highlights": [
+            {
+              "label": "S",
+              "detail": "モーションプロンプトとSeedance 2.0による画像から動画へのアニメーション"
+            },
+            {
+              "label": "A",
+              "detail": "再現可能なスタイルのためのリファレンス駆動の画像生成"
+            },
+            {
+              "label": "B",
+              "detail": "一貫した多角度ショットのための3Dオブジェクトリファレンス"
+            },
+            {
+              "label": "C",
+              "detail": "スタイライズされた出力のためのPixelatorとグリッチ処理"
+            }
+          ]
+        },
+        {
+          "order": 8,
+          "name": "ArtCraft Wiki コミュニティガイド",
+          "description": "ArtCraftコミュニティ向けの公式サポートチャンネル、チュートリアル、お知らせ、クリエイター向けリソース。",
+          "href": "/community/artcraft-community",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Discord",
+              "detail": "他のクリエイターとプロンプトをデバッグしモデルを比較する"
+            },
+            {
+              "label": "Reddit",
+              "detail": "正直なレビューとおすすめのワークフローを読む"
+            },
+            {
+              "label": "YouTube",
+              "detail": "動画チュートリアルとワークフロー解説を視聴する"
+            }
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "title": "ArtCraft Wiki よくある質問",
+      "description": "ArtCraft WikiとオープンソースのArtCraftデスクトップアプリに関する最も一般的な質問への簡単な回答。",
+      "items": [
+        {
+          "question": "ArtCraftとは何ですか？",
+          "answer": "ArtCraftは、AI画像と動画を生成するためのオープンソースのデスクトップアプリケーションで、プロンプト、リファレンス、出力ファイルを自分でコントロールしたいアーティスト、デザイナー、映像制作者のために作られています。ArtCraft Wikiは、その使い方を学ぶのに役立つガイドをまとめています。"
+        },
+        {
+          "question": "ArtCraftは無料でオープンソースですか？",
+          "answer": "はい。ArtCraftはオープンソースプロジェクトなので、ソースコードは公開されており、デスクトップアプリを検査、フォーク、拡張できます。ArtCraft Wikiでは、ダウンロード方法とリポジトリの場所を説明しています。"
+        },
+        {
+          "question": "ArtCraftはどのプラットフォームに対応していますか？",
+          "answer": "ArtCraftはWindows、macOS、Linuxでネイティブのデスクトップアプリとして動作します。ArtCraft Wikiはプラットフォーム別のインストールメモを用意しているので、自分のマシンにセットアップできます。"
+        },
+        {
+          "question": "ArtCraftにはどのようなAIモデルが含まれますか？",
+          "answer": "ArtCraftは、Seedance 2.0動画モデルを含む、画像・動画・3D制作向けの大規模なモデルライブラリに対応しています。ArtCraft Wikiでは、静止画、アニメーション、多角度リファレンスに適したモデルを解説しています。"
+        },
+        {
+          "question": "ArtCraftについてどこで助けを得られますか？",
+          "answer": "ArtCraftコミュニティはDiscord、Reddit、YouTubeでプロンプトのコツやワークフローを共有しています。ArtCraft Wikiは各チャンネルへのリンクと、よくある問題の段階的なガイドを掲載しています。"
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "ArtCraftで制作を始めよう",
+      "description": "最初のAI画像から完成した3Dシーンまで、ArtCraft Wikiはより速く制作するためのモデル、ワークフロー、チュートリアルを扱います。",
+      "primary": "はじめてのガイドを読む",
+      "secondary": "Windows & macOS版をダウンロード"
+    }
+  },
+  "guide": {
+    "overviewTitle": "ArtCraft Wiki 初心者ガイド",
+    "overviewDescription": "インストール、プロンプト、画像生成、動画ワークフローを扱う、新規ユーザー向けの段階的なArtCraftチュートリアル。"
+  },
+  "tools": {
+    "overviewTitle": "ArtCraft Wiki ツールとソフトウェア",
+    "overviewDescription": "ArtCraft AIスイートと、そのツールをPhotoshop、Premiere、Illustratorのワークフローとどう組み合わせるかのガイド。"
+  },
+  "features": {
+    "overviewTitle": "ArtCraft Wiki 機能",
+    "overviewDescription": "3Dオブジェクト、画像から動画、Pixelator、グリッチアート、オープンソースエンジンなどArtCraftの機能を探ります。"
+  },
+  "downloads": {
+    "overviewTitle": "ArtCraft Wiki ダウンロード",
+    "overviewDescription": "Windows、macOS、Linux版ArtCraftのダウンロードと、オープンソーススタジオのアプリ、GitHub、リリース情報。"
+  },
+  "community": {
+    "overviewTitle": "ArtCraft Wiki コミュニティ",
+    "overviewDescription": "Discord、Reddit、YouTubeでArtCraftコミュニティに参加し、レビュー、作品紹介、議論を読みましょう。"
+  },
+  "comparisons": {
+    "overviewTitle": "ArtCraft Wiki 比較",
+    "overviewDescription": "ArtCraft vs Photoshop、ComfyUI、Higgsfieldの比較と、オープンソースおよびAdobe代替の分析。"
+  },
+  "shared": {
+    "wikiNavigation": "Wikiナビゲーション",
+    "gettingStarted": "はじめに",
+    "beginnerGuideLink": "初心者ガイドを読む",
+    "downloadLink": "ArtCraftをダウンロード",
+    "updated": "更新日",
+    "playOnRoblox": "Robloxでプレイ",
+    "inThisSection": "このセクションの内容",
+    "tableOfContents": "目次",
+    "nextSteps": "次のステップ",
+    "needHelp": "お困りですか？",
+    "relatedReading": "関連記事",
+    "relatedGuides": "関連ガイド",
+    "readMore": "続きを読む",
+    "officialMedia": "公式メディア",
+    "home": "ホーム",
+    "noGuidesAvailable": "まだガイドがありません。近日公開予定です！"
+  },
+  "footer": {
+    "aboutTitle": "ArtCraft Wiki",
+    "about": "ArtCraft Wikiは、AI画像・動画・3D制作のワークフロー、モデルのチュートリアル、オープンソース制作ツールの資料を扱う、ファンによる独立したガイドハブです。",
+    "quickLinks": "クイックリンク",
+    "guides": "ガイド",
+    "legal": "法的事項",
+    "copyright": "2026 ArtCraft Wiki. ArtCraft Studiosとは提携していません。",
+    "description": "画像・動画・3D制作のためのオープンソースAIスタジオ。Windows & macOSで62以上のモデル。",
+    "playGame": "ArtCraftをダウンロード",
+    "officialDiscord": "公式Discord",
+    "officialYoutube": "公式YouTube",
+    "vvBuilder": "ArtCraft GitHub（オープンソース）",
+    "beginnerGuide": "初心者ガイド",
+    "privacyPolicy": "プライバシーポリシー",
+    "termsOfService": "利用規約",
+    "toolsGuide": "ツールとソフトウェア",
+    "featuresGuide": "機能",
+    "downloadsGuide": "ダウンロード"
+  }
+}
