@@ -19,18 +19,19 @@ export interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-  name: "My Seafood Stand Wiki",
-  shortName: "My Seafood Stand",
-  logoText: "SS",
-  tagline: "Complete Guides, Codes, Recipes & Tier Lists",
-  description: "Your ultimate guide to My Seafood Stand on Roblox! Explore active working codes, seafood recipes, best upgrades, profit strategies, and progression guides.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://myseafoodstand.top",
-  supportEmail: `support@${new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://myseafoodstand.top").hostname.replace(/^www\./, "")}`,
-  gameUrl: "https://www.roblox.com/games/my-seafood-stand",
-  heroVideoId: "M8DvcwoFRrk", // Roblox My Seafood Stand codes & gameplay video
+  name: "ArtCraft Wiki",
+  shortName: "ArtCraft",
+  logoText: "A",
+  tagline: "AI Image, Video & 3D Creation Guides",
+  description: "ArtCraft Wiki provides guides, tutorials, AI model information and workflow resources for the open-source AI image, video and 3D creative platform.",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://artcraftwiki.top",
+  supportEmail: `support@${new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://artcraftwiki.top").hostname.replace(/^www\./, "")}`,
+  gameUrl: "https://getartcraft.com/",
+  heroVideoId: "Ps5Dhc3Lh8U", // ArtCraft Studios showcase — "DOCUBOT" award-winning short film
   social: {
-    discord: "https://discord.gg/roblox",
-    youtube: "https://www.youtube.com/@roblox",
+    discord: "https://discord.gg/artcraft",
+    youtube: "https://www.youtube.com/@OfficialArtCraftStudios",
+    twitter: "https://x.com/get_artcraft",
   },
   locales: ["en", "es", "pt", "de", "fr"],
   defaultLocale: "en",
