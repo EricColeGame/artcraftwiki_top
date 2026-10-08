@@ -1,0 +1,124 @@
+export const metadata = {
+  title: "ArtCraft Illustrator Guide: Controllable AI Image and Video for Artists",
+  description: "A practical guide to the ArtCraft illustrator workflow: prompt control, references, animation, and open-source AI image and video on your desktop.",
+  category: "tools",
+  date: "2026-10-08",
+}
+
+Most AI image tools ask you to describe a picture and hope for the best. An ArtCraft illustrator works differently: you direct the model, supply references, refine the prompt, and keep the results on your own machine. That distinction matters, because control is the one thing cloud generators rarely hand back — and it's why so many artists are moving their rendering onto a desktop app they actually own. This guide walks through what an ArtCraft illustrator really does all day, which tools carry the workload, and how to build a workflow that stays repeatable instead of lucky.
+
+## What ArtCraft Actually Is — and What It Isn't
+
+ArtCraft is an open-source desktop application for generating AI images and video, built for artists who want real control over the output. Instead of logging into a browser tab and renting compute by the credit, you install the app, run it on your own hardware, and let it write finished files straight to your drive. The project describes itself as an intentional crafting engine for artists, designers, and filmmakers — a phrase that says a lot about its priorities.
+
+That word *intentional* is the whole pitch. Most generators optimize for speed and surprise. ArtCraft optimizes for direction: you structure the prompt, you supply the references, you pick the model, and you keep the result. You can explore the full feature set on the [official ArtCraft site](https://getartcraft.com/).
+
+| Question | ArtCraft (desktop) | Typical cloud generator |
+|---|---|---|
+| Where it runs | Installed app on your machine | Browser session |
+| Where finished files land | Your own drive | Vendor gallery tied to an account |
+| Model access | Multiple models inside one window | Only what the site offers |
+| Prompt control | Explicit and structured | Frequently simplified |
+| Source code | Open source and publicly viewable | Closed |
+| Workflow ownership | You own the app and the library | Account-bound |
+
+Because the code is public, the project also functions as a learning resource. Community reports on the [ArtCraft GitHub repository](https://github.com/storytold/artcraft) describe it as a crafting engine rather than a one-click toy, and the companion wiki collects workflow notes, download guidance, and prompt technique.
+
+## The Core Toolkit an ArtCraft Illustrator Relies On
+
+The feature list is shorter than you'd expect from a suite, and that's deliberate. ArtCraft concentrates on the levers that change an image, not on decoration.
+
+- **Text-to-image generation** for concepting, keyframes, and finished stills
+- **Image-to-video and animation** for turning a locked frame into motion
+- **Reference inputs** so a character, palette, or prop stays consistent across a set
+- **Prompt control**, including structured prompts you can save and reuse
+- **Model selection in a single window**, so you aren't juggling five tabs
+- **Local output**, meaning every render is a file you already own
+
+| Capability | What it's for | Who leans on it hardest |
+|---|---|---|
+| Text-to-image | Fast ideation and mood boards | Concept artists, illustrators |
+| Reference-driven prompting | Visual consistency across a series | Character and comic artists |
+| Image-to-video | Animatics and short motion tests | Storyboard and film artists |
+| Animation tools | Sequencing frames into a shot | Filmmakers, motion designers |
+| Prompt control | Repeatable, teachable results | Studio teams, educators |
+| Local file output | Archiving and client delivery | Freelancers, production houses |
+
+### Prompt control is the headline feature
+
+If you've ever gotten a beautiful render and then failed to reproduce it a week later, you understand the problem. Structured prompt control fixes that. An ArtCraft illustrator saves the wording, the references, and the settings together, so a look can be rebuilt on demand — or handed to a collaborator without a paragraph of explanation.
+
+### References and animation
+
+References are what separate a series from a pile of unrelated images. Feed the app a prior frame or a style board and the output stays inside the same visual world. Animation builds on top of that: lock a frame you're happy with, then push it into motion rather than gambling on a fresh generation.
+
+## Image or Video? Picking the Right Mode
+
+New users often jump straight to video because it looks impressive. Experienced hands usually do the opposite: they solve the image first, then animate. The table below shows why.
+
+| Goal | Better mode | Reason |
+|---|---|---|
+| Exploring a look or palette | Image | Fast iteration, cheap to discard |
+| Locking a character design | Image | Easier to compare side by side |
+| Testing camera movement | Video | Motion is the only way to judge it |
+| Building a shot for an edit | Video | Produces usable footage |
+| Client approval on a style | Image | Faster feedback loop |
+| Social-ready motion clips | Video | Delivers the final format |
+
+Video generation has gotten dramatically more practical. ArtCraft ships access to modern video models inside the same desktop window, including Seedance 2.0 for fast AI video generation, so you don't need a second application or a second subscription to move from still to motion.
+
+## A Repeatable ArtCraft Illustrator Workflow, Step by Step
+
+The artists who get consistent results aren't using secret prompts. They're using a sequence. Here's a workflow that scales from a single illustration to a full sequence.
+
+| Step | Action | Why it matters |
+|---|---|---|
+| 1 | Write a one-paragraph brief | Forces decisions before pixels |
+| 2 | Gather 3–5 references | Anchors style and subject |
+| 3 | Draft a structured prompt | Makes the result reproducible |
+| 4 | Render small test batches | Cheap exploration, fast rejection |
+| 5 | Lock the winner and refine details | Prevents aimless re-rolling |
+| 6 | Animate or upscale the locked frame | Protects the look you approved |
+| 7 | Save prompt, refs, and settings together | Turns a render into an asset |
+
+A few habits worth stealing:
+
+- **Keep a reference folder per project.** Community reports consistently point to reference quality as the biggest single factor in output quality.
+- **Name your prompts like files.** "Hero portrait, dusk, 35mm, warm rim light" beats "portrait2_final."
+- **Batch your tests.** Ten quick low-effort renders teach you more than one slow hero render.
+- **Version your approvals.** The moment a client says "that one," freeze it and stop generating variations.
+- **Archive the whole recipe, not just the PNG.** The image is the output; the prompt and references are the asset.
+
+For an ArtCraft illustrator working on a series, that last habit is the difference between a portfolio and a factory.
+
+## Ownership, Hardware, and Honest Limits
+
+The selling point of a desktop app is ownership, but ownership comes with responsibilities. It's worth being clear-eyed about both sides.
+
+| You control | You still deal with |
+|---|---|
+| Where your files live and how long they last | Your own GPU and storage |
+| Which model you run for a given job | Local render times |
+| Whether your prompts stay private | Setup and driver maintenance |
+| How your workflow is organized | A learning curve on first install |
+| Whether you can keep working if a service changes | Model updates you must manage yourself |
+
+The hardware question comes up constantly. Image generation is the lighter lift; video generation is where your machine earns its keep. If you're planning to animate regularly, budget for a machine with a capable GPU and plenty of fast storage, because local output means every test render takes up real disk space. That's a feature, not a bug — you're building a library, not renting one.
+
+The honest limits are equally worth naming. A desktop app won't hand you a curated gallery or a one-click style preset. It assumes you have taste, a reference habit, and the patience to iterate. For artists who already work that way, that's a relief rather than a barrier.
+
+## FAQ
+
+**Is ArtCraft free to use?**
+ArtCraft is distributed as an open-source desktop application, with its code publicly available. Because it runs locally on your own hardware, your practical costs are hardware and time rather than per-render credits. Check the [official ArtCraft site](https://getartcraft.com/) for the current distribution details.
+
+**Do I need an expensive GPU to start?**
+Not necessarily. Still-image generation is far more forgiving than video. Many artists begin with images only, learn their prompt workflow, and upgrade hardware later when animation becomes a regular part of the job.
+
+**Can an ArtCraft illustrator use it for video, or is it mainly stills?**
+Both. The same application handles image and video generation, and modern video models run inside that single window. Most users start with stills, then move to short animation tests once they've locked a look they like.
+
+**Where should a beginner learn the workflow?**
+Start with the project's public documentation and wiki, then copy one complete workflow — brief, references, prompt, render, archive — rather than collecting dozens of prompt snippets. Community reports suggest that mastering one repeatable process beats memorizing a hundred tricks.
+
+The pattern across all of it is the same: ArtCraft rewards artists who treat generation as craft. Direct the model, document your decisions, and the tool stops feeling like a slot machine and starts feeling like a studio.

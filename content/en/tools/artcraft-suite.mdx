@@ -1,0 +1,120 @@
+export const metadata = {
+  title: "ArtCraft Suite Review: Open-Source AI Image and Video Tools for Artists",
+  description: "Practical guide to the ArtCraft suite — the open-source desktop app for AI image and video, with prompt control, references, and animation.",
+  category: "tools",
+  date: "2026-10-08",
+}
+
+## What Is the ArtCraft Suite?
+
+The gap between an idea in your head and a finished AI-generated shot is usually filled with subscriptions, credit meters, and somebody else's server. The **ArtCraft suite** closes that gap by putting an open-source generation engine directly on your own machine — a desktop app for AI images and video rather than another browser tab. For artists, designers, and filmmakers who want genuine control over prompts, references, and outputs, the **ArtCraft suite** is less a novelty and more a working studio tool.
+
+The project describes itself as an "intentional crafting engine," and that phrasing is deliberate. Nothing about the workflow is meant to feel like pulling a slot machine lever. You choose the model, you write the prompt, you supply the reference, and the results are written straight to your drive. The tagline the developers keep returning to — you own ArtCraft — captures the core promise: your copy of the app, your files, your pipeline.
+
+Here is how the major pieces of the toolset break down:
+
+| Capability | What it does | Best suited for |
+|---|---|---|
+| Text-to-image generation | Turns written prompts into still images | Concept artists, illustrators |
+| Text-to-video generation | Produces short motion clips from prompts | Filmmakers, motion designers |
+| Reference conditioning | Uses input images to steer style and composition | Artists matching a house look |
+| Animation workflows | Extends a still frame into movement | Storyboarders, animators |
+| Local output | Saves renders directly into your own folders | Anyone archiving client work |
+| Open-source core | Source code is public and modifiable | Studios building custom pipelines |
+
+The short version: it is a generation studio that behaves like software you installed on purpose, not a service you rent by the month.
+
+## Why an Open-Source Desktop App Changes the Workflow
+
+Most people's first experience with AI generation happens in a browser. That is fine for experimenting, but it quietly shapes how you work. Credit tiers push you toward short, cautious prompts. Export buttons and watermarks push you toward the provider's idea of a finished file. And when the vendor changes the pricing page, your entire workflow changes with it.
+
+A desktop-native, open-source approach inverts those incentives. The engine is inspectable, which means a studio can audit what a model is actually doing, adapt the interface, or wire the output into an existing pipeline. The **ArtCraft suite** leans into that philosophy rather than hiding it behind a polished login screen.
+
+| Factor | Typical cloud generator | ArtCraft suite |
+|---|---|---|
+| Where it runs | Vendor servers, in a browser | Native desktop app on your machine |
+| Where files land | Behind an account and a download step | Directly on your own drive |
+| Customization | Whatever the interface exposes | Source is open; you can extend it |
+| Generation limits | Tiered credits and queues | Governed by your own hardware and setup |
+| Model choice | Fixed by the provider | Varies — you connect the models you want |
+| Long-term availability | Tied to the vendor's roadmap | You hold a copy of the application |
+
+One caveat worth stating plainly: running locally does not automatically mean running offline. Depending on which models you connect, the app may still reach out to external services. Community reports suggest checking each model's requirements before assuming a fully disconnected workflow. The advantage is transparency — you can find out, because the code is right there.
+
+## Core Tools Inside the ArtCraft Suite
+
+### Prompt Control
+
+Prompt control is the heart of the suite. Instead of a single text box and a hope, the app is built around giving you visibility into what is being sent and what comes back. That matters most when you are iterating: keeping the prompt stable while changing one variable at a time is how you learn what a model actually responds to.
+
+### References and Style Steering
+
+Reference images let you steer composition and look without describing every detail in words. This is the difference between writing "moody, warm, shallow depth of field" and simply showing the model a frame that already has those qualities. Artists who work with clients tend to lean on this heavily, because a reference is easier to agree on than a paragraph of adjectives.
+
+### Animation and Video Generation
+
+The suite also handles motion. Stills can be pushed into animation passes, and the platform has added support for external video models — the Seedance video model being one example the developers have highlighted on the project site. For filmmakers, the appeal is continuity: the same environment that generates your keyframes can generate the movement between them.
+
+| Stage | Tool in the suite | Typical output |
+|---|---|---|
+| Ideation | Text-to-image with prompt control | Rough concept frames |
+| Style lock | Reference conditioning | On-brand stills |
+| Sequence building | Animation workflows | Short motion clips |
+| Delivery | Local file output | Files in your project folder |
+
+## How to Get Started with the ArtCraft Suite
+
+Getting productive in the **ArtCraft suite** is mostly about sequencing. Jumping straight to video generation before you understand how the app handles a still frame is the fastest way to get frustrated.
+
+| Step | Action | Why it matters |
+|---|---|---|
+| 1 | Download the desktop build from the [official ArtCraft website](https://getartcraft.com/) | Ensures you start from the current release |
+| 2 | Skim the [ArtCraft source code on GitHub](https://github.com/storytold/artcraft) | Shows exactly what the engine exposes |
+| 3 | Read through the [ArtCraft wiki](https://www.artcraft.wiki/) for workflow notes | Saves hours of trial and error |
+| 4 | Configure which models you want to run | Determines your image and video options |
+| 5 | Generate a simple text-to-image prompt | Establishes a baseline you can compare against |
+| 6 | Add a reference image to the same prompt | Reveals how strongly conditioning steers output |
+| 7 | Push your best still into an animation pass | Validates the video side of the pipeline |
+| 8 | Set a dedicated output folder | Keeps renders organized from day one |
+
+If you are evaluating the tool for a team, do steps one through eight on a single machine first. The **ArtCraft suite** rewards a controlled rollout more than a broad one.
+
+## Tips, Techniques, and Common Mistakes
+
+The difference between a frustrating session and a productive one usually comes down to method, not hardware. These habits show up repeatedly in community reports from artists using desktop generation tools.
+
+| Technique | How to apply it | Why it works |
+|---|---|---|
+| Change one variable at a time | Hold the prompt fixed, alter only the seed or reference | Isolates what actually caused the change |
+| Write prompts as descriptions | Describe the image, not a command | Models respond better to scene language |
+| Build a reference library | Save frames that match your target look | Speeds up style consistency across a project |
+| Version your prompts | Keep a text file of prompts that worked | Turns lucky accidents into repeatable recipes |
+| Batch before you judge | Generate several variations before deciding | Single outputs are noisy signals |
+
+Common mistakes are equally predictable:
+
+| Mistake | Better approach |
+|---|---|
+| Starting with video generation | Master stills first, then animate |
+| Assuming local means offline | Verify what each connected model requires |
+| Chasing a perfect first render | Iterate in small, controlled steps |
+| Ignoring output folder structure | Set naming and folder conventions early |
+| Treating the suite as a black box | Read the source and wiki — that is the point |
+
+One more piece of practical advice: the **ArtCraft suite** is open source, which means the community is part of the documentation. When something behaves unexpectedly, the issue is often a configuration detail rather than a bug, and the project's own repositories and wiki are the fastest place to confirm that.
+
+## Frequently Asked Questions
+
+**Is the ArtCraft suite free to use?**
+The project is open source, and its source code is publicly available for inspection and modification. Licensing and distribution details can change over time, so check the official site for the current terms rather than relying on secondhand summaries.
+
+**Do I need a powerful computer to run it?**
+Because generation happens on your own machine rather than a vendor's servers, your hardware matters more than it would with a browser tool. The practical requirements depend on which models you connect, so treat your chosen model's specifications as the real benchmark.
+
+**Can the ArtCraft suite generate video, or only images?**
+Both. The suite supports AI image generation and AI video generation, including animation workflows that extend stills into motion, along with integration for external video models. Most users get better results by building image skills first.
+
+**Does it work without an internet connection?**
+Not necessarily. The app itself runs locally, but whether a given generation needs network access depends entirely on the models you configure. Community reports recommend testing your specific setup before assuming a fully offline workflow is possible.
+
+The bottom line: the **ArtCraft suite** is built for people who want to understand their tools, not just rent them. If that describes you, the download is the easy part — the control is what you keep.

@@ -1,0 +1,120 @@
+export const metadata = {
+  title: "ArtCraft Pixelator: Turn AI Images and Video Into Clean Pixel Art",
+  description: "The ArtCraft Pixelator converts AI renders into crisp pixel art. Learn the settings, the workflow, and the tips that keep sprites sharp and readable.",
+  category: "features",
+  date: "2026-10-08",
+}
+
+Pixel art is having a second life, and the reason is simple: a crisp, low-resolution image reads instantly at any size, from a 16-pixel app icon to a poster on a wall. If you generate AI images or video, the **ArtCraft Pixelator** is the part of the workflow that turns a smooth, high-resolution render into a deliberate grid of colored squares. That distinction matters more than it sounds. Most diffusion and video models are trained to produce soft gradients, feathered edges, and anti-aliased curves — exactly what a pixel artist spends hours removing by hand. The ArtCraft Pixelator gives you the grid back, and it does it without forcing you to redraw anything.
+
+ArtCraft itself is an open-source desktop app for generating AI images and video, built around the idea that artists should keep control of the process instead of handing it to a black box. The Pixelator is one expression of that philosophy: you decide how coarse, how limited, and how textured the final result should be.
+
+## What the ArtCraft Pixelator Actually Does
+
+At its core, the tool performs three operations in sequence. Each one changes the image in a visible, predictable way, and understanding them separately is the fastest route to getting results you actually like.
+
+### Downsampling: building the grid
+
+Downsampling throws away detail on purpose. The image is snapped to a fixed pixel grid — 32×32 for a tiny sprite, 64×64 or 128×128 for something with more readable shapes. Every soft gradient becomes a stack of flat bands, and every curve becomes a staircase.
+
+### Quantization: shrinking the palette
+
+Real pixel art from the 8-bit and 16-bit eras rarely used more than a few dozen colors at once. Quantization reduces your render to a limited palette, which is what produces that unmistakable flat, poster-like look. Too few colors and shapes collapse into mush; too many and you lose the retro character entirely.
+
+### Dithering: faking the in-between colors
+
+Dithering approximates a missing shade by scattering pixels in a pattern. It is the trick that let old hardware suggest a sunset with four colors. Used well, it adds texture. Used badly, it turns clean art into visual noise.
+
+| Operation | What it changes | What you see |
+|---|---|---|
+| Downsampling | Spatial detail | Hard edges, blocky shapes |
+| Palette quantization | Color count | Flat regions, retro tones |
+| Dithering | Color transitions | Checkerboard or stippled texture |
+| Nearest-neighbor scaling | Display size | Large, clean squares with no blur |
+
+The order matters. Downsample first, quantize second, dither last. Doing it in another sequence usually produces muddy results that no amount of tweaking will rescue.
+
+## Why Artists Reach for the ArtCraft Pixelator
+
+Community reports consistently point to the same handful of jobs where the ArtCraft Pixelator saves hours. The pattern is that people already have a generated image they like — the composition, the lighting, the character — and they need it to survive at a much smaller size.
+
+| Use case | Typical grid | Why pixelation helps |
+|---|---|---|
+| Game sprites and tiles | 16×16 to 64×64 | Readable at engine scale, no blur artifacts |
+| Icons and avatars | 32×32 to 128×128 | Stays sharp in every app and browser tab |
+| Album and poster art | 256×256 and up | Strong silhouette, limited palette prints well |
+| Animated loops | Matches the sprite grid | Consistent look across every frame |
+| Storyboards and pitch decks | 128×128 | Fast to produce, visually distinct from stock |
+| Social thumbnails | 64×64 to 256×256 | Survives aggressive compression |
+
+There is a practical argument here too. A pixelated render is dramatically cheaper to store and faster to preview than a full-resolution frame, which matters when you are iterating through dozens of variations. Pixelation is also a form of stylization that hides the small anatomical and lighting mistakes that give AI output away — the grid simply does not have room for them.
+
+Player experience with animation is worth calling out. If you pixelate a video clip, each frame is quantized independently, and small changes in the source cause the palette to shift from frame to frame. That flicker is the single most common complaint in community threads, and the fix is usually to lock a palette or generate the sprite sheet from a single reference image.
+
+## How to Run the ArtCraft Pixelator: Step by Step
+
+The workflow is short, but the order of operations is what separates a clean result from a mess. Work from a good source, keep the grid consistent, and resist the urge to over-tune.
+
+| Step | Action | What to watch for |
+|---|---|---|
+| 1 | Generate a clean source image in ArtCraft | High contrast, clear silhouette, simple background |
+| 2 | Crop tightly around the subject | Cropping after pixelation wastes your grid |
+| 3 | Set the target grid size | Pick a standard size; 32, 64, and 128 are safe defaults |
+| 4 | Choose a palette size | Start limited, then loosen only if shapes merge |
+| 5 | Apply dithering sparingly | Off for sprites, light for skies and gradients |
+| 6 | Scale up with nearest-neighbor | Never use smooth interpolation on pixel art |
+| 7 | Export and inspect at 100% zoom | Check readability at actual size, not zoomed in |
+
+Two habits make a real difference. First, decide the grid size before you generate anything, because a 512-pixel-wide render and a 64-pixel-wide sprite need different levels of detail in the prompt. Second, keep a copy of the pre-pixelated image. Once you quantize and dither, information is gone, and re-running from the original is almost always faster than trying to repair a bad conversion.
+
+Because ArtCraft runs locally on your desktop, this iteration loop is fast and private. You are not uploading client work to a web service, and you are not paying per conversion. That matters for studios working under NDA or on tight deadlines.
+
+## Settings That Shape Your Pixel Output
+
+Not every setting is exposed in every build, but these are the controls that matter most and how to think about them.
+
+| Setting | What it controls | Sensible starting point |
+|---|---|---|
+| Grid size | Total pixel dimensions | 64×64 for sprites, 256×256 for art |
+| Palette size | Number of distinct colors | 16 to 32 for a retro look |
+| Dithering mode | Pattern used for transitions | None for characters, ordered for backgrounds |
+| Dither strength | How much texture is applied | Low; increase only if banding is obvious |
+| Alpha handling | How transparency is treated | Preserve it for sprites, discard for scenes |
+| Scaling method | How the small image is enlarged | Nearest-neighbor, always |
+| Frame palette lock | Whether animation shares one palette | On, for any animated sequence |
+
+A quick diagnostic: if your subject's face has become an unrecognizable blob, your grid is too small or your palette is too tight. If the image looks like a normal photo with visible squares, your grid is too large. Move one variable at a time and you will find the sweet spot in three or four attempts.
+
+## Tips, Pitfalls, and Honest Limits
+
+- **Prompt for shapes, not detail.** A source with a bold silhouette and three or four large shapes pixelates beautifully. A source with fine lace, hair strands, or busy texture will not.
+- **Simplify the background first.** A flat or removed background gives the quantizer fewer colors to waste.
+- **Check your line work.** In pixel art, a one-pixel outline defines the whole figure. If the converter drops it, add it back by hand.
+- **Batch similar images together.** Reusing one palette across a set of sprites makes a project look intentional rather than assembled.
+- **Export at an integer multiple.** Doubling or tripling the pixel grid keeps squares perfectly even; arbitrary zoom levels do not.
+
+| Problem | Likely cause | Fix |
+|---|---|---|
+| Blurry or soft edges | Smooth interpolation on export | Switch to nearest-neighbor scaling |
+| Color banding in skies | Too few palette entries | Add colors or enable light ordered dithering |
+| Flickering in animation | Per-frame palette changes | Lock the palette across all frames |
+| Subject unreadable | Grid too small for the detail | Raise the grid or simplify the source |
+| Washed-out colors | Aggressive quantization | Reduce the palette cut or boost contrast first |
+
+It is worth being honest about the limits. The ArtCraft Pixelator is a converter, not a pixel artist. It will not fix a weak composition, it will not draw a clean outline where the source has none, and it will not match the craft of a human who places every pixel deliberately. What it does extremely well is compress a generated image into a coherent, stylized form in seconds — which makes it ideal for prototyping, mockups, and rapid iteration. For final production sprites, treat the output as a strong first pass and plan on a cleanup session.
+
+If you want to explore the tool yourself, start at the [official ArtCraft site](https://getartcraft.com/) for downloads and feature documentation, and the [ArtCraft GitHub repository](https://github.com/storytold/artcraft) if you prefer to read the source or contribute.
+
+## FAQ
+
+**Does the ArtCraft Pixelator work on video as well as images?**
+Yes. The same downsampling and quantization logic applies per frame, so you can turn a generated clip into a pixel-art animation. The main caveat is consistency: lock the palette across frames or you will see the colors shift as the subject moves.
+
+**What grid size should I start with?**
+For characters and sprites, 32×32 or 64×64 is the usual starting point. For standalone artwork or thumbnails, 128×128 to 256×256 gives you more room for recognizable detail without losing the pixel look.
+
+**Why does my pixelated image look muddy?**
+Almost always because the source had too much fine detail. Pixelation amplifies clutter. Generate a simpler image with large shapes and strong contrast, then run the ArtCraft Pixelator again — the difference is usually dramatic.
+
+**Can I undo a conversion I don't like?**
+Only if you kept the original. Quantization and dithering discard information permanently, so always save the pre-pixelated render alongside the result. Re-running from the clean source takes seconds and gives you a genuinely different outcome instead of a patched-up one.

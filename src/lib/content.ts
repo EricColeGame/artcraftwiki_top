@@ -225,11 +225,11 @@ export async function getContent(contentType: string, slugSegments: string[], la
  * 导航分组结构（用于动态 Wiki Navigation）
  */
 export interface NavGroup {
-  /** 分组标题，来自目录名转人类可读格式，如 "bosses" → "Bosses" */
+  /** 分组标题，来自目录名转人类可读格式，如 "guide" → "Beginner Guide" */
   title: string;
   /** 该分组下的文章数量 */
   count: number;
-  /** 分组 slug（即目录名，如 "bosses"） */
+  /** 分组 slug（即目录名，如 "guide"） */
   slug: string;
   /** 文章链接列表 */
   links: Array<{ label: string; href: string; badge?: string }>;
@@ -237,39 +237,61 @@ export interface NavGroup {
 
 // 分组标题映射：slug → 人类可读标题（默认英文）
 const GROUP_TITLES: Record<string, string> = {
-  bosses: "Bosses",
-  races: "Races",
-  maps: "Maps & Areas",
-  skills: "Skills",
-  codes: "Codes",
-  guide: "Getting Started",
-  "tier-list": "Tier Lists",
+  guide: "Beginner Guide",
+  tools: "Tools & Software",
+  features: "Features",
+  downloads: "Downloads",
+  community: "Community",
+  comparisons: "Comparisons",
 };
 
 // 日文分组标题映射
 const GROUP_TITLES_JA: Record<string, string> = {
-  bosses: "ボス",
-  races: "種族",
-  maps: "マップ & エリア",
-  skills: "スキル",
-  codes: "コード",
   guide: "初心者ガイド",
-  "tier-list": "Tier List",
+  tools: "ツール & ソフト",
+  features: "機能",
+  downloads: "ダウンロード",
+  community: "コミュニティ",
+  comparisons: "比較",
+};
+
+// 德文分组标题映射
+const GROUP_TITLES_DE: Record<string, string> = {
+  guide: "Erste Schritte",
+  tools: "Werkzeuge & Software",
+  features: "Funktionen",
+  downloads: "Downloads",
+  community: "Community",
+  comparisons: "Vergleiche",
+};
+
+// 韩文分组标题映射
+const GROUP_TITLES_KO: Record<string, string> = {
+  guide: "초보자 가이드",
+  tools: "도구 & 소프트웨어",
+  features: "기능",
+  downloads: "다운로드",
+  community: "커뮤니티",
+  comparisons: "비교",
 };
 
 // locale → 分组标题映射
 const GROUP_TITLES_BY_LOCALE: Record<string, Record<string, string>> = {
   ja: GROUP_TITLES_JA,
+  de: GROUP_TITLES_DE,
+  ko: GROUP_TITLES_KO,
 };
 
 // locale → "Overview" 翻译
 const OVERVIEW_LABEL_BY_LOCALE: Record<string, string> = {
   ja: "一覧",
+  de: "Übersicht",
+  ko: "개요",
 };
 
 // 分组排序顺序
 const GROUP_ORDER: string[] = [
-  "guide", "races", "bosses", "maps", "skills", "codes", "tier-list",
+  "guide", "tools", "features", "downloads", "community", "comparisons",
 ];
 
 /**

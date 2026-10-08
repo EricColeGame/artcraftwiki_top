@@ -1,0 +1,121 @@
+export const metadata = {
+  title: "ArtCraft Glitch Art Guide: Crafting Datamosh, Pixel Sort & VHS Aesthetics",
+  description: "Learn how to make artcraft glitch art on your desktop — prompt patterns, reference image tricks, and datamosh workflows for AI image and video.",
+  category: "features",
+  date: "2026-10-08",
+}
+
+Glitch art looks accidental. The scanlines, the torn color channels, the frames that smear into one another — it all reads like a happy accident, even when every artifact was placed on purpose. That gap between chaos and control is exactly where artcraft glitch art lives, and it's why artists who care about repeatable results keep moving to a desktop workflow instead of a browser tab. ArtCraft is an open-source desktop application for generating AI images and video, built for people who want genuine control over the output rather than a slot machine that occasionally pays out.
+
+If you've ever tried to force deliberate corruption out of a hosted generator, you know the frustration: the tool fights you. This guide walks through how artcraft glitch art actually works in practice — the aesthetics worth chasing, the prompt patterns that produce them, how to carry the look into animation, and the mistakes that turn a striking image into unreadable noise.
+
+## What Makes ArtCraft a Good Fit for Glitch Art
+
+Glitch art is a control problem disguised as a chaos problem. You need a clean base image first, then a specific, repeatable way to damage it. That demands two things many generators don't offer: reference images you can pin, and prompts you can iterate on without starting from zero every time.
+
+ArtCraft is an open-source desktop app for AI image and video creation, aimed at artists, designers, and filmmakers. Its own description calls it an intentional crafting engine — a phrase that suits glitch work perfectly, because intentionality is the entire game.
+
+| Workflow need | Why it matters for glitch art | How a desktop ArtCraft workflow helps |
+|---|---|---|
+| A stable base image | Corruption only reads as corruption against something coherent | Prompt control plus pinned reference images lock in a look |
+| Repeatable damage | You want the same tear across ten frames, not ten different tears | Iterative prompting on top of a fixed reference |
+| Motion | Datamosh and VHS looks depend on frame-to-frame drift | Built-in animation and video generation |
+| Ownership | Artists often need local files for compositing | Open-source desktop app; the work belongs to you |
+| Speed of iteration | Glitch is a numbers game — many small variations | A focused app beats juggling browser tabs |
+
+The desktop form factor matters more than it sounds. When results land next to your other assets instead of in a cloud gallery, comparing versions and feeding the best one back in as a reference becomes a two-second habit rather than a chore.
+
+## The Glitch Aesthetics Worth Building
+
+"Glitch" is not one look. It's a family of visual languages, and each one needs different vocabulary. Treat this table as a menu — pick two, not seven.
+
+| Aesthetic | What it looks like | How to steer toward it |
+|---|---|---|
+| Chromatic aberration | Red and cyan ghosts offset from the subject | "Lens separation," "channel offset," "anamorphic fringe" |
+| Pixel sorting | Vertical streaks where pixels stretch along an axis | "Pixel sorting," "data-stretched bands," "smear along the vertical axis" |
+| CRT / scanline | Horizontal lines, phosphor glow, slight barrel curve | "CRT monitor," "scanlines," "phosphor bloom," "interlaced video" |
+| Datamosh | Frames bleeding into the next, motion trails that never resolve | Video generation plus "frame blending," "compression drift" |
+| VHS degradation | Soft edges, color bleed, tracking noise at the top | "VHS transfer," "tape wear," "tracking error," "analog noise" |
+| Compression artifacts | Blocky tiles, ringing around high-contrast edges | "JPEG artifacts," "macroblocking," "low-bitrate stream" |
+| Palette corruption | Wrong but harmonious colors, broken gradients | "Bit-crushed palette," "corrupted color table," "indexed color" |
+
+The single most common mistake is asking for all of these at once. Stacked effects don't compound into "more glitch" — they compound into mud. One strong artifact plus one supporting artifact is usually the ceiling before an image stops communicating.
+
+## A Step-by-Step ArtCraft Glitch Art Workflow
+
+The workflow below assumes you're starting from nothing. It's the same sequence whether you're making a single poster frame or a five-second loop.
+
+| Step | What you do | Why it matters |
+|---|---|---|
+| 1 | Generate a clean, well-lit, boring base image | You cannot corrupt what you can't see |
+| 2 | Save the result and reuse it as a reference image | Anchors composition while the style drifts |
+| 3 | Add one glitch descriptor at a time | Isolates which phrase caused which artifact |
+| 4 | Compare each result against your control set | Prevents slow drift into pure noise |
+| 5 | Push the strongest frame into animation | Motion is where glitch art gets interesting |
+| 6 | Finish in your compositor of choice | Real scanlines and grain still beat generated ones |
+
+### Start Clean, Then Break It
+
+A glitch piece needs a straight man. Generate the portrait, the product shot, or the landscape exactly as you'd want it without any effects. Then, using that image as a reference, introduce damage. The model now has a coherent target to deviate from, and the deviations read as errors instead of as style.
+
+### Always Keep a Control Set
+
+Save three to five reference outputs you like and never overwrite them. As you push prompts harder, your sense of what "looks right" drifts with every generation. The control set is your anchor. Community reports consistently point to this habit as the difference between a finished series and a folder of 400 near-misses.
+
+## Prompt Patterns That Produce Real Glitch
+
+The word "glitch" on its own is nearly useless — it pulls in a generic mess of RGB splits and static. Specificity is what makes artcraft glitch art controllable.
+
+| Pattern | Example phrasing | Best for |
+|---|---|---|
+| Contradiction | "pristine studio portrait, corrupted by a failing transmission" | Balanced, still-readable glitch |
+| Signal vocabulary | "signal loss, sync error, dropped frames, keyframe drift" | Video-native looks |
+| Format language | "third-generation VHS dub, 240p stream, broadcast capture" | Analog and lo-fi moods |
+| Material substitution | "skin rendered as circuit traces," "hair as coaxial cable" | Conceptual, editorial work |
+| Deliberate limits | "limited to four colors, indexed palette, 1-bit dither" | Graphic, poster-like results |
+| Temporal language | "an image that is one frame behind itself" | Motion blur and ghosting |
+
+Two practical notes. First, describe the *cause* of the glitch, not just the glitch — "a failing transmission" gives the model a narrative to visualize, while "glitchy" gives it nothing. Second, keep a running text file of phrases that worked. Your personal prompt library will outperform any generic list, because it's tuned to your subject matter.
+
+## Glitch Art in Motion: Video and Animation
+
+Static glitch art is a picture of damage. Video glitch art is damage happening. The distinction matters, and it's where ArtCraft's video side earns its keep — the app has added fast generative video models, including Seedance 2.0, alongside its image tools.
+
+| Technique | Approach | Result |
+|---|---|---|
+| Frame blending | Animate between two similar reference frames | Datamosh-style smearing without a compositor |
+| Slow drift | Keep motion subtle so artifacts stay legible | A loop that reads as a broken signal, not a music video |
+| Hard cuts | Cut between two unrelated glitch states | The "tracking error" jump audiences recognize instantly |
+| Reference-locked motion | Hold the reference image fixed while the prompt shifts | Consistent subject, evolving corruption |
+| Loop construction | Match the first and last frame | Seamless playback for installations and social posts |
+
+For loops, aim for short. Three to six seconds is plenty; glitch aesthetics fatigue fast when they run long, and a tight loop invites rewatching in a way a thirty-second clip never will.
+
+## Troubleshooting: When the Glitch Eats the Image
+
+| Symptom | Likely cause | Fix |
+|---|---|---|
+| Everything is noise | Too many glitch terms stacked | Remove all but one descriptor and rebuild |
+| Nothing glitches at all | Prompt describes the subject but never the damage | Add a cause phrase, not just an effect phrase |
+| Colors turn muddy | Corruption applied to an already low-contrast base | Start from a brighter, higher-contrast original |
+| Motion is unreadable | Camera movement plus artifact movement | Freeze the camera; let only the artifacts move |
+| Series looks inconsistent | No fixed reference across generations | Pin one image and vary only the prompt text |
+| Results look generic | Using "glitch" alone | Swap in format or signal vocabulary from the tables above |
+
+Most of these come down to the same root cause: too many variables changing at once. Change one thing, look at the result, then decide. That's slower for the first ten images and dramatically faster for the next hundred.
+
+## Frequently Asked Questions
+
+**What exactly is artcraft glitch art?**
+It's glitch-style image and video work produced inside ArtCraft, an open-source desktop app for AI generation. In practice it means using prompt control, reference images, and animation to create deliberate corruption — chromatic aberration, pixel sorting, datamosh, VHS wear — rather than accepting whatever randomness a generator hands you.
+
+**Do I need to write code to use it?**
+No. ArtCraft is open source, which means the code is available and inspectable, but the day-to-day experience is a desktop application. You prompt, you reference, you generate. The open-source nature matters most for artists who want to verify how their tools work or extend them later.
+
+**Can I make animated glitch art, or is it images only?**
+Both. Image generation is the natural starting point because it's faster to iterate, but video and animation tools are available and are where datamosh and tracking-error looks really come alive. A common path is to nail a still first, then push that exact frame into motion.
+
+**How do I keep a whole series consistent?**
+Lock three things: the reference image, the base subject description, and the single glitch descriptor you're using. Vary everything else. Consistency in glitch art comes from restraint, not from repeating the same long prompt and hoping the seed holds.
+
+The through-line in all of this is simple. ArtCraft gives you the control; the taste is still yours to supply. Start clean, break one thing at a time, and keep the frames that surprise you.

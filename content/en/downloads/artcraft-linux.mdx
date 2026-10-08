@@ -1,0 +1,138 @@
+export const metadata = {
+  title: "ArtCraft Linux Download Guide: Install the Open-Source AI Studio on Your Desktop",
+  description: "A complete ArtCraft Linux download guide: package options, install steps, performance tuning, and fixes for common issues on your desktop.",
+  category: "downloads",
+  date: "2026-10-08",
+}
+
+## Why an ArtCraft Linux Download Changes Your Creative Workflow
+
+ArtCraft is an open-source desktop application for generating AI images and video, built for artists who want real control over prompts, references, and animation. For Linux users, an **ArtCraft Linux** download means that control lives on your own machine — no browser tab, no rented render farm, no lock-in. That matters because generative work is iterative: the faster you can test a prompt, tweak a reference, and re-render, the better your final frames look.
+
+The pitch behind ArtCraft is simple: it's an "intentional crafting engine" for artists, designers, and filmmakers rather than a one-click novelty toy. If you already run Linux for its transparency and flexibility, pairing it with an open desktop AI tool is a natural fit. This guide covers what ArtCraft does, how Linux users typically get it, and how to keep it running smoothly.
+
+## What ArtCraft Actually Does (and Why Linux Users Care)
+
+ArtCraft focuses on AI image and video generation inside a native desktop window. Instead of uploading your work to a third-party service, you keep projects, models, and outputs on your own drive. That's the core promise: you own the app and you own the results.
+
+Key capabilities reported by the project and its community include:
+
+- **Prompt control** — fine-grained input handling rather than a single text box
+- **Reference images** — guide generations with your own visual inputs
+- **Animation and video** — move beyond stills into motion work
+- **Open-source workflows** — inspectable code and a public repository
+- **Desktop-native performance** — local rendering rather than cloud queues
+
+| Attribute | Details |
+|---|---|
+| What it is | Open-source desktop app for AI image and video generation |
+| Primary audience | Artists, designers, filmmakers, and independent creators |
+| Distribution model | Free, open-source desktop download |
+| Signature strength | Controllable, intentional generation workflows |
+| Code availability | Public repository you can read, fork, and audit |
+
+The project's source is hosted publicly — you can browse [ArtCraft's open-source repository on GitHub](https://github.com/storytold/artcraft) to review the code, check issue threads, and see how releases are built. For Linux users, that transparency is the whole point: you can verify what runs on your system before you run it.
+
+### The "you own it" philosophy
+
+ArtCraft positions itself as software the user owns rather than rents. In practice that means local files, portable projects, and no forced cloud dependency for basic operation. Community reports suggest this is exactly why Linux users gravitate toward it.
+
+### Where Linux fits
+
+Linux is a strong host for AI desktop tools because of its driver control, scripting, and package management. A **ArtCraft Linux** setup lets you script batch renders, mount fast scratch drives, and integrate output folders into existing pipelines.
+
+## ArtCraft Linux Download Options Compared
+
+Linux doesn't have a single installer format, so the first question is always "which build do I grab?" Availability depends on what the project currently publishes, so confirm the latest release on the official ArtCraft site before downloading. The table below explains the tradeoffs of each common format.
+
+| Package Format | Best For | Advantages | Tradeoffs |
+|---|---|---|---|
+| AppImage | Trying the app quickly | Runs without installing; portable | Manual updates; no system integration |
+| .deb | Debian, Ubuntu, Mint | Native package manager integration | Distro-specific |
+| .rpm | Fedora, openSUSE, RHEL | Fits existing RPM workflows | Distro-specific |
+| Flatpak | Sandboxed setups | Isolation, easy updates via Flathub-style remotes | Permission configuration needed |
+| Snap | Ubuntu-first users | Auto-updates, confinement | Slower cold starts for some apps |
+| Source build | Developers and tinkerers | Full control, latest commits | Dependency management overhead |
+
+A practical rule: if you just want to evaluate **ArtCraft Linux** performance on your hardware, start with the most portable option available and upgrade to a native package once you're committed. If you manage multiple machines, a sandboxed format saves you from dependency drift.
+
+## How to Install ArtCraft on Linux Step by Step
+
+The exact commands differ by distribution and by the build the project ships, but the workflow is consistent. Here's the sequence that works for nearly every Linux desktop AI app.
+
+| Step | Action | What to Watch For |
+|---|---|---|
+| 1 | Confirm your GPU and driver version | Proprietary NVIDIA drivers usually outperform open alternatives for AI work |
+| 2 | Download the current Linux build from the official source | Avoid third-party mirrors and reuploads |
+| 3 | Verify the checksum if one is published | Catches truncated or tampered downloads |
+| 4 | Make the file executable (portable builds) | `chmod +x` on AppImage-style files |
+| 5 | Launch and complete first-run setup | Model downloads can take a while |
+| 6 | Point the app at a fast storage location | Keep model caches off slow external drives |
+| 7 | Test a simple prompt before a long render | Confirms GPU acceleration is actually active |
+
+**Tip:** create a dedicated folder such as `~/AI/artcraft` for models and outputs. It makes backups trivial and keeps large files out of your home directory root.
+
+### Verifying the download
+
+If the release page publishes a SHA-256 checksum, compare it against your downloaded file with your distro's hashing tool. It takes ten seconds and eliminates an entire class of "why won't this launch" problems. Community reports consistently list corrupted downloads as a top cause of first-run failures.
+
+### First-run checklist
+
+- Confirm the app detects your GPU rather than falling back to CPU
+- Set an output directory you can actually find later
+- Download only the models you need — storage fills up fast
+- Test one short generation before committing to a long queue
+
+## Performance Tuning for ArtCraft Linux Renders
+
+Desktop AI generation is hardware-bound. Two machines with identical software can differ dramatically in render time based on VRAM, driver version, and storage speed. Here's where to focus your attention.
+
+| Component | Why It Matters | Practical Tip |
+|---|---|---|
+| GPU / VRAM | Primary driver of generation speed | Prefer discrete GPUs; close other GPU-heavy apps |
+| Drivers | Compatibility with acceleration libraries | Keep vendor drivers current, especially on rolling releases |
+| System RAM | Handles model loading and caching | 16 GB is a comfortable baseline for desktop AI work |
+| Storage | Model reads and output writes | Use an NVMe SSD for models and scratch space |
+| Display server | Window behavior and capture | X11 sometimes behaves better with legacy GPU tooling; Wayland is improving fast |
+| Thermal headroom | Sustained performance | Long render queues will throttle a hot laptop |
+
+If your **ArtCraft Linux** renders feel slow, check the task monitor before blaming the app. A GPU sitting near idle during generation almost always points to a driver or acceleration configuration problem, not a software bug.
+
+### Storage strategy that scales
+
+Model files are the biggest space consumers. Keep a single library folder, symlink it if you need it in multiple locations, and prune models you no longer use. A 2 TB drive can disappear surprisingly quickly once you start collecting video models.
+
+## Troubleshooting Common ArtCraft Linux Issues
+
+Most problems fall into a handful of categories. Community reports point to the same fixes again and again.
+
+| Symptom | Likely Cause | Fix |
+|---|---|---|
+| App won't launch | Missing runtime libraries | Install the documented dependencies for your distro |
+| Blank or black window | GPU/driver mismatch | Update drivers; try switching display server session |
+| Very slow generation | CPU fallback in use | Verify GPU detection in settings |
+| Out-of-memory errors | Insufficient VRAM for model | Use a smaller model or lower resolution |
+| No output file | Incorrect output path or permissions | Point output to a writable directory |
+| Sandbox can't see files | Flatpak/Snap confinement | Grant filesystem permissions to the app |
+
+### Getting help faster
+
+When you ask for support, include your distribution, kernel version, GPU model, driver version, and the exact build you installed. That single block of context resolves a huge share of back-and-forth. If the issue looks like a genuine bug, search the public issue tracker before opening a new thread — someone may have already found a workaround.
+
+## Frequently Asked Questions
+
+**Is ArtCraft free to download on Linux?**
+Yes — ArtCraft is distributed as open-source software, so there's no license fee. You should always download from the official project site or its public repository rather than a third-party mirror, since reuploads can be outdated or modified.
+
+**Does an ArtCraft Linux install work without a discrete GPU?**
+It can run, but performance will be limited. Generation is GPU-bound, so integrated graphics typically mean much slower renders. Check that hardware acceleration is active before judging the app's speed.
+
+**How do I update my ArtCraft Linux build?**
+It depends on the format you chose. Package-managed installs update through your system's normal tools, sandboxed builds update through their remote, and portable builds require downloading a fresh file. Always back up projects before a major version jump.
+
+**Can I run ArtCraft Linux offline?**
+Core generation can work locally once models are downloaded, which is one of the main appeals of a desktop tool. Some features that rely on external model services may still need a connection, so verify requirements for any specific model you plan to use.
+
+## Final Thoughts on Choosing an ArtCraft Linux Setup
+
+The appeal of an **ArtCraft Linux** download comes down to ownership: your hardware, your files, your workflow. Pick the package format that matches how you maintain your system, verify your download, and spend ten minutes confirming GPU acceleration before you start a long render queue. Do that, and the desktop becomes the most flexible AI studio you own — no subscription, no upload limits, no surprises.

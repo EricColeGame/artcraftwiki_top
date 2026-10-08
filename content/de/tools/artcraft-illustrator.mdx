@@ -1,0 +1,124 @@
+export const metadata = {
+  title: "ArtCraft-Illustrator-Leitfaden: Kontrollierbare KI-Bilder und -Videos für Künstler",
+  description: "Ein praktischer Leitfaden zum Workflow für ArtCraft-Illustratoren: Prompt-Kontrolle, Referenzen, Animation und Open-Source-KI für Bilder und Videos auf dem Desktop.",
+  category: "tools",
+  date: "2026-10-08",
+}
+
+Die meisten KI-Bildwerkzeuge bitten dich, ein Bild zu beschreiben, und dann heißt es: Daumen drücken. Ein ArtCraft-Illustrator arbeitet anders: Du steuerst das Modell, lieferst Referenzen, verfeinerst den Prompt und behältst die Ergebnisse auf deiner eigenen Maschine. Dieser Unterschied ist wichtig, denn Kontrolle ist genau das, was Cloud-Generatoren selten zurückgeben – und deshalb verlagern so viele Künstler ihr Rendering auf eine Desktop-App, die ihnen tatsächlich gehört. Dieser Leitfaden zeigt, was ein ArtCraft-Illustrator den ganzen Tag wirklich tut, welche Werkzeuge die Arbeit tragen und wie du einen Workflow aufbaust, der wiederholbar bleibt statt vom Glück abzuhängen.
+
+## Was ArtCraft wirklich ist – und was es nicht ist
+
+ArtCraft ist eine Open-Source-Desktop-Anwendung zur Generierung von KI-Bildern und -Videos, entwickelt für Künstler, die echte Kontrolle über das Ergebnis wollen. Statt dich in einem Browser-Tab anzumelden und Rechenleistung pro Credit zu mieten, installierst du die App, führst sie auf deiner eigenen Hardware aus und lässt fertige Dateien direkt auf deine Festplatte schreiben. Das Projekt beschreibt sich selbst als eine bewusste Crafting-Engine für Künstler, Designer und Filmemacher – eine Formulierung, die viel über seine Prioritäten verrät.
+
+Dieses Wort *bewusst* ist das ganze Versprechen. Die meisten Generatoren optimieren auf Geschwindigkeit und Überraschung. ArtCraft optimiert auf Richtung: Du strukturierst den Prompt, du lieferst die Referenzen, du wählst das Modell und du behältst das Ergebnis. Den vollständigen Funktionsumfang kannst du auf der [offiziellen ArtCraft-Website](https://getartcraft.com/) erkunden.
+
+| Frage | ArtCraft (Desktop) | Typischer Cloud-Generator |
+|---|---|---|
+| Wo es läuft | Installierte App auf deiner Maschine | Browser-Sitzung |
+| Wo fertige Dateien landen | Deine eigene Festplatte | Anbieter-Galerie, an ein Konto gebunden |
+| Modellzugriff | Mehrere Modelle in einem Fenster | Nur das, was die Website anbietet |
+| Prompt-Kontrolle | Explizit und strukturiert | Häufig vereinfacht |
+| Quellcode | Open Source und öffentlich einsehbar | Geschlossen |
+| Workflow-Eigentum | Du besitzt die App und die Bibliothek | An ein Konto gebunden |
+
+Weil der Code öffentlich ist, fungiert das Projekt zugleich als Lernressource. Berichte aus der Community im [ArtCraft-GitHub-Repository](https://github.com/storytold/artcraft) beschreiben es als eine Crafting-Engine statt als Ein-Klick-Spielzeug, und das begleitende Wiki sammelt Workflow-Notizen, Download-Hinweise und Prompt-Technik.
+
+## Das Kern-Toolkit, auf das ein ArtCraft-Illustrator setzt
+
+Die Funktionsliste ist kürzer, als man es von einer Suite erwarten würde, und das ist Absicht. ArtCraft konzentriert sich auf die Hebel, die ein Bild verändern, nicht auf Dekoration.
+
+- **Text-zu-Bild-Generierung** für Konzeption, Keyframes und fertige Standbilder
+- **Bild-zu-Video und Animation**, um einen festgelegten Frame in Bewegung zu verwandeln
+- **Referenz-Eingaben**, damit eine Figur, Farbpalette oder ein Requisit über ein Set hinweg konsistent bleibt
+- **Prompt-Kontrolle**, einschließlich strukturierter Prompts, die du speichern und wiederverwenden kannst
+- **Modellauswahl in einem einzigen Fenster**, sodass du nicht fünf Tabs jonglieren musst
+- **Lokale Ausgabe**, das heißt, jedes Rendering ist eine Datei, die dir bereits gehört
+
+| Funktion | Wofür sie gedacht ist | Wer sie am stärksten nutzt |
+|---|---|---|
+| Text-zu-Bild | Schnelle Ideenfindung und Moodboards | Konzeptkünstler, Illustratorinnen und Illustratoren |
+| Referenzgesteuertes Prompting | Visuelle Konsistenz über eine Serie hinweg | Charakter- und Comic-Künstler |
+| Bild-zu-Video | Animatics und kurze Bewegungstests | Storyboard- und Filmkünstler |
+| Animationswerkzeuge | Frames zu einer Einstellung aneinanderreihen | Filmemacher, Motion Designer |
+| Prompt-Kontrolle | Wiederholbare, vermittelbare Ergebnisse | Studio-Teams, Lehrende |
+| Lokale Dateiausgabe | Archivierung und Lieferung an Kunden | Freelancer, Produktionsfirmen |
+
+### Prompt-Kontrolle ist die Hauptattraktion
+
+Wenn du jemals ein wunderschönes Rendering bekommen hast und es eine Woche später nicht reproduzieren konntest, verstehst du das Problem. Strukturierte Prompt-Kontrolle behebt das. Ein ArtCraft-Illustrator speichert Formulierung, Referenzen und Einstellungen zusammen, sodass ein Look bei Bedarf neu aufgebaut werden kann – oder an eine Kollegin oder einen Kollegen weitergegeben werden kann, ohne einen Absatz Erklärung.
+
+### Referenzen und Animation
+
+Referenzen sind das, was eine Serie von einem Haufen unzusammenhängender Bilder unterscheidet. Gib der App einen vorherigen Frame oder ein Styleboard, und die Ausgabe bleibt in derselben visuellen Welt. Animation baut darauf auf: Fixiere einen Frame, mit dem du zufrieden bist, und bring ihn dann in Bewegung, statt auf eine frische Generierung zu wetten.
+
+## Bild oder Video? Den richtigen Modus wählen
+
+Neue Nutzer springen oft direkt zum Video, weil es beeindruckend aussieht. Erfahrene Hände machen meist das Gegenteil: Sie lösen zuerst das Bild und animieren dann. Die folgende Tabelle zeigt, warum.
+
+| Ziel | Besserer Modus | Grund |
+|---|---|---|
+| Einen Look oder eine Farbpalette erkunden | Bild | Schnelle Iteration, günstig zu verwerfen |
+| Ein Charakterdesign festlegen | Bild | Leichter Seite an Seite zu vergleichen |
+| Kamerabewegung testen | Video | Bewegung ist die einzige Möglichkeit, sie zu beurteilen |
+| Eine Einstellung für den Schnitt aufbauen | Video | Erzeugt verwendbares Filmmaterial |
+| Kundenfreigabe für einen Stil | Bild | Schnellere Feedback-Schleife |
+| Social-Media-taugliche Bewegungsclips | Video | Liefert das endgültige Format |
+
+Die Videogenerierung ist dramatisch praktischer geworden. ArtCraft bietet Zugriff auf moderne Videomodelle im selben Desktop-Fenster, darunter Seedance 2.0 für schnelle KI-Videogenerierung, sodass du weder eine zweite Anwendung noch ein zweites Abo brauchst, um vom Standbild zur Bewegung zu gelangen.
+
+## Ein wiederholbarer ArtCraft-Illustrator-Workflow, Schritt für Schritt
+
+Die Künstler, die konstante Ergebnisse erzielen, verwenden keine geheimen Prompts. Sie verwenden eine Abfolge. Hier ist ein Workflow, der von einer einzelnen Illustration bis zu einer vollständigen Sequenz skaliert.
+
+| Schritt | Aktion | Warum es wichtig ist |
+|---|---|---|
+| 1 | Ein Absatz-Briefing schreiben | Erzwingt Entscheidungen, bevor Pixel entstehen |
+| 2 | 3–5 Referenzen sammeln | Verankert Stil und Motiv |
+| 3 | Einen strukturierten Prompt entwerfen | Macht das Ergebnis reproduzierbar |
+| 4 | Kleine Test-Batches rendern | Günstige Erkundung, schnelle Verwerfung |
+| 5 | Den Gewinner fixieren und Details verfeinern | Verhindert zielloses Neu-Auswürfeln |
+| 6 | Den fixierten Frame animieren oder hochskalieren | Schützt den Look, den du freigegeben hast |
+| 7 | Prompt, Referenzen und Einstellungen zusammen speichern | Verwandelt ein Rendering in ein Asset |
+
+Ein paar Gewohnheiten, die es wert sind, übernommen zu werden:
+
+- **Führe pro Projekt einen Referenzordner.** Community-Berichte verweisen immer wieder auf die Referenzqualität als wichtigsten Einzelfaktor für die Ausgabequalität.
+- **Benenne deine Prompts wie Dateien.** "Hero portrait, dusk, 35mm, warm rim light" schlägt "portrait2_final."
+- **Fasse deine Tests in Batches zusammen.** Zehn schnelle, einfache Renderings lehren dich mehr als ein langsames Hero-Rendering.
+- **Versioniere deine Freigaben.** In dem Moment, in dem ein Kunde sagt „das da“, friere es ein und höre auf, Variationen zu generieren.
+- **Archiviere das gesamte Rezept, nicht nur das PNG.** Das Bild ist die Ausgabe; der Prompt und die Referenzen sind das Asset.
+
+Für einen ArtCraft-Illustrator, der an einer Serie arbeitet, ist diese letzte Gewohnheit der Unterschied zwischen einem Portfolio und einer Fabrik.
+
+## Eigentum, Hardware und ehrliche Grenzen
+
+Das Verkaufsargument einer Desktop-App ist Eigentum, aber Eigentum bringt Verantwortung mit sich. Es lohnt sich, beide Seiten nüchtern zu betrachten.
+
+| Du kontrollierst | Du hast trotzdem mit Folgendem zu tun |
+|---|---|
+| Wo deine Dateien liegen und wie lange sie bestehen | Deine eigene GPU und dein Speicher |
+| Welches Modell du für eine bestimmte Aufgabe ausführst | Lokale Renderzeiten |
+| Ob deine Prompts privat bleiben | Einrichtung und Treiber-Wartung |
+| Wie dein Workflow organisiert ist | Eine Lernkurve bei der ersten Installation |
+| Ob du weiterarbeiten kannst, wenn sich ein Dienst ändert | Modell-Updates, die du selbst verwalten musst |
+
+Die Hardware-Frage kommt ständig auf. Die Bildgenerierung ist die leichtere Übung; bei der Videogenerierung muss deine Maschine ihren Wert beweisen. Wenn du regelmäßig animieren willst, plane ein Budget für eine Maschine mit leistungsfähiger GPU und reichlich schnellem Speicher ein, denn lokale Ausgabe bedeutet, dass jedes Test-Rendering echten Speicherplatz belegt. Das ist ein Feature, kein Bug – du baust eine Bibliothek auf, statt eine zu mieten.
+
+Die ehrlichen Grenzen sind es ebenso wert, benannt zu werden. Eine Desktop-App schenkt dir keine kuratierte Galerie und kein Ein-Klick-Stil-Preset. Sie setzt voraus, dass du Geschmack, eine Referenz-Routine und die Geduld zum Iterieren hast. Für Künstler, die bereits so arbeiten, ist das eine Erleichterung statt einer Hürde.
+
+## FAQ
+
+**Ist ArtCraft kostenlos nutzbar?**
+ArtCraft wird als Open-Source-Desktop-Anwendung vertrieben, der Code ist öffentlich verfügbar. Da es lokal auf deiner eigenen Hardware läuft, bestehen deine praktischen Kosten aus Hardware und Zeit statt aus Credits pro Rendering. Aktuelle Vertriebsdetails findest du auf der [offiziellen ArtCraft-Website](https://getartcraft.com/).
+
+**Brauche ich für den Einstieg eine teure GPU?**
+Nicht unbedingt. Die Generierung von Standbildern ist deutlich genügsamer als Video. Viele Künstler beginnen nur mit Bildern, lernen ihren Prompt-Workflow und rüsten später die Hardware auf, wenn Animation ein regelmäßiger Teil der Arbeit wird.
+
+**Kann ein ArtCraft-Illustrator es für Video nutzen, oder ist es hauptsächlich für Standbilder?**
+Beides. Dieselbe Anwendung übernimmt Bild- und Videogenerierung, und moderne Videomodelle laufen in diesem einen Fenster. Die meisten Nutzer beginnen mit Standbildern und gehen dann zu kurzen Animationstests über, sobald sie einen Look fixiert haben, der ihnen gefällt.
+
+**Wo sollte ein Anfänger den Workflow lernen?**
+Beginne mit der öffentlichen Dokumentation und dem Wiki des Projekts und kopiere dann einen vollständigen Workflow – Briefing, Referenzen, Prompt, Rendering, Archivierung –, statt Dutzende Prompt-Schnipsel zu sammeln. Community-Berichte legen nahe, dass die Beherrschung eines wiederholbaren Prozesses besser ist als das Auswendiglernen von hundert Tricks.
+
+Das Muster ist überall dasselbe: ArtCraft belohnt Künstler, die Generierung als Handwerk begreifen. Steuere das Modell, dokumentiere deine Entscheidungen, und das Werkzeug fühlt sich nicht mehr wie ein Spielautomat an, sondern wie ein Studio.

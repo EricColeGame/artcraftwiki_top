@@ -1,0 +1,127 @@
+export const metadata = {
+  title: "ArtCraft Tutorial: A Beginner's Guide to AI Image and Video Generation on Desktop",
+  description: "Learn how to master ArtCraft with this hands-on tutorial covering setup, prompting, references, animation, and export workflows for artists.",
+  category: "guide",
+  date: "2026-10-08",
+}
+
+Most AI image and video tools hand you a text box and hope for the best. An artcraft tutorial flips that relationship, putting the artist back in the director's chair with prompt control, reference inputs, and a native desktop workspace built for people who care about the result. If you have ever generated something beautiful by accident and then failed to reproduce it, this guide is for you — because ArtCraft is designed for intentional, repeatable work rather than lucky rolls.
+
+This artcraft tutorial walks through installation, prompting, references, animation, and the small habits that separate a usable pipeline from a folder full of near-misses. Everything here applies whether you are storyboarding a short film, building a client mood board, or just learning how modern generative tools actually behave.
+
+## What Is ArtCraft and Who Is It For?
+
+ArtCraft is an open-source desktop application for generating AI images and video, built for artists, designers, and filmmakers who want real control over the output. Its [GitHub repository](https://github.com/storytold/artcraft) describes it as an "intentional crafting engine," and that phrase captures the philosophy well: you direct the process, the model does the labor.
+
+Most generators treat you like a customer pressing a button. ArtCraft treats you like the person holding the camera. That difference shows up in three places — prompt control that lets you steer a result instead of re-rolling it, reference inputs that anchor a specific look, and animation tools that turn a still frame into motion. Being open source also means the community can inspect, fork, and extend the app, which matters if your studio has strong opinions about how its tools behave.
+
+Who gets the most out of it?
+
+- Illustrators chasing a consistent style across dozens of frames
+- Filmmakers and storyboard artists prototyping shots before a shoot
+- Designers exploring mood, color, and composition at speed
+- Hobbyists who would rather learn a real pipeline than a black box
+
+If you fit any of those descriptions, the rest of this artcraft tutorial will take you from a fresh install to a workflow you can repeat on demand.
+
+### How ArtCraft Differs From a Typical Cloud Generator
+
+| Factor | ArtCraft (desktop, open source) | Typical cloud generator |
+| --- | --- | --- |
+| Where it runs | Installed desktop app | Browser tab |
+| Source code | Open and inspectable | Closed |
+| Creative control | Prompt control plus references | Mostly prompt-only |
+| Video generation | Modern video models, including Seedance 2.0 | Varies by subscription tier |
+| Best fit | Artists, designers, filmmakers | One-off casual outputs |
+| Ownership | You run it and you own it | Rented access |
+
+## ArtCraft Tutorial: Setting Up Your Workspace Step by Step
+
+Installation is the easy part. The setup decisions you make in the first ten minutes are what determine whether week two feels smooth or chaotic. Work through the table below in order — each step exists to prevent a specific kind of pain later.
+
+| Step | What to do | Why it matters |
+| --- | --- | --- |
+| 1 | Download the desktop build from the [official ArtCraft site](https://getartcraft.com/) | You get the real app, not a browser wrapper |
+| 2 | Sign in and confirm model access | Video and image models are gated behind your account |
+| 3 | Create a dedicated output folder | Keeps generations, references, and exports separate |
+| 4 | Choose image or video mode before you start | Each mode has its own defaults for resolution and length |
+| 5 | Run one throwaway test prompt | Gives you a baseline before you tune anything |
+| 6 | Save that test result and its prompt | Your first comparison point for later iterations |
+
+That last step is the one almost everyone skips. A saved baseline turns vague frustration ("the new ones look worse") into a concrete comparison ("the new ones lost the rim light"). It costs thirty seconds and saves hours.
+
+Once the basics are in place, spend a few minutes with the [ArtCraft wiki](https://www.artcraft.wiki/), which collects documentation on prompting, references, animation, and open-source workflows. Community reports there are a useful shortcut when a specific model behaves in a way the interface does not explain.
+
+## Prompting in ArtCraft: Control, References, and Style
+
+Prompting is where a mediocre artcraft tutorial usually stops at "describe what you want." That advice is technically true and practically useless. Real control comes from breaking a prompt into blocks you can adjust independently, so that when something is wrong you know exactly which line to change.
+
+| Prompt block | What it controls | Practical tip |
+| --- | --- | --- |
+| Subject | The who or what | Name one clear subject, not three |
+| Action or motion | What happens | Essential for video, optional for stills |
+| Style | Medium and rendering | Reference a medium, not a living artist |
+| Lighting | Mood and depth | "Soft window light" beats "good lighting" |
+| Camera | Framing and lens feel | "Low angle, 35mm" changes composition fast |
+| Negatives | What to avoid | List artifacts you keep seeing, not wishes |
+
+Change one block at a time. If you rewrite the whole prompt between runs, you learn nothing about which change worked. This single habit is the difference between an artist who improves weekly and one who stays stuck at "it's random."
+
+References do the heavy lifting that words cannot. When you have a color palette, a character design, or a composition you want to preserve, feed it in as a reference instead of trying to describe it in prose. Prompts are for intent; references are for specifics. Use both, and you will stop fighting the model.
+
+## From Stills to Motion: Animation Workflows
+
+The animation half of any artcraft tutorial is where most people stall, because video generation adds a dimension that stills never punish you for. Motion exposes weak prompts immediately — a vague subject becomes a morphing blob, and an unclear camera instruction becomes a drifting frame.
+
+The reliable path is to lock your image first, then animate it.
+
+| Stage | Goal | What to check before moving on |
+| --- | --- | --- |
+| 1. Stills | Get a frame you would hang on a wall | Composition, lighting, color all read correctly |
+| 2. Test motion | Confirm the subject can move plausibly | No melting edges or identity drift |
+| 3. Extend | Build the shot to full length | Continuity between segments holds up |
+| 4. Refine | Fix the weakest two seconds | The fix does not break the rest |
+
+Modern video models such as Seedance 2.0 have made short, coherent clips far more achievable inside a desktop app, but they still reward preparation. Generate three or four candidate stills, pick the strongest, and animate only that one. Animating a mediocre frame just produces a mediocre video with motion blur.
+
+Keep your clips short at first. A tight four-second shot that holds together teaches you more than a twenty-second one that falls apart at second six.
+
+## ArtCraft Tutorial: Troubleshooting and Pro Tips
+
+Every tool has failure modes, and knowing them in advance saves you from assuming you did something wrong when the model simply has limits.
+
+| Symptom | Likely cause | Fix |
+| --- | --- | --- |
+| Output ignores part of the prompt | Too many competing ideas in one block | Split into two generations |
+| Style drifts between runs | No reference anchoring the look | Add a style reference image |
+| Faces or hands degrade | Subject too small in frame | Move the camera closer |
+| Motion looks like melting | Prompt describes a state, not an action | Rewrite with a clear verb |
+| Colors look muddy | Conflicting lighting terms | Keep one lighting direction only |
+| Results feel random | You changed several things at once | Return to your saved baseline |
+
+Beyond troubleshooting, a few habits compound over time:
+
+- **Name your files meaningfully.** A folder of `output_001` through `output_400` is a folder you will never revisit.
+- **Keep a prompt log.** One line per generation, with the seed if the app exposes it. This is the habit most artcraft tutorial videos skip entirely, and it is the one that makes you faster.
+- **Batch before you judge.** Three results tell you nothing. Ten results show you a trend.
+- **Reuse your winners.** The prompt that produced your best frame is a template, not a trophy.
+- **Stop at good enough.** Generative tools reward iteration, but they punish perfectionism just as hard.
+
+One more thing worth internalizing: the model is a collaborator with a narrow skill set, not an oracle. When a generation fails, the useful question is not "why is this bad?" but "what did I fail to specify?" That reframing turns every failure into a note for your next prompt.
+
+## FAQ
+
+**Do I need prior experience to follow this artcraft tutorial?**
+No. If you can write a clear sentence describing a picture, you can prompt effectively. The skills that matter most are observation and patience — noticing what changed between two generations and adjusting one variable at a time.
+
+**Is ArtCraft free to use?**
+ArtCraft is open source, so the application itself is available to download and inspect. Model access and any associated compute costs depend on how you configure it, so check the official site for current details rather than assuming a single pricing model.
+
+**Can I generate both images and video in the same project?**
+Yes. The most efficient workflow is to generate stills first, pick the strongest frame, and then animate that frame. Treating images and video as one pipeline rather than two separate tools is what keeps a project visually consistent.
+
+**How long does it take to get good results?**
+Most people produce something usable in their first session. Producing something *repeatable* takes longer — usually a few weeks of consistent practice with a prompt log and saved baselines. Consistency is the real skill, and it is entirely learnable.
+
+**What should I do when a generation looks nothing like what I asked for?**
+Cut the prompt in half. Remove every block except the subject and one style descriptor, generate again, then add elements back one at a time. You will find the conflicting instruction within two or three runs, and you will learn something about how the model reads language in the process.

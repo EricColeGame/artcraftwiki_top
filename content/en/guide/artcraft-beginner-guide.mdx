@@ -1,0 +1,125 @@
+export const metadata = {
+  title: "ArtCraft Beginner Guide: Create AI Images and Video on Your Desktop",
+  description: "A hands-on ArtCraft beginner guide covering installation, prompting, image and video generation, references, and workflow tips for new artists.",
+  category: "guide",
+  date: "2026-10-08",
+}
+
+## What ArtCraft Is and Who It Is For
+
+If you went looking for an ArtCraft beginner guide, the short version is this: ArtCraft is an open-source desktop application for generating AI images and video, built for artists, designers, and filmmakers who want visible control instead of a black box. It installs like any normal program rather than living in a browser tab, and its developers describe it as an intentional crafting engine — a tool where every choice, from prompt wording to reference images, stays in your hands.
+
+This ArtCraft beginner guide assumes you have never opened the app. You do not need a machine-learning background, and you do not need to know how diffusion models work internally. What you do need is patience with iteration: generate, look closely, change one variable, generate again. That loop is the entire skill.
+
+Here is the landscape at a glance before you install anything.
+
+| Feature | What it means for a beginner |
+|---|---|
+| Desktop application | Installs locally; your session does not vanish when a tab closes |
+| Open source | The code is public, so the community can inspect and contribute |
+| Image and video generation | One tool covers stills and motion instead of two subscriptions |
+| Prompt control | You write and revise the text that drives every generation |
+| Reference inputs | You can steer results with example images, not just words |
+| Files written to your drive | Outputs land in your own folders, ready for your pipeline |
+
+The appeal for new users is ownership. Because ArtCraft is open source and desktop-native, your work is not trapped inside someone else's interface. You can browse the [official ArtCraft repository on GitHub](https://github.com/storytold/artcraft) to see exactly what the project does and how it is maintained.
+
+## Setting Up Without Wasting Your First Weekend
+
+### Adopt a desktop-first mindset
+
+Beginners often treat an AI tool like a website: click, generate, close. ArtCraft rewards the opposite habit. Because it runs natively and writes results to disk, you should decide *where* your work lives before you generate a single image. A simple structure — `ArtCraft/projects/project-name/refs`, `/outputs`, `/prompts` — saves hours of scrolling later.
+
+### Prepare these six things first
+
+| Prep item | Why it matters | Beginner shortcut |
+|---|---|---|
+| Disk space | Video output is far larger than stills | Reserve a dedicated folder or drive |
+| Reference images | Words alone rarely capture a look | Collect 5–10 images per style you like |
+| A naming convention | Generated files multiply fast | Use `project-date-subject-v1` |
+| Prompt notes | You will forget what worked | Keep a plain text prompt log |
+| Stable internet | Some models or services need it | Test your connection before a long run |
+| Time blocks | Generation is not instant | Work in 30–60 minute sessions |
+
+Once installed, take ten minutes to click through every panel without generating anything. New users who explore the interface first consistently produce better results in week one, because they know where references, prompt fields, and output settings actually live.
+
+## Your First Image: Prompting Without Guesswork
+
+### The anatomy of a useful prompt
+
+A beginner prompt usually reads like a wish: "beautiful fantasy castle." A working prompt reads like a shot list. You are not describing a feeling, you are specifying a photograph or a frame.
+
+| Prompt element | Weak example | Strong example |
+|---|---|---|
+| Subject | "a knight" | "a weathered knight in dented plate armor" |
+| Action or pose | "standing" | "kneeling, one hand on a broken sword" |
+| Setting | "outside" | "on a fog-covered moor at dawn" |
+| Lighting | "nice light" | "low side light, cold blue shadows" |
+| Composition | (missing) | "wide shot, subject left of frame" |
+| Style or medium | "cool" | "oil painting, visible brushwork" |
+| Detail level | (missing) | "high detail on armor scratches" |
+
+Write one line per element, then merge them into a single paragraph. If the result is wrong, change one line — not all seven. That single discipline is the most valuable habit in this entire ArtCraft beginner guide.
+
+### Use references to close the gap
+
+When your vocabulary runs out, references take over. ArtCraft supports reference-driven workflows, which means you can hand the model a visual target and ask it to respect composition, palette, or character design. Start with one reference per generation. Stacking five references at once creates conflicting signals and muddies the output.
+
+## From Stills to Motion: Video Generation Basics
+
+Video generation is where beginners either fall in love or get discouraged. The mental shift is simple: an image is one decision, a video is a sequence of decisions that must stay consistent. Motion, camera movement, and subject continuity all have to hold together across frames.
+
+| Setting | How it behaves for images | How it behaves for video |
+|---|---|---|
+| Prompt length | Shorter prompts often work better | Motion and camera words matter more |
+| Reference use | Drives style and composition | Drives character and scene consistency |
+| Generation time | Seconds to a couple of minutes | Substantially longer per clip |
+| Iteration cost | Cheap to re-roll | Expensive — plan before you run |
+| Failure mode | Wrong look | Right look, broken motion |
+
+The app also integrates external video models over time; Seedance 2.0, for example, was added to ArtCraft as a video generation option. Model availability shifts, so check the official ArtCraft site or the community wiki before planning a project around any single model.
+
+For your first clip, keep it boring on purpose: one subject, one slow camera move, three to five seconds. Get a clean result before attempting anything ambitious.
+
+## Workflow Habits That Separate a Good Week from a Frustrating One
+
+Most beginner frustration is not a talent problem. It is a process problem, and it is fixable.
+
+| Mistake | What it looks like | The fix |
+|---|---|---|
+| Rewriting everything at once | New prompt each attempt, no learning | Change one variable per run |
+| No prompt log | "What did I type yesterday?" | Save every prompt with its output |
+| Chasing perfection on attempt one | 40 generations, nothing saved | Save the best of every five |
+| Ignoring references | Endless style drift | Lock one reference per project |
+| Hoarding outputs | Thousands of unnamed files | Delete ruthlessly, keep ten per project |
+
+A structured first week helps more than any single tip.
+
+| Day | Focus | Goal |
+|---|---|---|
+| 1 | Install and tour the interface | Know where everything lives |
+| 2 | Prompt anatomy | Produce one intentionally composed image |
+| 3 | References | Reproduce a specific look from a reference |
+| 4 | Iteration discipline | Improve one image across five runs |
+| 5 | First video clip | A clean three-second motion test |
+| 6 | Organization | A tidy folder and prompt log |
+| 7 | Personal project | Apply everything to your own idea |
+
+Community reports consistently suggest that new users who log prompts improve far faster than those who generate on instinct alone. Player experience also points to another truth: the first twenty outputs are practice, not portfolio pieces. Treat them that way and the pressure disappears.
+
+## Frequently Asked Questions
+
+**Do I need an expensive computer to start?**
+Not necessarily. ArtCraft is a desktop app, so performance depends on which models and features you use. Still-image generation is generally lighter than video work. Start with images, measure your own machine's behavior, and upgrade only when a specific feature becomes unusable.
+
+**Is this ArtCraft beginner guide relevant if I have never used AI tools before?**
+Yes — that is exactly who it is written for. Learn the prompt structure table, use one reference at a time, and resist the urge to change everything at once. Those three rules carry most beginners through their first month.
+
+**Should I learn images or video first?**
+Images first, always. Image generation teaches you prompting, references, and iteration at low cost. Video multiplies every mistake you have not yet learned to fix, so the sequence matters.
+
+**Where do I get help when something breaks?**
+Start with the official ArtCraft site and the community wiki, which cover downloads, prompt control, references, animation, and open-source workflows. For deeper questions, the GitHub repository's issues and discussions are the most reliable place to see what other users have already solved.
+
+**How long before I make something I actually like?**
+Most people produce a keeper within their first week of deliberate practice, and a small portfolio within a month. Speed depends less on talent than on whether you keep a prompt log and change one variable at a time.

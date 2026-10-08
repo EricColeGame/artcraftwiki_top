@@ -1,0 +1,131 @@
+export const metadata = {
+  title: "ArtCraft verwenden: Ein Anfängerleitfaden für KI-Bild- und Videogenerierung",
+  description: "Erfahren Sie, wie Sie ArtCraft von der Installation bis zum finalen Rendering verwenden. Schritt-für-Schritt-Workflow, Prompt-Steuerungstipps, Referenzbilder und Videoeinstellungen für Künstler.",
+  category: "guide",
+  date: "2026-10-08",
+}
+
+ArtCraft ist eine Open-Source-Desktop-Anwendung zur Generierung von KI-Bildern und -Videos, entwickelt für Menschen, die das Ergebnis steuern wollen, statt zu würfeln. Wenn Sie nach einer klaren ArtCraft-Anleitung gesucht haben, lautet die Kurzfassung: Installieren Sie die App, wählen Sie ein Modell, schreiben Sie einen Prompt, fügen Sie Referenzen hinzu und iterieren Sie, bis das Bild stimmt. Zu wissen, wie man ArtCraft richtig verwendet, ist wichtig, denn der Unterschied zwischen einem Wegwerf-Render und einer brauchbaren Aufnahme liegt meistens in der Kontrolle – Referenzen, Seeds und konsistentes Prompting statt Glück.
+
+Dieser Leitfaden behandelt Einrichtung, Kern-Workflow, Prompting-Strategie, Videogenerierung und die Fehler, die am meisten Zeit verschwenden. Alles hier ist für Künstler, Designer und Filmemacher geschrieben, die wiederholbare Ergebnisse statt zufälliger Überraschungen wollen.
+
+## Was ArtCraft ist und für wen es gedacht ist
+
+ArtCraft beschreibt sich selbst als eine Engine für bewusstes Gestalten – Software, bei der der Creator die Kontrolle über das Ergebnis behält. Statt eines Black-Box-Webtools ist es eine Desktop-App, die Sie herunterladen und selbst ausführen, was bedeutet, dass Ihre Projektdateien und Ergebnisse auf Ihrem eigenen Rechner liegen.
+
+Die offizielle [ArtCraft-Website](https://getartcraft.com/) beschreibt es als „steuerbare KI für Künstler“, und das [Open-Source-Repository auf GitHub](https://github.com/storytold/artcraft) bestätigt, dass das Projekt öffentlich und community-getrieben ist. Das ist aus zwei Gründen wichtig: Sie können nachvollziehen, wie es funktioniert, und Sie können verfolgen, was andere Nutzer entdecken.
+
+| Attribut | Details |
+|---|---|
+| Was es ist | Open-Source-Desktop-App für KI-Bild- und Videogenerierung |
+| Gedacht für | Künstler, Designer und Filmemacher, die Kontrolle wollen |
+| Ausgabetypen | Standbilder und KI-generierte Videoclips |
+| Videomodell | Seedance 2.0 ist laut offizieller Website in ArtCraft verfügbar |
+| Lizenzierung | Open Source, öffentlich auf GitHub entwickelt |
+| Dokumentation | Community-gepflegtes ArtCraft-Wiki zu Downloads, Prompts und Referenzen |
+
+Berichte aus der Community im ArtCraft-Wiki legen nahe, dass die größte Umstellung für Neueinsteiger darin besteht, in Ebenen zu denken – Prompt, Referenz und Seed – statt einen Satz einzutippen und zu hoffen.
+
+## ArtCraft installieren und den Arbeitsbereich einrichten
+
+Die Einrichtung geht schnell, aber ein paar frühe Entscheidungen sparen später Stunden. Die wichtigste ist, wohin Ihre Ausgaben gespeichert werden, denn ein unordentlicher Ausgabeordner macht es nahezu unmöglich, Iterationen zu vergleichen.
+
+| Schritt | Was zu tun ist | Warum es wichtig ist |
+|---|---|---|
+| 1 | Laden Sie die Desktop-App von der offiziellen Website herunter | Stellt sicher, dass Sie die aktuelle Build-Version erhalten |
+| 2 | Installieren und starten Sie sie wie jede Desktop-Anwendung | Keine Begrenzung durch Browser-Tabs oder Sitzungs-Timeouts |
+| 3 | Erstellen Sie bei Aufforderung ein Konto oder melden Sie sich an | Schaltet den Arbeitsbereich und Modellzugriff frei |
+| 4 | Wählen Sie einen eigenen Ausgabeordner | Hält Renderings nach Projekt organisiert |
+| 5 | Führen Sie ein kurzes Test-Rendering aus | Bestätigt, dass alles funktioniert, bevor Sie Zeit investieren |
+
+Eine praktische Gewohnheit: Erstellen Sie einen Ordner pro Projekt und darin Unterordner für Referenzen, freigegebene Standbilder und Videotests. Wenn Sie lernen, ArtCraft zu verwenden, ist es wertvoller, durch zehn Versionen einer Aufnahme zurückblättern zu können, als jeder einzelne Prompt-Trick.
+
+Wenn Sie animieren möchten, legen Sie Ziel-Seitenverhältnis und Cliplänge fest, bevor Sie ein einziges Standbild generieren. Standbilder später neu zu rendern, um sie an einen Videoframe anzupassen, ist einer der häufigsten Zeitfresser, von denen neue Nutzer berichten.
+
+## ArtCraft verwenden: Der Kern-Workflow, Schritt für Schritt
+
+Jede Sitzung in ArtCraft folgt ungefähr derselben Schleife, egal ob Sie ein Poster oder einen fünfsekündigen Clip erstellen. Die Schleife lautet: definieren, generieren, bewerten, verfeinern und exportieren.
+
+1. **Die Aufnahme definieren.** Schreiben Sie auf, was das Bild enthalten muss – Motiv, Bildausschnitt, Stimmung und Licht. Vage Ziele führen zu vagen Ergebnissen.
+2. **Modell auswählen.** Verschiedene Modelle gehen unterschiedlich mit Realismus, Illustration und Bewegung um. Passen Sie das Modell an das Ziel an, nicht umgekehrt.
+3. **Den Prompt schreiben.** Setzen Sie das Motiv zuerst, dann Stil, dann Kamera und Licht. Die Reihenfolge beeinflusst die Betonung.
+4. **Referenzen hinzufügen.** Fügen Sie ein Bild ein, das den gewünschten Look, Charakter oder die Farbpalette zeigt.
+5. **Eine kleine Batch generieren.** Vier bis acht Varianten geben Ihnen eine echte Auswahl, ohne eine Stunde zu verbrennen.
+6. **Bewerten und verfeinern.** Ändern Sie jeweils nur eine Variable – Prompt, Seed oder Referenz –, damit Sie wissen, was die Verbesserung verursacht hat.
+7. **Exportieren und archivieren.** Speichern Sie den erfolgreichen Prompt und die Einstellungen zusammen mit der Datei.
+
+| Workflow-Phase | Was Sie tun | Häufige Falle |
+|---|---|---|
+| Definieren | Eine einzeilige Aufnahmebeschreibung schreiben | Dies überspringen und improvisieren |
+| Generieren | Eine kleine Batch von Varianten ausführen | 50 Bilder auf einmal rendern |
+| Bewerten | Seite an Seite vergleichen | Nur nach Miniaturansichten urteilen |
+| Verfeinern | Eine einzelne Variable anpassen | Prompt, Seed und Referenz gleichzeitig ändern |
+| Exportieren | Einstellungen mit der Datei speichern | Den funktionierenden Prompt verlieren |
+
+Die Ein-Variablen-Regel ist der größte einzelne Grund, warum erfahrene Nutzer konsistente Ergebnisse erzielen. Wenn sich drei Dinge gleichzeitig ändern, lernen Sie nichts.
+
+## Prompting und Referenzkontrolle in ArtCraft
+
+Prompting in ArtCraft belohnt Struktur. Ein nützliches mentales Modell ist, Prompts in Blöcken aufzubauen und die Blöcke dann neu anzuordnen, um die Betonung zu verschieben.
+
+| Prompt-Block | Beispielinhalt | Wirkung |
+|---|---|---|
+| Motiv | "ein Leuchtturmwärter in einem Wollmantel" | Verankert, was das Modell zeichnet |
+| Stil | "Matte Painting, gedämpfte Palette" | Legt die Renderingsprache fest |
+| Komposition | "weite Einstellung, niedriger Horizont" | Steuert den Bildausschnitt |
+| Licht | "bewölkte Morgendämmerung, weiches Kantenlicht" | Treibt Stimmung und Tiefe |
+| Bewegung (Video) | "langsamer Push-in, sanfte Wasserbewegung" | Lenkt die Animation, nicht Standbilder |
+| Ausschlüsse | "kein Text, kein Wasserzeichen" | Entfernt wiederkehrende Artefakte |
+
+Referenzen leisten die Schwerarbeit für Konsistenz. Wenn Sie denselben Charakter in zehn Bildern brauchen, übertrifft ein einziges klares Referenzbild einen Absatz Beschreibung. Sperren Sie den Seed, sobald Sie einen Look gefunden haben, der Ihnen gefällt, und variieren Sie dann nur den Prompt – so bauen Sie eine zusammenhängende Serie statt zehn unabhängiger Bilder auf.
+
+Wenn Leute fragen, wie man ArtCraft für professionelle Arbeit verwendet, lautet die ehrliche Antwort, dass Konsistenz aus Referenzdisziplin kommt, nicht aus geheimen Keywords.
+
+## Video generieren: Einstellungen, die das Ergebnis wirklich verändern
+
+Video ist der Bereich, in dem ArtCraft interessant wird und in dem Einstellungen am wichtigsten sind. Die offizielle Website hebt Seedance 2.0 als Videogenerierungsoption innerhalb der App hervor, und die folgenden allgemeinen Prinzipien gelten unabhängig davon, welches Modell Sie auswählen.
+
+| Einstellung | Standbilder | Videoclips |
+|---|---|---|
+| Seitenverhältnis | Einmal festlegen, selten ändern | Muss zu Ihrem Ausgabeformat passen |
+| Dauer | Nicht zutreffend | Clips kurz halten für schnellere Iteration |
+| Bewegungsstärke | Nicht zutreffend | Niedrig für subtile Drift, hoch für Action |
+| Seed | Für Serienkonsistenz sperren | Sperren, um den Bewegungsstil stabil zu halten |
+| Referenzbild | Charakter- oder Stilanker | Anker für das erste Frame des Clips |
+
+Ein zuverlässiger Ansatz: Generieren Sie das gewünschte Standbild, geben Sie es frei und animieren Sie dann dieses freigegebene Frame. Video von einem nicht freigegebenen Bild zu starten, vervielfacht verschwendete Renderings. Halten Sie Bewegungs-Prompts einfach – „langsamer Kamera-Push“, „Haare bewegen sich im Wind“ –, weil gestapelte Bewegungsanweisungen oft gegeneinander arbeiten.
+
+Berichte aus der Community legen nahe, dass kurze Clips von einigen Sekunden viel einfacher zu kontrollieren sind als lange Sequenzen. Bauen Sie eine Szene aus mehreren kurzen, freigegebenen Aufnahmen auf, statt einen langen Versuch zu wagen.
+
+## Häufige Fehler und wie man sie behebt
+
+Die meiste Frustration in der ersten Woche entsteht durch eine Handvoll wiederkehrender Fehler.
+
+| Problem | Wahrscheinliche Ursache | Lösung |
+|---|---|---|
+| Ergebnisse sehen der Idee überhaupt nicht ähnlich | Prompt zu vage | Motiv-, Stil- und Lichtblöcke hinzufügen |
+| Charakter ändert sich bei jedem Rendering | Keine Referenz, entsperrter Seed | Referenzbild hinzufügen und Seed sperren |
+| Ergebnisse wirken flach | Keine Lichtrichtung | Tageszeit und Lichtqualität angeben |
+| Video wirkt zittrig | Zu viel Bewegungsanweisung | Bewegungsstärke reduzieren, Prompt vereinfachen |
+| Die gute Version ist nicht auffindbar | Kein Benennungssystem | Prompts und Einstellungen bei jedem Export speichern |
+| Endloses Feintuning, kein Fortschritt | Mehrere Variablen geändert | Pro Iteration nur eine Sache anpassen |
+
+Drei Gewohnheiten unterscheiden schnelle Lernende von langsamen. Erstens: Führen Sie ein laufendes Prompt-Log – eine einfache Textdatei reicht. Zweitens: Archivieren Sie Ihre besten Renderings mit ihren Einstellungen. Drittens: Hören Sie auf, wenn das Bild gut genug für den nächsten Schritt ist, nicht wenn es perfekt ist. Perfektionismus in der Standbildphase verzögert den Teil, in dem Sie tatsächlich lernen, die Video-Tools von ArtCraft zu verwenden.
+
+Ebenfalls erwähnenswert: Da ArtCraft Open Source ist, kommen Updates und Unterstützung für neue Modelle über das Projekt selbst. Prüfen Sie die offizielle Website und das Repository regelmäßig, statt anzunehmen, dass Ihre installierte Build-Version aktuell ist.
+
+## Häufig gestellte Fragen
+
+**Ist ArtCraft kostenlos nutzbar?**
+ArtCraft ist ein Open-Source-Projekt, und die Software selbst wird öffentlich entwickelt. Kontoanforderungen, Modellzugriff oder Nutzungsbedingungen können sich ändern. Bestätigen Sie die aktuellen Details auf der offiziellen ArtCraft-Website, bevor Sie ein Projekt darauf aufbauen.
+
+**Muss ich ein erfahrener Künstler sein, um ArtCraft verwenden zu lernen?**
+Nein. Der Workflow ist an einem Nachmittag erlernbar. Was gute Ergebnisse ausmacht, ist die Disziplin strukturierter Prompts, Referenzbilder und jeweils nur einer geänderten Variable – Fähigkeiten, die jeder aufbauen kann.
+
+**Kann ich meine eigenen Referenzbilder verwenden?**
+Ja. Referenzen sind einer der wichtigsten Steuerungsmechanismen in ArtCraft. Ein klares, gut beleuchtetes Referenzbild ist normalerweise effektiver als eine lange schriftliche Beschreibung, besonders wenn Sie denselben Charakter oder dieselbe Farbpalette über mehrere Renderings hinweg brauchen.
+
+**Sollte ich mit Bildern oder Videos beginnen?**
+Beginnen Sie mit Bildern. Wenn Sie Standbilder beherrschen, lernen Sie, wie Prompt, Seed und Referenz zusammenspielen. Sobald Sie zuverlässig ein Frame erzeugen können, das Ihnen gefällt, ist die Animation dieses Frames ein viel kürzerer Weg zu einem brauchbaren Clip.
+
+ArtCraft belohnt Planung mehr als wildes Herumklicken. Laden Sie die App herunter, richten Sie einen sauberen Ausgabeordner ein und führen Sie Ihre erste Batch mit einem strukturierten Prompt und einem einzigen Referenzbild aus. Verfeinern Sie von dort aus jeweils eine Variable, sperren Sie Ihre Seeds und archivieren Sie, was funktioniert. Diese Schleife – nicht eine einzelne Einstellung – ist die eigentliche Antwort darauf, wie man ArtCraft gut verwendet.

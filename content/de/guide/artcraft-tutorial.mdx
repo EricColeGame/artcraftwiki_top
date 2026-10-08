@@ -1,0 +1,127 @@
+export const metadata = {
+  title: "ArtCraft-Tutorial: Ein Einsteigerleitfaden für KI-Bild- und Videogenerierung auf dem Desktop",
+  description: "Lernen Sie, ArtCraft mit diesem praxisorientierten Tutorial zu meistern – von Einrichtung, Prompting, Referenzen und Animation bis hin zu Export-Workflows für Künstler.",
+  category: "guide",
+  date: "2026-10-08",
+}
+
+Die meisten KI-Bild- und Videotools geben Ihnen ein Textfeld und hoffen auf das Beste. Ein ArtCraft-Tutorial dreht dieses Verhältnis um und setzt den Künstler zurück auf den Regiestuhl – mit Prompt-Kontrolle, Referenzeingaben und einer nativen Desktop-Umgebung, die für Menschen gebaut ist, denen das Ergebnis wichtig ist. Wenn Sie schon einmal versehentlich etwas Wunderschönes generiert und es dann nicht reproduzieren konnten, ist dieser Leitfaden für Sie – denn ArtCraft ist auf absichtsvolle, wiederholbare Arbeit ausgelegt, nicht auf Glückstreffer.
+
+Dieses ArtCraft-Tutorial führt durch Installation, Prompting, Referenzen, Animation und die kleinen Gewohnheiten, die eine nutzbare Pipeline von einem Ordner voller Beinahe-Treffer trennen. Alles hier gilt, egal ob Sie ein Kurzfilm-Storyboard erstellen, ein Moodboard für einen Kunden aufbauen oder einfach lernen möchten, wie sich moderne generative Tools tatsächlich verhalten.
+
+## Was ist ArtCraft und für wen ist es gedacht?
+
+ArtCraft ist eine Open-Source-Desktop-Anwendung zur Generierung von KI-Bildern und -Videos, entwickelt für Künstler, Designer und Filmemacher, die echte Kontrolle über das Ergebnis wollen. Ihr [GitHub-Repository](https://github.com/storytold/artcraft) beschreibt sie als „intentionale Crafting-Engine“, und dieser Satz fasst die Philosophie gut zusammen: Sie führen den Prozess, das Modell erledigt die Arbeit.
+
+Die meisten Generatoren behandeln Sie wie einen Kunden, der einen Knopf drückt. ArtCraft behandelt Sie wie die Person, die die Kamera hält. Dieser Unterschied zeigt sich an drei Stellen – Prompt-Kontrolle, mit der Sie ein Ergebnis steuern statt es neu auszuwürfeln, Referenzeingaben, die einen bestimmten Look verankern, und Animationswerkzeuge, die ein Standbild in Bewegung verwandeln. Open Source zu sein bedeutet außerdem, dass die Community die App prüfen, forken und erweitern kann, was wichtig ist, wenn Ihr Studio klare Vorstellungen davon hat, wie seine Tools sich verhalten sollen.
+
+Wer profitiert am meisten davon?
+
+- Illustratoren, die einen konsistenten Stil über Dutzende von Frames hinweg anstreben
+- Filmemacher und Storyboard-Künstler, die Einstellungen vor einem Dreh prototypen
+- Designer, die Stimmung, Farbe und Komposition schnell erkunden
+- Hobbyisten, die lieber eine echte Pipeline lernen als eine Blackbox
+
+Wenn eine dieser Beschreibungen auf Sie zutrifft, bringt Sie der Rest dieses ArtCraft-Tutorials von einer frischen Installation zu einem Workflow, den Sie auf Abruf wiederholen können.
+
+### Wie sich ArtCraft von einem typischen Cloud-Generator unterscheidet
+
+| Faktor | ArtCraft (Desktop, Open Source) | Typischer Cloud-Generator |
+| --- | --- | --- |
+| Wo es läuft | Installierte Desktop-App | Browser-Tab |
+| Quellcode | Offen und einsehbar | Geschlossen |
+| Kreative Kontrolle | Prompt-Kontrolle plus Referenzen | Meist nur Prompt-basiert |
+| Videogenerierung | Moderne Videomodelle, einschließlich Seedance 2.0 | Variiert je nach Abonnementstufe |
+| Am besten geeignet für | Künstler, Designer, Filmemacher | Einmalige, lockere Ergebnisse |
+| Eigentum | Sie betreiben es und besitzen es | Gemieteter Zugang |
+
+## ArtCraft-Tutorial: Arbeitsumgebung Schritt für Schritt einrichten
+
+Die Installation ist der einfache Teil. Die Setup-Entscheidungen, die Sie in den ersten zehn Minuten treffen, bestimmen, ob sich Woche zwei reibungslos oder chaotisch anfühlt. Arbeiten Sie die folgende Tabelle der Reihe nach durch – jeder Schritt existiert, um eine bestimmte Art von Schmerz später zu verhindern.
+
+| Schritt | Was zu tun ist | Warum es wichtig ist |
+| --- | --- | --- |
+| 1 | Laden Sie die Desktop-Version von der [offiziellen ArtCraft-Website](https://getartcraft.com/) herunter | Sie erhalten die echte App, keinen Browser-Wrapper |
+| 2 | Melden Sie sich an und bestätigen Sie den Modellzugriff | Video- und Bildmodelle sind an Ihr Konto gebunden |
+| 3 | Erstellen Sie einen eigenen Ausgabeordner | Hält Generierungen, Referenzen und Exporte getrennt |
+| 4 | Wählen Sie vor dem Start den Bild- oder Videomodus | Jeder Modus hat eigene Standardwerte für Auflösung und Länge |
+| 5 | Führen Sie einen Wegwerf-Test-Prompt aus | Gibt Ihnen eine Ausgangsbasis, bevor Sie irgendetwas optimieren |
+| 6 | Speichern Sie dieses Testergebnis und seinen Prompt | Ihr erster Vergleichspunkt für spätere Iterationen |
+
+Diesen letzten Schritt überspringen fast alle. Eine gespeicherte Ausgangsbasis verwandelt vage Frustration („die neuen sehen schlechter aus“) in einen konkreten Vergleich („die neuen haben das Kantenlicht verloren“). Es kostet dreißig Sekunden und spart Stunden.
+
+Sobald die Grundlagen stehen, verbringen Sie ein paar Minuten mit dem [ArtCraft-Wiki](https://www.artcraft.wiki/), das Dokumentation zu Prompting, Referenzen, Animation und Open-Source-Workflows sammelt. Community-Berichte dort sind eine nützliche Abkürzung, wenn sich ein bestimmtes Modell auf eine Weise verhält, die die Oberfläche nicht erklärt.
+
+## Prompting in ArtCraft: Kontrolle, Referenzen und Stil
+
+Prompting ist der Punkt, an dem ein mittelmäßiges ArtCraft-Tutorial meist bei „beschreiben Sie, was Sie wollen“ stehen bleibt. Dieser Rat ist technisch wahr und praktisch nutzlos. Echte Kontrolle entsteht, wenn Sie einen Prompt in Blöcke zerlegen, die Sie unabhängig voneinander anpassen können, sodass Sie bei einem Problem genau wissen, welche Zeile Sie ändern müssen.
+
+| Prompt-Block | Was er steuert | Praktischer Tipp |
+| --- | --- | --- |
+| Motiv | Das Wer oder Was | Benennen Sie ein klares Motiv, nicht drei |
+| Aktion oder Bewegung | Was passiert | Für Video essenziell, für Standbilder optional |
+| Stil | Medium und Rendering | Beziehen Sie sich auf ein Medium, nicht auf einen lebenden Künstler |
+| Beleuchtung | Stimmung und Tiefe | „Weiches Fensterlicht“ schlägt „gute Beleuchtung“ |
+| Kamera | Bildausschnitt und Objektivgefühl | „Niedrige Perspektive, 35 mm“ verändert die Komposition schnell |
+| Negative | Was vermieden werden soll | Listen Sie Artefakte auf, die Sie immer wieder sehen, keine Wünsche |
+
+Ändern Sie jeweils nur einen Block. Wenn Sie zwischen den Durchläufen den gesamten Prompt neu schreiben, lernen Sie nichts darüber, welche Änderung gewirkt hat. Diese eine Gewohnheit ist der Unterschied zwischen einem Künstler, der sich wöchentlich verbessert, und einem, der bei „es ist zufällig“ feststeckt.
+
+Referenzen erledigen die Schwerstarbeit, die Worte nicht leisten können. Wenn Sie eine Farbpalette, ein Charakterdesign oder eine Komposition haben, die Sie bewahren möchten, geben Sie sie als Referenz ein, statt zu versuchen, sie in Prosa zu beschreiben. Prompts sind für die Absicht; Referenzen sind für die Details. Nutzen Sie beides, und Sie hören auf, gegen das Modell anzukämpfen.
+
+## Von Standbildern zur Bewegung: Animations-Workflows
+
+Die Animationshälfte jedes ArtCraft-Tutorials ist der Punkt, an dem die meisten stocken, weil Videogenerierung eine Dimension hinzufügt, für die Standbilder Sie nie bestrafen. Bewegung entlarvt schwache Prompts sofort – ein vages Motiv wird zum Morphing-Blob, und eine unklare Kameraanweisung wird zum driftenden Frame.
+
+Der zuverlässige Weg ist, zuerst Ihr Bild festzulegen und es dann zu animieren.
+
+| Phase | Ziel | Was vor dem Weitergehen geprüft werden sollte |
+| --- | --- | --- |
+| 1. Standbilder | Holen Sie sich einen Frame, den Sie an eine Wand hängen würden | Komposition, Beleuchtung und Farbe lesen sich alle korrekt |
+| 2. Bewegung testen | Bestätigen Sie, dass sich das Motiv plausibel bewegen kann | Keine schmelzenden Kanten oder Identitätsdrift |
+| 3. Erweitern | Bauen Sie die Einstellung auf volle Länge aus | Kontinuität zwischen Segmenten hält stand |
+| 4. Verfeinern | Reparieren Sie die schwächsten zwei Sekunden | Die Korrektur zerstört nicht den Rest |
+
+Moderne Videomodelle wie Seedance 2.0 haben kurze, kohärente Clips in einer Desktop-App deutlich erreichbarer gemacht, aber sie belohnen weiterhin Vorbereitung. Generieren Sie drei oder vier Kandidaten-Standbilder, wählen Sie das stärkste aus und animieren Sie nur dieses. Ein mittelmäßiges Frame zu animieren, erzeugt nur ein mittelmäßiges Video mit Bewegungsunschärfe.
+
+Halten Sie Ihre Clips zunächst kurz. Eine kompakte vier Sekunden lange Einstellung, die zusammenhält, lehrt Sie mehr als eine zwanzig Sekunden lange, die bei Sekunde sechs auseinanderfällt.
+
+## ArtCraft-Tutorial: Fehlerbehebung und Profi-Tipps
+
+Jedes Tool hat Fehlermodi, und sie im Voraus zu kennen, bewahrt Sie davor anzunehmen, Sie hätten etwas falsch gemacht, wenn das Modell einfach Grenzen hat.
+
+| Symptom | Wahrscheinliche Ursache | Lösung |
+| --- | --- | --- |
+| Die Ausgabe ignoriert einen Teil des Prompts | Zu viele konkurrierende Ideen in einem Block | Auf zwei Generierungen aufteilen |
+| Der Stil driftet zwischen Durchläufen | Keine Referenz, die den Look verankert | Ein Stil-Referenzbild hinzufügen |
+| Gesichter oder Hände verschlechtern sich | Motiv zu klein im Bild | Die Kamera näher heranrücken |
+| Bewegung sieht wie Schmelzen aus | Prompt beschreibt einen Zustand, keine Aktion | Mit einem klaren Verb neu schreiben |
+| Farben wirken schlammig | Widersprüchliche Beleuchtungsbegriffe | Nur eine Beleuchtungsrichtung beibehalten |
+| Ergebnisse wirken zufällig | Sie haben mehrere Dinge gleichzeitig geändert | Zur gespeicherten Ausgangsbasis zurückkehren |
+
+Über die Fehlerbehebung hinaus summieren sich einige Gewohnheiten mit der Zeit:
+
+- **Benennen Sie Ihre Dateien sinnvoll.** Ein Ordner von `output_001` bis `output_400` ist ein Ordner, den Sie nie wieder besuchen werden.
+- **Führen Sie ein Prompt-Log.** Eine Zeile pro Generierung, mit dem Seed, falls die App ihn offenlegt. Das ist die Gewohnheit, die die meisten ArtCraft-Tutorialvideos komplett auslassen, und genau die, die Sie schneller macht.
+- **Bewerten Sie erst nach einer Charge.** Drei Ergebnisse sagen Ihnen nichts. Zehn Ergebnisse zeigen einen Trend.
+- **Verwenden Sie Ihre Gewinner wieder.** Der Prompt, der Ihr bestes Frame erzeugt hat, ist eine Vorlage, keine Trophäe.
+- **Hören Sie bei gut genug auf.** Generative Tools belohnen Iteration, aber sie bestrafen Perfektionismus genauso hart.
+
+Noch etwas, das es sich zu verinnerlichen lohnt: Das Modell ist ein Mitarbeiter mit einem schmalen Kompetenzprofil, kein Orakel. Wenn eine Generierung fehlschlägt, lautet die nützliche Frage nicht „Warum ist das schlecht?“, sondern „Was habe ich versäumt zu spezifizieren?“ Diese Umdeutung macht aus jedem Fehlschlag eine Notiz für Ihren nächsten Prompt.
+
+## FAQ
+
+**Brauche ich Vorerfahrung, um diesem ArtCraft-Tutorial zu folgen?**
+Nein. Wenn Sie einen klaren Satz schreiben können, der ein Bild beschreibt, können Sie effektiv prompten. Die wichtigsten Fähigkeiten sind Beobachtungsgabe und Geduld – zu bemerken, was sich zwischen zwei Generierungen geändert hat, und jeweils eine Variable anzupassen.
+
+**Ist ArtCraft kostenlos nutzbar?**
+ArtCraft ist Open Source, die Anwendung selbst kann also heruntergeladen und eingesehen werden. Modellzugriff und damit verbundene Compute-Kosten hängen davon ab, wie Sie es konfigurieren; prüfen Sie daher die offizielle Website auf aktuelle Details, statt ein einziges Preismodell anzunehmen.
+
+**Kann ich im selben Projekt sowohl Bilder als auch Videos generieren?**
+Ja. Der effizienteste Workflow besteht darin, zuerst Standbilder zu generieren, das stärkste Frame auszuwählen und dann dieses Frame zu animieren. Bilder und Video als eine Pipeline statt als zwei getrennte Tools zu behandeln, hält ein Projekt visuell konsistent.
+
+**Wie lange dauert es, bis man gute Ergebnisse erzielt?**
+Die meisten Menschen produzieren in ihrer ersten Sitzung etwas Brauchbares. Etwas *Wiederholbares* zu produzieren dauert länger – normalerweise ein paar Wochen konsequenter Praxis mit einem Prompt-Log und gespeicherten Ausgangsbasen. Konsistenz ist die eigentliche Fähigkeit, und sie ist vollständig erlernbar.
+
+**Was sollte ich tun, wenn eine Generierung überhaupt nicht dem entspricht, wonach ich gefragt habe?**
+Halbieren Sie den Prompt. Entfernen Sie jeden Block außer dem Motiv und einem Stil-Deskriptor, generieren Sie erneut und fügen Sie dann Elemente eines nach dem anderen wieder hinzu. Sie werden die widersprüchliche Anweisung innerhalb von zwei oder drei Durchläufen finden, und dabei etwas darüber lernen, wie das Modell Sprache liest.

@@ -1,0 +1,127 @@
+export const metadata = {
+  title: "ArtCraft Photoshop Workflow: KI-Generierung mit klassischer Bearbeitung kombinieren",
+  description: "Erfahren Sie, wie ein ArtCraft-Photoshop-Workflow Open-Source-KI-Bild- und -Videogenerierung mit ebenenbasierter Bearbeitung kombiniert – inklusive Einrichtungsschritten und praktischen Tipps.",
+  category: "tools",
+  date: "2026-10-08",
+}
+
+Die meisten Künstler werfen einen Lieblingseditor nicht weg, wenn ein neues Tool auftaucht – sie erweitern ihn. Genau das ist die Idee hinter einem **ArtCraft Photoshop**-Workflow: ArtCraft liefert das Rohmaterial, und Photoshop vollendet es mit der Ebenenkontrolle, der Künstler bereits vertrauen. Wenn Sie jemals ein Bild generiert haben, das Sie liebten, aber die Hände, die Beleuchtung oder einen unordentlichen Hintergrund nicht korrigieren konnten, löst genau diese Kombination das Problem.
+
+ArtCraft ist eine Open-Source-Desktop-App zur Generierung von KI-Bildern und -Videos, entwickelt für Künstler, die echte Kontrolle statt eines Spielautomaten wollen. Photoshop bleibt der Standard-Raster-Editor für Maskieren, Retuschieren und Compositing. Ein **ArtCraft Photoshop**-Workflow verbindet die beiden, und dieser Leitfaden behandelt die Einrichtung, die Stärken der jeweiligen Tools und die Gewohnheiten, die am meisten Zeit verschwenden.
+
+## Warum überhaupt ArtCraft mit Photoshop kombinieren?
+
+Generative Tools sind hervorragend bei der Ideenfindung und mittelmäßig bei chirurgischer Präzision. ArtCraft wird von seinen Machern als bewusste Crafting-Engine für Künstler, Designer und Filmemacher beschrieben – eine Desktop-Anwendung, die Sie selbst ausführen, statt eines Webdienstes, der Ihre Dateien verwahrt. Photoshop hingegen ist der Ort, an dem Pixel repariert, zusammengesetzt und für die Ausgabe vorbereitet werden.
+
+Kombiniert man sie, greifen die Stärken sauber ineinander: ArtCraft liefert Menge und Vielfalt, Photoshop liefert Kontrolle und Konsistenz. Sie hören auf, ein Tool für eine Aufgabe zu beanspruchen, für die es nie gedacht war.
+
+| Aufgabe | Wohin sie gehört | Warum |
+| --- | --- | --- |
+| Konzepte und Stilvarianten erkunden | ArtCraft | Schnelle Iteration über Prompts und Referenzen |
+| Eine Richtung festlegen | ArtCraft | Referenzbilder und Prompt-Kontrolle halten die Ausgabe am Briefing |
+| Bewegung oder kurze Clips generieren | ArtCraft | Videogenerierung läuft in derselben Desktop-App |
+| Gesichter, Hände und Kanten retuschieren | Photoshop | Healing, Klonen und maskierte Anpassungen |
+| Mehrere Elemente kombinieren | Photoshop | Ebenenstapel, Füllmethoden und Masken |
+| Farbkorrektur und finaler Export | Photoshop | Profile, Kurven und druckfertige Ausgabe |
+
+Die praktische Konsequenz: Breit in ArtCraft generieren, dann in Photoshop aggressiv eingrenzen.
+
+## Einen ArtCraft Photoshop-Workflow Schritt für Schritt einrichten
+
+Eine saubere Übergabe beginnt, bevor Sie überhaupt ein Prompt-Feld öffnen. Legen Sie zuerst Ihre finalen Abmessungen, das Seitenverhältnis und den Ausgabetyp fest, denn eine Charge im falschen Verhältnis neu zu generieren, ist der häufigste Zeitfresser. Arbeiten Sie dann die folgenden Schritte der Reihe nach ab.
+
+| Schritt | Aktion | Warum es wichtig ist |
+| --- | --- | --- |
+| 1 | Das Endprodukt definieren | Verhindert Neugenerierung in falscher Größe oder mit falschem Seitenverhältnis |
+| 2 | Einen kontrollierten Prompt schreiben | Wiederholbare Ergebnisse statt Glückstreffer |
+| 3 | Eine Charge generieren, nicht nur ein Bild | Optionen schlagen Perfektion beim ersten Versuch |
+| 4 | Bei 100 % Zoom prüfen | Fehler an Händen, Augen, Text und Kanten früh erkennen |
+| 5 | In maximaler Auflösung exportieren | PNG oder TIFF bewahrt Details; JPEG wirft sie weg |
+| 6 | Als Smart-Objekt importieren | Nicht-destruktives Skalieren und Filtern in Photoshop |
+| 7 | Mit Einstellungsebenen und Masken bearbeiten | Alles bleibt umkehrbar |
+| 8 | Rohe Ausgabe und die Ebenendatei archivieren | Bewahrt die Herkunft für zukünftige Überarbeitungen |
+
+Ein paar Ordnungsroutinen zahlen sich schnell aus:
+
+- Benennen Sie Dateien mit Prompt-ID und Datum, damit Sie jede Bearbeitung bis zur Quelle zurückverfolgen können.
+- Führen Sie ein Klartextprotokoll der Prompts, die funktioniert haben; es wird Ihre persönliche Stilbibliothek.
+- Duplizieren Sie Ihr Smart-Objekt vor destruktiven Bearbeitungen, nicht danach.
+- Speichern Sie eine flachgelegte Referenzkopie, damit Sie „Vorher“ und „Nachher“ direkt vergleichen können.
+
+Berichte aus der Community von Künstlern, die ähnliche Pipelines nutzen, erwähnen durchweg denselben Vorteil: Der Übergabeschritt zwingt Sie, langsamer zu werden und ein Bild ehrlich zu beurteilen, bevor Sie eine Stunde mit Retusche verbringen.
+
+## ArtCraft vs. Photoshop: Funktionsvergleich
+
+Diese Tools überschneiden sich weniger, als man annimmt. Wer die Aufteilung versteht, vermeidet den klassischen Fehler, ein Retuscheproblem wegprompten zu wollen.
+
+| Fähigkeit | ArtCraft | Photoshop |
+| --- | --- | --- |
+| Hauptzweck | KI-Bild- und Videogenerierung | Rasterbearbeitung und Compositing |
+| Lizenzmodell | Open-Source-Desktop-App | Kommerzielle Abo-Software |
+| Am besten geeignet für | Schnelles Konzipieren, Stilerkundung, Bewegung | Präzise Retusche, Typografie, Druckvorbereitung |
+| Schwach bei | Pixelgenauer Bereinigung und Typografie | Generierung neuer Inhalte aus einer Beschreibung |
+| Typische Ausgabe | Generierte Standbilder und Videos, auf Ihre Festplatte geschrieben | Ebenendokumente und exportfertige Dateien |
+| Kernkompetenz | Prompt-Kompetenz und Referenzverwaltung | Sicherer Umgang mit Ebenen, Masken und Werkzeugen |
+
+Wenn Ihr Ziel ein fertiges, druckreifes Layout ist, führt kein Weg an Photoshop vorbei. Wenn Ihr Ziel fünfzig Richtungen an einem Nachmittag sind, gewinnt ArtCraft um Längen. Die Kombination ArtCraft Photoshop ist kein Wettbewerb – sie ist ein Staffellauf.
+
+## Prompt-Kontrolle, Referenzen und Animationstechniken
+
+Die Qualität Ihrer finalen Bearbeitung ist durch die Qualität Ihrer Generierung begrenzt. Die Dokumentation von ArtCraft hebt Prompt-Kontrolle, Referenzbilder und Animation als Kernbestandteile seines Workflows hervor, und jeder dieser Punkte wirkt sich darauf aus, wie viel Nacharbeit Sie später haben.
+
+| Technik | So verwenden Sie sie | Nutzen in Photoshop |
+| --- | --- | --- |
+| Strukturiertes Prompt-Gerüst | Motiv, Aktion, Umgebung, Licht, Objektiv, Stil | Weniger Anatomie- und Perspektivfehler zu korrigieren |
+| Referenzbilder | Stil- oder Figurenreferenz bereitstellen | Konsistente Figuren über eine Serie hinweg |
+| Iteration mit einer Variable | Pro Charge nur ein Element ändern | Vorhersehbare, vergleichbare Varianten |
+| Negative Beschreibungen | Auflisten, was Sie nicht sehen möchten | Weniger Artefakte zum Wegstempeln |
+| Animationsdurchlauf | Kurze Bewegung aus einem Standbild generieren | Zusätzliche Frames zum Compositing oder Stapeln |
+| Gesperrte Prompts | Einen freigegebenen Prompt für ein Set wiederverwenden | Einheitliche Assets, die zusammenpassen |
+
+Eine nützliche Faustregel: Jedes Artefakt, das Sie bereits in der Prompt-Phase verhindern, spart ungefähr zehn Minuten Retusche. Zwei zusätzliche Minuten für die Verfeinerung eines Prompts sind fast immer der bessere Tausch.
+
+Für Videoarbeiten weist die ArtCraft-Website darauf hin, dass Modelle wie Seedance 2.0 in der App laufen, was bedeutet, dass Bewegungsclips auf Ihrer Festplatte landen und für Frame-genaue Arbeit in der Photoshop-Zeitleiste bereit sind. Mehr erfahren Sie auf [der offiziellen ArtCraft-Website](https://getartcraft.com/) oder Sie durchsuchen den Quellcode und die Versionshinweise im [ArtCraft-GitHub-Repository](https://github.com/storytold/artcraft).
+
+## Praktische Tipps und häufige Fehler
+
+Fünf Gewohnheiten unterscheiden Künstler, die schnell vorankommen, von Künstlern, die gegen ihre Werkzeuge ankämpfen:
+
+- **Generieren Sie größer als nötig.** Herunterskalieren verdeckt kleine Fehler; Hochskalieren vergrößert sie.
+- **Bündeln Sie nach Projekt, nicht nach Stimmung.** Eine Prompt-Familie zusammenzuhalten macht Stilkonsistenz mühelos.
+- **Bearbeiten Sie ab dem ersten Strich auf einer duplizierten Ebene.** Sie werden Ihre Meinung ändern.
+- **Führen Sie einen „Ausschuss“-Ordner.** Fehlgeschlagene Generierungen sind hervorragende Textur- und Hintergrundquellen.
+- **Exportieren Sie vor der Auslieferung einen flachgelegten Proof.** Er deckt verirrte Ebenen und unsichtbare Masken auf.
+
+Nun zu den Fehlern, die einen ArtCraft Photoshop-Workflow still und leise ruinieren:
+
+| Fehler | Wie er sich zeigt | Lösung |
+| --- | --- | --- |
+| Eine komprimierte Exportdatei bearbeiten | Banding, matschige Kanten, verlorene Details | Immer PNG oder TIFF exportieren |
+| Einen Fix herbeiprompten | Zehn Generierungen, dieselbe kaputte Hand | Zu Photoshop wechseln und retuschieren |
+| Die 100-%-Prüfung überspringen | Fehler erst nach stundenlanger Arbeit entdecken | Prüfen, bevor Sie sich festlegen |
+| Zu früh flachlegen | Kein Weg zurück zur ursprünglichen Generierung | Ebenen bis zur Auslieferung behalten |
+| Seitenverhältnis ignorieren | Den besten Teil eines Frames wegschneiden | Seitenverhältnis vor dem Generieren festlegen |
+
+Anwendererfahrung und Community-Berichte spiegeln dasselbe Thema wider: Die Künstler, die das Meiste aus diesem Setup herausholen, behandeln Generierung und Bearbeitung als zwei unterschiedliche Handwerke, nicht als einen verschwommenen Prozess.
+
+## FAQ: Fragen zu ArtCraft Photoshop
+
+**Ist ArtCraft ein Photoshop-Plugin?**
+
+Nein. ArtCraft ist eine eigenständige Open-Source-Desktop-Anwendung zur Generierung von KI-Bildern und -Videos. Die Beziehung zwischen ArtCraft und Photoshop ist eine dateibasierte Übergabe – Sie generieren in ArtCraft, exportieren und öffnen diese Datei dann in Photoshop für die abschließende Bearbeitung.
+
+**Brauche ich Photoshop, um ArtCraft zu nutzen?**
+
+Überhaupt nicht. ArtCraft erzeugt eigenständig fertige Standbilder und Videos. Photoshop ergänzt lediglich präzise Retusche, Compositing und Druckvorbereitung, wenn ein Projekt es erfordert. Jeder Raster-Editor mit Ebenenfunktion kann dieselbe Rolle übernehmen.
+
+**Kann ArtCraft Videos generieren, nicht nur Bilder?**
+
+Ja. ArtCraft übernimmt sowohl KI-Bild- als auch KI-Videogenerierung in einer Desktop-App, und seine Website weist darauf hin, dass Videomodelle wie Seedance 2.0 darin verfügbar sind. Dadurch können Sie Bewegung und Standbilder aus demselben Projekt generieren, ohne die Werkzeuge zu wechseln.
+
+**Was sollte ein Anfänger zuerst lernen?**
+
+Beginnen Sie mit ArtCraft, wenn Ihr Engpass Ideen sind – Prompt-Struktur und Referenzverwaltung sind schnell erlernt. Beginnen Sie mit Photoshop, wenn Ihr Engpass die Finish-Qualität ist. Die meisten Künstler brauchen irgendwann beides, und die ArtCraft-Photoshop-Kombination lässt sich am leichtesten aufnehmen, wenn Sie jeweils eine Fähigkeit nach der anderen lernen.
+
+**Wo sollten generierte Dateien liegen?**
+
+Bewahren Sie rohe Generierungen und bearbeitete Ebenendateien in getrennten Ordnern auf, idealerweise auf demselben Laufwerk, auf das ArtCraft schreibt. Wenn Sie beide sichern, können Sie eine Bearbeitung jederzeit aus der ursprünglichen Ausgabe neu aufbauen, falls ein Projekt eine unerwartete Wendung nimmt.

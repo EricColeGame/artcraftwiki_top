@@ -1,0 +1,120 @@
+export const metadata = {
+  title: "ArtCraft Suite im Test: Open-Source-KI-Werkzeuge für Bilder und Videos für Künstler",
+  description: "Praktischer Leitfaden zur ArtCraft Suite — der Open-Source-Desktop-App für KI-Bilder und -Videos, mit Prompt-Steuerung, Referenzen und Animation.",
+  category: "tools",
+  date: "2026-10-08",
+}
+
+## Was ist die ArtCraft Suite?
+
+Die Lücke zwischen einer Idee im Kopf und einer fertigen KI-generierten Aufnahme ist normalerweise mit Abonnements, Credit-Zählern und dem Server von jemand anderem gefüllt. Die **ArtCraft Suite** schließt diese Lücke, indem sie eine Open-Source-Generierungs-Engine direkt auf Ihren eigenen Rechner bringt — eine Desktop-App für KI-Bilder und -Videos statt eines weiteren Browser-Tabs. Für Künstler, Designer und Filmemacher, die echte Kontrolle über Prompts, Referenzen und Ergebnisse wollen, ist die **ArtCraft Suite** weniger eine Neuheit als vielmehr ein funktionierendes Studio-Werkzeug.
+
+Das Projekt beschreibt sich selbst als „intentionale Crafting-Engine", und diese Formulierung ist bewusst gewählt. Nichts am Arbeitsablauf soll sich anfühlen wie das Ziehen eines Spielautomatenhebels. Sie wählen das Modell, Sie schreiben den Prompt, Sie liefern die Referenz, und die Ergebnisse werden direkt auf Ihre Festplatte geschrieben. Der Slogan, zu dem die Entwickler immer wieder zurückkehren — you own ArtCraft — fasst das Kernversprechen zusammen: Ihre Kopie der App, Ihre Dateien, Ihre Pipeline.
+
+So gliedern sich die wichtigsten Bestandteile des Werkzeugsatzes auf:
+
+| Fähigkeit | Was sie tut | Am besten geeignet für |
+|---|---|---|
+| Text-zu-Bild-Generierung | Verwandelt geschriebene Prompts in Standbilder | Concept-Artists, Illustratoren |
+| Text-zu-Video-Generierung | Erzeugt kurze Bewegungsclips aus Prompts | Filmemacher, Motion-Designer |
+| Referenz-Konditionierung | Nutzt Eingabebilder, um Stil und Komposition zu steuern | Künstler, die einen einheitlichen Look treffen wollen |
+| Animations-Workflows | Erweitert ein Standbild zu Bewegung | Storyboarder, Animatoren |
+| Lokale Ausgabe | Speichert Renders direkt in Ihre eigenen Ordner | Alle, die Kundenarbeiten archivieren |
+| Open-Source-Kern | Der Quellcode ist öffentlich und veränderbar | Studios, die eigene Pipelines bauen |
+
+Die Kurzfassung: Es ist ein Generierungsstudio, das sich wie Software verhält, die Sie absichtlich installiert haben, nicht wie ein Dienst, den Sie monatlich mieten.
+
+## Warum eine Open-Source-Desktop-App den Workflow verändert
+
+Die erste Erfahrung der meisten Menschen mit KI-Generierung findet in einem Browser statt. Das ist in Ordnung zum Experimentieren, aber es prägt still und leise die Art, wie Sie arbeiten. Credit-Stufen drängen Sie zu kurzen, vorsichtigen Prompts. Export-Buttons und Wasserzeichen drängen Sie zur Vorstellung des Anbieters von einer fertigen Datei. Und wenn der Anbieter die Preisseite ändert, ändert sich Ihr gesamter Workflow mit ihr.
+
+Ein Desktop-nativer, Open-Source-Ansatz kehrt diese Anreize um. Die Engine ist einsehbar, was bedeutet, dass ein Studio prüfen kann, was ein Modell tatsächlich tut, die Oberfläche anpassen oder die Ausgabe in eine bestehende Pipeline einspeisen kann. Die **ArtCraft Suite** lebt diese Philosophie, statt sie hinter einem polierten Login-Bildschirm zu verstecken.
+
+| Faktor | Typischer Cloud-Generator | ArtCraft Suite |
+|---|---|---|
+| Wo er läuft | Anbieter-Server, in einem Browser | Native Desktop-App auf Ihrem Rechner |
+| Wo Dateien landen | Hinter einem Konto und einem Download-Schritt | Direkt auf Ihrer eigenen Festplatte |
+| Anpassung | Was die Oberfläche eben hergibt | Quellcode ist offen; Sie können ihn erweitern |
+| Generierungslimits | Gestaffelte Credits und Warteschlangen | Gesteuert durch Ihre eigene Hardware und Einrichtung |
+| Modellwahl | Vom Anbieter festgelegt | Unterschiedlich — Sie verbinden die Modelle, die Sie wollen |
+| Langfristige Verfügbarkeit | An die Roadmap des Anbieters gebunden | Sie besitzen eine Kopie der Anwendung |
+
+Ein Vorbehalt, der klar ausgesprochen werden sollte: Lokal zu laufen bedeutet nicht automatisch, offline zu laufen. Je nachdem, welche Modelle Sie verbinden, kann die App dennoch externe Dienste kontaktieren. Berichte aus der Community empfehlen, die Anforderungen jedes Modells zu prüfen, bevor man einen vollständig getrennten Workflow annimmt. Der Vorteil ist Transparenz — Sie können es herausfinden, weil der Code direkt vor Ihnen liegt.
+
+## Kernwerkzeuge innerhalb der ArtCraft Suite
+
+### Prompt-Steuerung
+
+Prompt-Steuerung ist das Herzstück der Suite. Statt eines einzelnen Textfelds und einer Hoffnung ist die App darum herum gebaut, Ihnen Einblick zu geben, was gesendet wird und was zurückkommt. Das ist am wichtigsten, wenn Sie iterieren: den Prompt stabil zu halten, während Sie jeweils eine Variable ändern, ist der Weg zu lernen, worauf ein Modell tatsächlich reagiert.
+
+### Referenzen und Stilsteuerung
+
+Referenzbilder lassen Sie Komposition und Look steuern, ohne jedes Detail in Worten beschreiben zu müssen. Das ist der Unterschied zwischen dem Schreiben von „stimmungsvoll, warm, geringe Schärfentiefe" und dem einfachen Zeigen eines Frames, der diese Eigenschaften bereits hat. Künstler, die mit Kunden arbeiten, verlassen sich stark darauf, weil eine Referenz leichter abzustimmen ist als ein Absatz voller Adjektive.
+
+### Animation und Videogenerierung
+
+Die Suite kümmert sich auch um Bewegung. Standbilder können in Animationsdurchläufe überführt werden, und die Plattform hat Unterstützung für externe Videomodelle hinzugefügt — das Seedance-Videomodell ist ein Beispiel, das die Entwickler auf der Projektseite hervorgehoben haben. Für Filmemacher liegt der Reiz in der Kontinuität: Dieselbe Umgebung, die Ihre Keyframes generiert, kann auch die Bewegung dazwischen erzeugen.
+
+| Phase | Werkzeug in der Suite | Typische Ausgabe |
+|---|---|---|
+| Ideenfindung | Text-zu-Bild mit Prompt-Steuerung | Grobe Konzept-Frames |
+| Stil-Fixierung | Referenz-Konditionierung | Markengerechte Standbilder |
+| Sequenzaufbau | Animations-Workflows | Kurze Bewegungsclips |
+| Auslieferung | Lokale Dateiausgabe | Dateien in Ihrem Projektordner |
+
+## Erste Schritte mit der ArtCraft Suite
+
+Produktiv zu werden in der **ArtCraft Suite** dreht sich vor allem um die Reihenfolge. Direkt zur Videogenerierung zu springen, bevor Sie verstehen, wie die App ein Standbild behandelt, ist der schnellste Weg, frustriert zu werden.
+
+| Schritt | Aktion | Warum es wichtig ist |
+|---|---|---|
+| 1 | Laden Sie den Desktop-Build von der [offiziellen ArtCraft-Website](https://getartcraft.com/) herunter | Stellt sicher, dass Sie mit der aktuellen Version beginnen |
+| 2 | Überfliegen Sie den [ArtCraft-Quellcode auf GitHub](https://github.com/storytold/artcraft) | Zeigt genau, was die Engine bereitstellt |
+| 3 | Lesen Sie das [ArtCraft-Wiki](https://www.artcraft.wiki/) für Workflow-Hinweise durch | Spart Stunden von Versuch und Irrtum |
+| 4 | Konfigurieren Sie, welche Modelle Sie ausführen wollen | Bestimmt Ihre Bild- und Videooptionen |
+| 5 | Generieren Sie einen einfachen Text-zu-Bild-Prompt | Etabliert eine Vergleichsbasis |
+| 6 | Fügen Sie demselben Prompt ein Referenzbild hinzu | Zeigt, wie stark die Konditionierung die Ausgabe steuert |
+| 7 | Überführen Sie Ihr bestes Standbild in einen Animationsdurchlauf | Validiert die Videoseite der Pipeline |
+| 8 | Legen Sie einen eigenen Ausgabeordner fest | Hält Renders von Anfang an organisiert |
+
+Wenn Sie das Werkzeug für ein Team evaluieren, machen Sie die Schritte eins bis acht zuerst auf einem einzigen Rechner. Die **ArtCraft Suite** belohnt eine kontrollierte Einführung mehr als eine breite.
+
+## Tipps, Techniken und häufige Fehler
+
+Der Unterschied zwischen einer frustrierenden und einer produktiven Sitzung läuft meist auf die Methode hinaus, nicht auf die Hardware. Diese Gewohnheiten tauchen in Community-Berichten von Künstlern, die Desktop-Generierungswerkzeuge nutzen, immer wieder auf.
+
+| Technik | Wie man sie anwendet | Warum sie funktioniert |
+|---|---|---|
+| Eine Variable nach der anderen ändern | Den Prompt fix halten, nur den Seed oder die Referenz ändern | Isoliert, was die Veränderung tatsächlich verursacht hat |
+| Prompts als Beschreibungen schreiben | Das Bild beschreiben, nicht einen Befehl | Modelle reagieren besser auf Szenensprache |
+| Eine Referenzbibliothek aufbauen | Frames speichern, die Ihrem Ziellook entsprechen | Beschleunigt die Stilkonsistenz über ein Projekt hinweg |
+| Prompts versionieren | Eine Textdatei mit Prompts führen, die funktioniert haben | Verwandelt glückliche Zufälle in wiederholbare Rezepte |
+| Erst sammeln, dann urteilen | Mehrere Varianten generieren, bevor Sie entscheiden | Einzelne Ausgaben sind verrauschte Signale |
+
+Häufige Fehler sind ebenso vorhersehbar:
+
+| Fehler | Besserer Ansatz |
+|---|---|
+| Mit Videogenerierung beginnen | Erst Standbilder meistern, dann animieren |
+| Annehmen, lokal bedeute offline | Prüfen, was jedes verbundene Modell erfordert |
+| Einem perfekten ersten Render nachjagen | In kleinen, kontrollierten Schritten iterieren |
+| Die Struktur der Ausgabeordner ignorieren | Benennungs- und Ordnerkonventionen früh festlegen |
+| Die Suite als Blackbox behandeln | Quellcode und Wiki lesen — darum geht es |
+
+Noch ein praktischer Rat: Die **ArtCraft Suite** ist Open Source, was bedeutet, dass die Community Teil der Dokumentation ist. Wenn etwas unerwartet reagiert, ist das Problem oft ein Konfigurationsdetail und kein Bug, und die eigenen Repositories und das Wiki des Projekts sind der schnellste Ort, um das zu bestätigen.
+
+## Häufig gestellte Fragen
+
+**Ist die ArtCraft Suite kostenlos nutzbar?**
+Das Projekt ist Open Source, und sein Quellcode ist öffentlich einsehbar und veränderbar. Lizenzierungs- und Vertriebsdetails können sich im Laufe der Zeit ändern, prüfen Sie also die offizielle Website für die aktuellen Bedingungen, statt sich auf Zusammenfassungen aus zweiter Hand zu verlassen.
+
+**Brauche ich einen leistungsstarken Computer, um sie auszuführen?**
+Da die Generierung auf Ihrem eigenen Rechner statt auf den Servern eines Anbieters erfolgt, spielt Ihre Hardware eine größere Rolle als bei einem Browser-Werkzeug. Die praktischen Anforderungen hängen davon ab, welche Modelle Sie verbinden, betrachten Sie also die Spezifikationen Ihres gewählten Modells als den echten Maßstab.
+
+**Kann die ArtCraft Suite Videos generieren oder nur Bilder?**
+Beides. Die Suite unterstützt KI-Bildgenerierung und KI-Videogenerierung, einschließlich Animations-Workflows, die Standbilder in Bewegung überführen, sowie die Integration externer Videomodelle. Die meisten Nutzer erzielen bessere Ergebnisse, wenn sie zuerst Bildfähigkeiten aufbauen.
+
+**Funktioniert sie ohne Internetverbindung?**
+Nicht unbedingt. Die App selbst läuft lokal, aber ob eine bestimmte Generierung Netzwerkzugriff benötigt, hängt vollständig von den Modellen ab, die Sie konfigurieren. Berichte aus der Community empfehlen, Ihr spezifisches Setup zu testen, bevor Sie annehmen, dass ein vollständig offlinefähiger Workflow möglich ist.
+
+Das Fazit: Die **ArtCraft Suite** ist für Menschen gebaut, die ihre Werkzeuge verstehen wollen, nicht nur mieten. Wenn das auf Sie zutrifft, ist der Download der einfache Teil — die Kontrolle ist das, was Ihnen bleibt.

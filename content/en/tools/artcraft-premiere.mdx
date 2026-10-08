@@ -1,0 +1,137 @@
+export const metadata = {
+  title: "ArtCraft Premiere Guide: Open-Source AI Video and Image Generation for Artists",
+  description: "A practical guide to the ArtCraft premiere: setup, prompt control, references, animation, and how to move AI-generated clips into your editing timeline.",
+  category: "tools",
+  date: "2026-10-08",
+}
+
+## What the ArtCraft Premiere Actually Changes
+
+Your first ArtCraft premiere is the moment a prompt stops being a gamble and starts being footage you can cut. ArtCraft is an open-source desktop application for generating AI images and video, and it was built for artists who want deliberate control rather than a slot machine. That distinction matters, because the hard part of AI video was never producing *something* — it was producing the specific thing you had in mind, then getting it into an edit without a stack of subscriptions standing in the way.
+
+Instead of a browser tab that forgets your work the moment the session expires, you install an app, work in it, and keep the results. The project describes itself as an intentional crafting engine for artists, designers, and filmmakers, which is a useful framing: the tool is a workshop, not a vending machine.
+
+| Capability | What it gives you | Why it matters in practice |
+|---|---|---|
+| AI image generation | Still frames from text prompts and references | Storyboards, mood boards, and key art before you commit to motion |
+| AI video generation | Short motion clips from prompts | B-roll, transitions, and concept shots without a shoot day |
+| Prompt control | Fine-grained input over subject, style, and motion | Fewer rerolls, more usable takes per session |
+| Reference inputs | Guiding output with existing images | Keeps a character or palette consistent across shots |
+| Animation tools | Turning stills into movement | Extends a single strong frame into a sequence |
+| Open-source desktop app | Inspectable, moddable, locally installed | No black box between you and your own pipeline |
+| Direct file output | Results written to your own drive | Files drop straight into your editor |
+
+## Why the ArtCraft Premiere Matters for Working Creators
+
+Most AI video tools ask you to rent access to a model you cannot see, running on hardware you do not control, producing files you have to download before they vanish. The ArtCraft premiere flips that arrangement. The application is open source, it runs as a native desktop app, and the assets land on your machine — which means your project folder, not someone else's dashboard, is the source of truth.
+
+For freelancers, that is a billing question. For studios, it is a compliance question. For independent filmmakers, it is simply the difference between owning your footage and borrowing it.
+
+The other shift is speed of iteration. When generation happens locally in a dedicated window rather than through a queue on a website, the loop between "that's not right" and "try again" gets short enough to actually explore. Community reports from artists using desktop generation tools consistently point to the same thing: the value is not the first render, it is the twentieth.
+
+| Creator type | Primary use | Smart first experiment |
+|---|---|---|
+| Illustrator / concept artist | Key art and iterative framing | Generate 10 variations of one composition, then pick a direction |
+| Filmmaker | Concept shots and pickups | Build a short animatic from generated stills |
+| Motion designer | Loops, textures, abstract transitions | Animate a single reference frame into a 3-second loop |
+| Social media creator | Fast vertical content | Lock a visual style with references, then batch prompts |
+| Indie game developer | Mood boards and promo art | Keep a reference sheet for consistent character looks |
+
+## How to Prepare for Your First ArtCraft Premiere
+
+Preparation is the difference between a frustrating afternoon and a productive one. Before you open the app, decide what you are making and how it will be used. A 3-second loop for a title card and a 15-second narrative beat demand very different prompts.
+
+1. **Define the deliverable.** Resolution, aspect ratio, and duration should be decided before you type a single prompt. Vertical social clips and widescreen film shots are not the same job.
+2. **Collect references first.** Gather 3–5 images that capture the look you want. References do more for consistency than any adjective you can stack into a prompt.
+3. **Write a base prompt and a modifier list.** Keep the subject, style, lighting, and camera language in separate buckets so you can swap one without rewriting everything.
+4. **Create a project folder on your drive.** Since ArtCraft writes results straight to disk, decide where those files live before you have 200 of them.
+5. **Test small, then scale.** Run one short low-commitment generation to confirm your settings before you queue a longer sequence.
+
+| Pre-flight step | What to decide | Cost of skipping it |
+|---|---|---|
+| Deliverable spec | Format, length, ratio | Reshoot-by-prompt, wasted generations |
+| Reference set | 3–5 anchor images | Inconsistent characters and palettes |
+| Prompt structure | Subject / style / camera buckets | Endless rewriting, no reusable formula |
+| File organization | Folder naming and versioning | A downloads folder you will never sort |
+| Test render | One short clip | Discovering a problem after a long batch |
+
+## The ArtCraft Premiere Workflow: From Prompt to Timeline
+
+The most practical reason to care about the ArtCraft premiere is the handoff. Because output is written to your own storage as standard media files, the transition from "generated" to "edited" is a file import rather than a download-and-re-upload dance. That means your generated clips sit alongside camera footage, screen recordings, and stock in the same editing timeline.
+
+If you cut in Adobe Premiere Pro or any comparable non-linear editor, the workflow is refreshingly boring: generate, review, drag the keepers into your bin, and treat them like any other asset. You can trim, retime, color match, and layer them without leaving your edit.
+
+| Stage | What you do | What you get |
+|---|---|---|
+| 1. Brief | Write the shot list and pick references | A clear target instead of a vibe |
+| 2. Generate stills | Produce image options for each beat | Approved key frames |
+| 3. Animate | Turn approved frames into motion | Short clips with consistent look |
+| 4. Review | Watch everything back-to-back | A shortlist of usable takes |
+| 5. Organize | Rename and sort into project folders | A bin structure that mirrors your edit |
+| 6. Edit | Import into your NLE and cut | A finished sequence |
+| 7. Refine | Regenerate only the weak shots | Targeted fixes instead of full redo |
+
+Step 7 is where the desktop model pays off. Because you are not paying per render in a browser queue, replacing one bad shot does not feel like burning money — it feels like reshooting a single setup, which is exactly how filmmakers already think.
+
+## Prompt Control, References, and Animation: Where Quality Comes From
+
+Anyone can type a sentence into a generator. The artists getting consistently good results out of an ArtCraft premiere session are doing three things differently: they constrain the model, they reuse references, and they build motion from stills rather than asking a single prompt to do everything at once.
+
+| Feature | Why artists care | Practical tip |
+|---|---|---|
+| Prompt control | Directs subject, style, and camera | Change one variable at a time so you learn what did what |
+| Reference inputs | Anchors a look across many shots | Reuse the same reference set for an entire scene |
+| Animation | Turns a still into movement | Approve the frame first; never animate a frame you dislike |
+| Open-source workflow | Lets you inspect and adapt the pipeline | Follow the project repository to see how generation is wired |
+| Local output | Keeps files in your control | Version filenames so you can always trace a clip's origin |
+
+A useful habit from experienced users: keep a "prompt ledger." Every time a generation works, write down the exact prompt, the reference used, and the setting. After a dozen entries you have a personal formula sheet that is worth more than any generic prompt pack.
+
+For the underlying tool, the official [ArtCraft desktop app page](https://getartcraft.com/) is the place to confirm current capabilities, downloads, and model availability — including the Seedance 2.0 video generation integration that the project has highlighted.
+
+## Comparing Your Options Before You Commit
+
+There is no single right answer here, and the honest comparison depends on what you value: convenience, ownership, or cost predictability.
+
+| Approach | Strength | Trade-off | Best for |
+|---|---|---|---|
+| Browser-based AI video services | Zero setup, runs on any machine | Subscription, queue times, files in someone else's cloud | Quick one-off experiments |
+| Cloud generation inside an editing suite | Tight integration with the editor | Requires an active subscription and connectivity | Editors already living in one ecosystem |
+| ArtCraft on desktop | Open source, local files, real prompt control | You supply the hardware and manage your own library | Artists building a repeatable pipeline |
+| Traditional footage and stock | Predictable, licensable quality | Expensive, slow, logistically heavy | Productions with a budget and a schedule |
+
+The pattern is simple. If you need one clip for a client deck, a browser tool is fine. If you are building a body of work, a consistent visual language, or a pipeline you intend to reuse, an open-source desktop app is the more durable investment — and the ArtCraft premiere is how that investment starts.
+
+## Common Mistakes and How to Avoid Them
+
+- **Overloading one prompt.** Subject, style, lighting, camera move, and mood in a single sentence produces mud. Split them across iterations.
+- **Skipping references.** Without an anchor image, every generation drifts a little further from your intent.
+- **Generating before organizing.** Decide your folder structure on day one, not after your first hundred clips.
+- **Judging at full speed.** Watch clips frame by frame before you commit them to a timeline; motion artifacts hide at playback speed.
+- **Chasing a perfect single shot.** Generate options, then edit. A good sequence of imperfect shots beats one flawless frame that does not cut.
+- **Ignoring the source project.** Because ArtCraft is open source, reading the repository and community discussions will teach you more about its behavior than any tutorial.
+
+| Mistake | Why it hurts | Fix |
+|---|---|---|
+| Kitchen-sink prompts | Nothing is clearly specified | One variable per iteration |
+| No reference set | Style drifts shot to shot | Lock 3–5 anchor images |
+| No file plan | Unusable asset library | Project folders from the start |
+| Playback-speed review | Artifacts slip through | Scrub frame by frame |
+| Perfectionism on one clip | Stalled progress | Generate options, solve it in the edit |
+
+## FAQ
+
+**Is the ArtCraft premiere a one-time event or an ongoing workflow?**
+It is a starting point. The first session teaches you how the app responds to your prompts and references; every session after that gets faster because you are reusing formulas rather than rediscovering them.
+
+**Do I need a powerful computer to run ArtCraft?**
+ArtCraft is a desktop application, so generation happens on your own machine rather than in a remote browser queue. That means your hardware matters more than it would with a cloud service. Check the official site for current system requirements before you install.
+
+**Can I use ArtCraft output in a professional editing timeline?**
+Yes. Because results are written to your own drive as media files, you can import them into Adobe Premiere Pro or any comparable non-linear editor and treat them like ordinary footage — trim, retime, color, and layer them normally.
+
+**Is ArtCraft really free and open source?**
+The project positions itself as open source and emphasizes that you own the application and your files. Licensing details and any paid model integrations can change, so verify the current terms on the official ArtCraft site and its public repository before planning a commercial pipeline around it.
+
+**What should I make first?**
+Something short and specific. A three-second loop from a single approved still will teach you more about prompt control, references, and animation than an ambitious ten-shot sequence — and it gives you a finished asset on day one.

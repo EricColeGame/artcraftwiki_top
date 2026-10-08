@@ -1,0 +1,137 @@
+export const metadata = {
+  title: "ArtCraft-3D-Objekte: Dimensionale Referenzen für KI-Bilder und -Videos",
+  description: "Erfahre, wie ArtCraft-3D-Objekte als Referenzen für die KI-Bild- und Videogenerierung funktionieren, plus Tipps zur Vorbereitung, Workflows und häufige Fehler, die du vermeiden solltest.",
+  category: "features",
+  date: "2026-10-08",
+}
+
+## Warum 3D-Objekte die KI-Generierung verändern
+
+Die meisten KI-Bilder zerfallen in dem Moment, in dem du dasselbe Motiv aus einem zweiten Blickwinkel brauchst. ArtCraft-3D-Objekte lösen dieses Problem direkt: Statt zu hoffen, dass sich ein Text-Prompt richtig verhält, übergibst du dem Modell eine echte, dimensionale Referenz, die du drehen, beleuchten und Bild für Bild abgleichen kannst. ArtCraft-3D-Objekte machen aus einem Ratespiel ein kontrollierbares Handwerk.
+
+ArtCraft selbst ist eine Open-Source-Desktop-Anwendung zur Generierung von KI-Bildern und -Videos, entwickelt für Künstler, die echte Kontrolle über das Ergebnis wollen und keinen Spielautomaten. Da sie nativ auf deinem Rechner läuft und Ergebnisse direkt auf deine Festplatte schreibt, fügt sie sich in eine bestehende 3D-Pipeline ein, statt sie zu ersetzen. Das ist wichtig, denn die Künstler mit den konsistentesten Ergebnissen sind diejenigen, die dem Generator Geometrie statt Adjektive füttern.
+
+Die Kernidee ist einfach: Ein 3D-Objekt trägt Informationen, die ein Prompt nicht liefern kann – exakte Proportionen, kamerarelative Perspektive, Verdeckung und Silhouette. Sobald diese Struktur im Prozess ist, verschiebt sich deine Aufgabe davon, gegen den Zufall anzukämpfen, hin dazu, ihn zu lenken.
+
+| Was dir ein Text-Prompt liefert | Was dir eine 3D-Objekt-Referenz liefert |
+| --- | --- |
+| Vage Form, in Worten beschrieben | Exakte Geometrie und Proportionen |
+| Inkonsistentes Aussehen zwischen Einstellungen | Wiederholbares Motiv über Blickwinkel hinweg |
+| Kein Kameraverständnis | Echte Perspektive und Tiefenhinweise |
+| Schwer präzise zu überarbeiten | Editierbare, neu renderbare Quelle |
+| Stil driftet mit jedem Seed | Stil an deine Referenz gebunden |
+
+## Was als 3D-Objekt-Referenz in ArtCraft gilt
+
+Nicht jedes 3D-Asset muss ein fertiges Hero-Modell sein. In der Praxis verwenden Künstler mehrere Detailstufen, und die richtige Wahl hängt davon ab, wie viel Kontrolle du brauchst gegenüber wie viel Zeit du hast.
+
+| Referenztyp | Was er steuert | Am besten geeignet für |
+| --- | --- | --- |
+| Blockout-Mesh | Maßstab, Proportion, Kameraframing | Previsualisierung und Einstellungsplanung |
+| Mid-Poly-Sculpt | Gesamtform und Silhouette | Konsistenz von Charakteren und Kreaturen |
+| High-Poly-Asset | Oberflächendetails und Mikroform | Hero-Shots und Nahaufnahmen |
+| Depth-Pass-Render | Räumliche Schichtung und Fokusabfall | Compositing-freundliche Ergebnisse |
+| Silhouetten-/Matte-Render | Kantenform und Negativraum | Stilisierte und grafische Looks |
+| Turntable-Sequenz | Konsistenz über mehrere Blickwinkel | Animation und Kontinuität von Einstellung zu Einstellung |
+
+Berichte aus der Community von Künstlern, die mit Open-Source-Generierungstools arbeiten, deuten darauf hin, dass ein sauberer Depth- oder Matte-Render als Steuerungsinput oft besser abschneidet als ein vollständig texturiertes Modell. Texturen können einen Generator verwirren, der versucht, seine eigene Beleuchtung zu erfinden; reine Geometrie gibt ihm Raum zum Arbeiten. Deine Ergebnisse können je nach gewähltem Modell variieren, teste also beides an einer kurzen Sequenz, bevor du dich auf einen langen Render festlegst.
+
+Außerdem ist es erwähnenswert, dass ArtCraft aktiv weiterentwickelt wird und sich der genaue Umgang mit Referenzinputs von Release zu Release weiterentwickelt. Prüfe [die offizielle ArtCraft-Website](https://getartcraft.com/) auf den aktuellen Funktionsumfang, statt dich auf ältere Tutorials zu verlassen.
+
+## 3D-Objekte für ein sauberes Ergebnis vorbereiten
+
+Die meisten fehlgeschlagenen Generierungen gehen auf die Referenz zurück, nicht auf den Prompt. Ein Modell, das mit umgedrehten Normalen, einem wilden Maßstab oder einer Kamera ankommt, die nicht zu deiner beabsichtigten Einstellung passt, wird dir die ganze Zeit entgegenarbeiten. Zehn Minuten Aufräumen sparen eine Stunde Neu-Rollen.
+
+### Die Checkliste vor dem Start
+
+| Prüfung | Warum sie wichtig ist | Schnelle Lösung |
+| --- | --- | --- |
+| Korrekter Weltmaßstab | Falscher Maßstab verzerrt Perspektive und Tiefenhinweise | Vor dem Export auf reale Einheiten skalieren |
+| Saubere Normalen | Umdrehte Flächen erscheinen in Rendern als Löcher | Normalen außen neu berechnen |
+| Ursprung an einem sinnvollen Pivot | Rotation und Framing bleiben vorhersehbar | Ursprung zur Basis-Mitte verschieben |
+| Kamera an Einstellung angepasst | Nicht passende Linse erzeugt unmögliche Geometrie | Brennweite und Höhe an dein Plate anpassen |
+| Neutraler Hintergrund | Unruhige Hintergründe bluten in die Referenz ein | Auf einer flachen Matte-Farbe rendern |
+| Ein einzelnes Objekt pro Pass | Überlappende Motive verwischen das Steuerungssignal | Komplexe Szenen in separate Pässe aufteilen |
+| Konsistente Benennung | Du verlierst den Überblick, welcher Pass welcher ist | Verwende eine strikte Dateibenennungskonvention |
+
+### Das richtige Ausgabeformat für die Aufgabe wählen
+
+Ein Depth-Pass, ein Normal-Pass und ein Beauty-Render sagen dem Generator jeweils unterschiedliche Dinge. Depth ist das Arbeitstier für räumliche Kontrolle. Normalen sind nützlich, wenn du möchtest, dass der Generator die Oberflächenrichtung interpretiert, ohne deine Beleuchtung zu übernehmen. Ein Clay- oder Matte-Render liegt dazwischen – er kommuniziert Form und bleibt dabei stilistisch neutral.
+
+Wenn du mit Animation arbeitest, gibt das Exportieren eines kurzen Turntables oder einer Kamerabewegung statt eines Stills dem Modell eine Bewegungsreferenz. Hier zahlen sich ArtCraft-3D-Objekte am deutlichsten aus: Eine fünfzehnsekündige Orbit-Bewegung kann eine ganze Sequenz verankern.
+
+## Ein Schritt-für-Schritt-Workflow für ArtCraft-3D-Objekte
+
+Der folgende Workflow setzt voraus, dass du bereits eine Desktop-Version installiert hast. Er ist bewusst tool-agnostisch auf der 3D-Seite – Blender, Maya, Cinema 4D oder jede DCC-App, die Stills und Bildsequenzen exportiert, funktioniert.
+
+| Schritt | Aktion | Ausgabe |
+| --- | --- | --- |
+| 1. Einstellung blocken | Geometrie und Kameraposition grob anlegen | Szenendatei mit niedrigem Detailgrad |
+| 2. Steuerungspässe rendern | Depth-, Matte- oder Clay-Versionen exportieren | Referenzbild-Set |
+| 3. Referenzen importieren | Pässe in dein ArtCraft-Projekt laden | Kontrolliertes Generierungs-Setup |
+| 4. Einen schlanken Prompt schreiben | Stil, Licht und Stimmung beschreiben – nicht die Form | Kurzer, fokussierter Prompt |
+| 5. Einen Test-Batch generieren | Eine kleine Anzahl von Varianten erzeugen | Beispiel-Frames |
+| 6. Mit der Referenz vergleichen | Silhouette, Proportion und Framing prüfen | Entscheidung: bestehen oder überarbeiten |
+| 7. Verfeinern und wiederholen | Geometrie oder Prompt anpassen, dann neu generieren | Präziseres Ergebnis |
+| 8. In Bewegung überführen | Dasselbe Setup auf einen Video-Pass anwenden | Animierte Sequenz |
+
+Der mit Abstand größte Effizienzgewinn in diesem Kreislauf ist Schritt sechs. Künstler, die die Ausgabe systematisch mit der Referenz vergleichen – statt nur grob hinzuschauen –, erkennen Proportionsdrift früh, bevor sie sich über eine Sequenz hinweg verstärkt.
+
+| Prompt-Disziplin | Schwacher Ansatz | Starker Ansatz |
+| --- | --- | --- |
+| Formbeschreibung | "Ein großer, dürrer Roboter mit langen Armen" | Weglassen – die Geometrie erledigt das |
+| Stilrichtung | In einem Absatz vergraben | Eine klare stilistische Formulierung |
+| Beleuchtung | Widerspricht dem Referenzpass | Passt dazu oder überschreibt bewusst |
+| Länge | 80+ Wörter | 15–30 Wörter |
+
+## ArtCraft-3D-Objekte vs. reines Text-Prompting
+
+Es ist berechtigt zu fragen, ob der zusätzliche Aufwand es wert ist. Für einmalige Konzeptskizzen ist reines Prompting schneller. Für alles, was über mehrere Einstellungen hinweg zusammenhalten muss, gewinnt der Geometry-First-Ansatz.
+
+| Szenario | Reines Text-Prompting | 3D-Objekt-Referenz |
+| --- | --- | --- |
+| Einzelnes Wegwerf-Konzept | Schnell und ausreichend | Übertrieben |
+| Charakter über 5+ Einstellungen | Hohes Drift-Risiko | Von Grund auf konsistent |
+| Genauigkeit von Produkten oder Requisiten | Unzuverlässig | Präzise |
+| Kundenrevisionsrunden | Prompt von Grund auf neu schreiben | Geometrie anpassen und neu rendern |
+| Animationskontinuität | Sehr schwierig | Praktikabel |
+| Stilisierte Abstraktion | Oft in Ordnung | Optional, aber nützlich |
+
+Eine nützliche Faustregel von arbeitenden Künstlern: Wenn es dir peinlich wäre, zwei Versionen nebeneinander zu zeigen, verwende eine Referenz. Konsistenz ist das Feature, für das Leute tatsächlich bezahlen, und ArtCraft-3D-Objekte sind der direkteste Weg dorthin.
+
+## Häufige Fehler und wie du sie vermeidest
+
+| Fehler | Symptom | Lösung |
+| --- | --- | --- |
+| Form im Prompt überbeschreiben | Ausgabe ignoriert deine Referenz | Formsprache aus dem Prompt entfernen |
+| Einen texturierten Beauty-Render als Steuerung verwenden | Generator übernimmt deine Beleuchtung schlecht | Zu Depth- oder Matte-Pässen wechseln |
+| Falsche Kamera in der 3D-Szene | Perspektive wirkt physikalisch unmöglich | Linse und Höhe an die beabsichtigte Einstellung anpassen |
+| Ein Pass für eine Szene mit mehreren Objekten | Motive verschmelzen oder tauschen | In separate Pässe aufteilen |
+| Test-Batches überspringen | Teure Neu-Renders später | Immer zuerst eine kleine Stichprobe generieren |
+| Dateiorganisation ignorieren | Verschwendete Stunden bei der Suche nach Assets | Benennungskonventionen früh übernehmen |
+
+Ein paar praktische Gewohnheiten unterscheiden reibungslose Projekte von frustrierenden:
+
+- **Versioniere deine Referenzen.** Bewahre die 3D-Szene auf, die jeden Pass erzeugt hat, damit du nach einer Änderung neu generieren kannst.
+- **Führe eine Referenzbibliothek.** Ein Ordner mit wiederverwendbaren Depth-Pässen für gängige Requisiten und Körpertypen spart über ein Jahr hinweg Stunden.
+- **Arbeite mit der niedrigsten Detailstufe, die das Problem löst.** Blockouts sind günstig; High-Poly-Assets nicht.
+- **Dokumentiere, was funktioniert hat.** Eine kurze Notiz zu Prompt-Länge und Pass-Typ für jede Einstellung zahlt sich beim nächsten Projekt aus.
+- **Bleib auf dem Laufenden.** Da ArtCraft Open Source ist und sich schnell weiterentwickelt, sind Workflows, die vor ein paar Monaten optimal waren, heute vielleicht nicht mehr aktuell. Das [GitHub-Repository für ArtCraft](https://github.com/storytold/artcraft) ist der Ort, an dem du Änderungen verfolgen kannst.
+
+## Häufig gestellte Fragen
+
+**Muss ich 3D-Künstler sein, um ArtCraft-3D-Objekte zu verwenden?**
+
+Nein, aber du brauchst grundlegende Sicherheit im Umgang mit einem 3D-Viewport. Du kannst den größten Nutzen aus einfachen Blockouts ziehen – Boxen, Kugeln und eine angepasste Kamera –, ohne jemals ein detailliertes Modell zu sculpten. Die wichtigste Fähigkeit ist der Kameraabgleich, nicht das Modellieren.
+
+**Welcher Datei- oder Render-Typ eignet sich am besten als Referenz?**
+
+Community-Berichte bevorzugen durchgängig Depth- und Matte-Pässe gegenüber vollständig texturierten Rendern, weil sie Form kommunizieren, ohne dem Generator Beleuchtungsentscheidungen aufzuzwingen. Beginne mit einem neutralen Clay-Render und experimentiere dann mit Depth, wenn du eine engere räumliche Kontrolle brauchst.
+
+**Können ArtCraft-3D-Objekte auch bei Videos helfen, nicht nur bei Stills?**
+
+Ja, und hier glänzt der Ansatz. Das Exportieren einer kurzen Kamerabewegung oder eines Turntables gibt dem Generator eine Bewegungsreferenz, was die Kontinuität zwischen Frames im Vergleich zum reinen Prompting drastisch verbessert.
+
+**Ist dieser Workflow langsamer als nur Prompts zu schreiben?**
+
+Für ein einzelnes Bild: ja. Für jedes Projekt mit mehr als ein paar Einstellungen ist er insgesamt meist schneller, weil du Zeit mit dem Verfeinern der Geometrie verbringst, statt Prompts neu zu rollen und Beinahe-Treffer zu verwerfen. Der Break-even-Punkt wird typischerweise etwa bei der dritten oder vierten Einstellung erreicht, die übereinstimmen muss.

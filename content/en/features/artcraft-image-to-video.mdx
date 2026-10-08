@@ -1,0 +1,127 @@
+export const metadata = {
+  title: "ArtCraft Image to Video: A Complete Guide to AI Animation on Your Desktop",
+  description: "Learn how ArtCraft image to video workflows turn stills into motion, with prompt control, references, and open-source desktop power for artists.",
+  category: "features",
+  date: "2026-10-08",
+}
+
+A still image can hold a mood, a character, an entire scene — but it can't breathe. That's the gap the ArtCraft image to video workflow is built to close. Instead of uploading your artwork to a black-box cloud service and hoping for the best, you animate it inside an open-source desktop app where prompts, references, and rendered frames stay under your control.
+
+That distinction matters more than ever. Artists are producing enormous volumes of AI motion clips, and the ones who keep ownership of their files and their process are the ones who can build a real body of work. This guide explains how ArtCraft image to video generation works in practice, what separates it from browser-based tools, and how to get motion that looks intentional rather than accidental.
+
+## What "ArtCraft Image to Video" Means for Working Artists
+
+ArtCraft is an open-source desktop application for generating AI video and images, built for artists who want genuine control over the result rather than a slot-machine output. The phrase ArtCraft image to video describes one specific capability inside that app: taking a finished still — a character design, a concept painting, a photograph, a rendered frame — and giving it believable motion.
+
+The distinction between this and text-to-video matters. With text-to-video, the model invents the composition, the lighting, and the subject all at once. With image-to-video, you have already made those decisions yourself. The model only has to solve the motion problem, which is a much smaller and more controllable task.
+
+That's why illustrators, storyboard artists, and indie filmmakers gravitate toward it. Your drawing stays your drawing. The AI adds time to it.
+
+| Starting point | What you provide | How much control you keep | Best suited for |
+|---|---|---|---|
+| Text to video | A written prompt only | Moderate — the model interprets everything | Brainstorming, mood boards, quick concepts |
+| Image to video | A still plus a motion prompt | High — composition is locked, only motion varies | Animating finished artwork and concept frames |
+| Image to video with references | A still, a motion prompt, and style or character references | Highest — identity and look are anchored | Multi-shot sequences that need consistency |
+
+The desktop-first design is the other half of the story. Because ArtCraft runs as a native application rather than a web service, your renders are written straight to your own drive. There is no download queue, no expiration date on your projects, and no question about who holds the master file.
+
+## Why Artists Choose ArtCraft Image to Video Over Cloud Generators
+
+Most AI video tools ask you to trade control for convenience. You paste a prompt, you wait, and you get something back that may or may not resemble your intent. ArtCraft inverts that trade. It is positioned as an intentional crafting engine for artists, designers, and filmmakers, and the feature set reflects that priority.
+
+| Capability | What it gives you | Why it matters for animation |
+|---|---|---|
+| Open-source codebase | The software can be inspected, modified, and extended | You are never locked out of your own toolchain |
+| Local file output | Renders land on your drive | Archiving, editing, and client delivery stay simple |
+| Prompt control | Detailed, structured prompts are respected | Motion instructions actually translate into motion |
+| Reference inputs | Feed in character or style images | Keeps a character recognizable across multiple shots |
+| Multiple model options | Different generation engines, including fast video models | You can match the engine to the shot, not the other way around |
+
+A good example is model choice. Fast video generation models have been integrated directly into ArtCraft, which means a shot that once required a long wait can now be iterated on quickly. For animators, iteration speed is everything — you learn more from five fast renders than from one slow one.
+
+The practical upshot: ArtCraft image to video is less about pressing a button and more about directing a process. If you have ever wished you could tell a generator "keep her face exactly the same, but move the camera slowly to the left," this is the kind of tool that takes that instruction seriously.
+
+## The ArtCraft Image to Video Workflow, Step by Step
+
+The workflow is deliberately linear. Each step narrows the model's job until the only unknown left is the motion itself.
+
+| Step | Action | What to watch for |
+|---|---|---|
+| 1 | Pick your source still | Clean edges, single clear subject, no baked-in text |
+| 2 | Load it as the starting frame | Match the aspect ratio to your final delivery format |
+| 3 | Write a motion-first prompt | Describe what changes, not what is already visible |
+| 4 | Attach references if needed | Character or style images that must stay consistent |
+| 5 | Generate and review | Check for warping, flicker, and identity drift |
+| 6 | Export to your drive | Files stay local for editing and archiving |
+
+### Preparing the source image
+
+Your first frame is a contract. Whatever is in it — including its flaws — will be animated. Community reports from artists working with image-to-video tools repeatedly land on the same advice: start from a clean, high-resolution still with one dominant subject and clear separation from the background. Busy, cluttered frames give the model too many objects to track, and objects that aren't tracked are objects that warp.
+
+Avoid source images with embedded lettering or logos. Text is one of the hardest things for a video model to hold steady, and a title card that shimmers will ruin an otherwise good clip.
+
+### Writing the motion prompt
+
+This is where most beginners lose the plot. They describe the image they already uploaded instead of the movement they want. A motion prompt should read like stage direction.
+
+| Element | Weak version | Strong version | Why it works |
+|---|---|---|---|
+| Camera | "moving shot" | "slow dolly in, steady horizon" | Names the axis and the pace |
+| Subject motion | "she moves" | "hair lifts in a light breeze" | Specific, small, physically plausible |
+| Environment | (omitted) | "steam drifting low across the floor" | Adds depth without disturbing the subject |
+| Pace | (omitted) | "gentle and continuous" | Prevents sudden jumps between frames |
+
+Short clips are your friend. A three-to-five-second shot that looks clean beats a fifteen-second shot that falls apart halfway through. Once you can reliably produce the short version, extend it.
+
+## Prompting and Motion Control: How to Get Cleaner Animation
+
+Motion control is really a debugging skill. When a clip fails, the failure usually points directly at the prompt or the source image. Here are the symptoms artists hit most often and what actually fixes them.
+
+| Symptom | Likely cause | Fix |
+|---|---|---|
+| Faces melt or warp | Too much motion concentrated on a small area | Reduce motion intensity; keep the head still and move the camera |
+| Flickering or pulsing light | Conflicting style or lighting language in the prompt | Strip the prompt down to one lighting description |
+| Clip is nearly static | Prompt describes the still, not the movement | Rewrite with active verbs and a named camera move |
+| Character looks different by the end | No identity anchor | Attach a character reference image |
+| Background objects drift | Cluttered source frame | Simplify the source or crop tighter on the subject |
+
+Two habits separate clean renders from messy ones. First, change one variable at a time — if you alter the camera move, the subject motion, and the style language simultaneously, you will never know which change helped. Second, keep a written log of prompts that worked. A personal prompt library is worth more than any tutorial, because it encodes your own visual instincts.
+
+It also helps to think in terms of physics. Models handle small, plausible motion — a curtain shifting, a head turning, water rippling — far better than dramatic transformations. If you need a big action, break it into multiple shorter clips and cut them together in your editor.
+
+## ArtCraft Image to Video vs. Cloud Video Generators
+
+The comparison isn't about which tool is "better" in the abstract. It's about which constraints you're willing to accept.
+
+| Criteria | ArtCraft (open-source desktop) | Typical cloud generator |
+|---|---|---|
+| Where output lives | Your local drive | Vendor servers |
+| Source code access | Open and inspectable | Closed |
+| Model flexibility | Multiple engines, including fast video models | Whatever the vendor offers that month |
+| Prompt and reference control | Fine-grained, structured | Often simplified or capped |
+| Workflow fit | Feeds directly into your existing editing pipeline | Requires download and re-import steps |
+| Long-term access | You own the app you installed | Access depends on the service staying online |
+
+For a solo artist, the local-first model means no upload time on large source images and no ambiguity about storage. For a studio, the open-source nature means the tool can be adapted to a pipeline rather than the pipeline bending around the tool.
+
+The honest caveat: a desktop application puts more responsibility on you. You manage your own project files, you choose your own models, and you decide how to organize renders. That's a feature if you want control and a chore if you don't. Artists who thrive with ArtCraft image to video tend to be the ones who already keep tidy project folders and version their work.
+
+You can explore the project directly on the [official ArtCraft site](https://getartcraft.com/) or dig into the code at the [ArtCraft GitHub repository](https://github.com/storytold/artcraft).
+
+## Frequently Asked Questions About ArtCraft Image to Video
+
+**What exactly is ArtCraft image to video?**
+
+It's the process of animating a still image inside ArtCraft, an open-source desktop app for AI image and video generation. You supply a finished frame plus a motion prompt, and the software generates a short clip that starts from your image and moves according to your instructions.
+
+**Do I need an expensive computer to run it?**
+
+It depends heavily on which generation model you select. Lighter and faster video models are more forgiving, while heavier engines benefit from a strong GPU and plenty of memory. The advantage of a desktop app is that you can choose the model that matches your hardware instead of being locked to one server-side option.
+
+**Can I keep and sell the clips I generate?**
+
+Because ArtCraft writes results directly to your drive and the application itself is open source, your renders stay in your possession for editing, archiving, and client delivery. Always check the licensing terms of the individual model you run, since those terms can vary between engines.
+
+**How do I keep a character consistent across multiple shots?**
+
+Use reference inputs. Attach the same character image to each generation and keep your motion prompts focused on camera movement and small physical actions rather than dramatic changes. Consistency comes from anchoring identity while varying only the motion — and it is one of the strongest reasons artists choose an ArtCraft image to video pipeline over one-shot cloud tools.

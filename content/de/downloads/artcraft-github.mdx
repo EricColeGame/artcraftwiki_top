@@ -1,0 +1,133 @@
+export const metadata = {
+  title: "ArtCraft GitHub: Die Open-Source-Desktop-App für KI-Bilder und -Videos herunterladen",
+  description: "Erfahre, wie das ArtCraft-GitHub-Projekt funktioniert, wie du die Open-Source-Desktop-App herunterlädst und was Künstler von den steuerbaren KI-Tools profitieren.",
+  category: "downloads",
+  date: "2026-10-08",
+}
+
+## Warum das ArtCraft-GitHub-Projekt einen Platz auf deiner Festplatte verdient
+
+Wenn du schon immer ein KI-Tool für Bilder und Videos wolltest, das du wirklich inspizieren, verändern und besitzen kannst, ist das ArtCraft-GitHub-Repository der richtige Ausgangspunkt. ArtCraft ist eine Open-Source-Desktop-Anwendung, die für Künstler, Designer und Filmemacher entwickelt wurde, die echte Kontrolle über die Generierung wollen statt eines Black-Box-Webformulars. Das ArtCraft-GitHub-Projekt aufzuspüren ist der erste Schritt zu einem Workflow, bei dem Prompts, Referenzen und fertige Renderings alle auf deinem eigenen Rechner liegen.
+
+Die meisten kreativen KI-Tools verstecken ihre Modelle hinter einem Abonnement und einem Browser-Tab. ArtCraft geht den entgegengesetzten Weg: Der Code ist öffentlich, die App läuft nativ auf deinem Desktop, und deine Ergebnisse landen in Ordnern, die du selbst auswählst. Diese Kombination erklärt, warum das ArtCraft-GitHub-Repo immer wieder Aufmerksamkeit von Menschen erhält, denen Eigentum genauso wichtig ist wie die Ausgabequalität.
+
+Dieser Leitfaden führt durch das, was ArtCraft tatsächlich ist, jeden Weg zu einer funktionierenden Installation, das, was im Repository steckt, und die Gewohnheiten, die eine frustrierende erste Sitzung von einer produktiven unterscheiden.
+
+## Was ist ArtCraft genau?
+
+ArtCraft präsentiert sich als bewusste Crafting-Engine für Künstler, Designer und Filmemacher statt als Generator für einen einzigen Zweck. In der Praxis bedeutet das einen Desktop-Arbeitsbereich zum Erstellen von KI-Bildern und -Videos mit Schwerpunkt auf steuerbaren, wiederholbaren Ergebnissen. Das Projekt wird unter der Organisation storytold auf GitHub gepflegt, während die offizielle Website es als offene Desktop-App beschreibt, die dir gehört.
+
+| Merkmal | Details |
+|---|---|
+| Was es ist | Open-Source-Desktop-App für KI-Bild- und Videogenerierung |
+| Hauptzielgruppe | Künstler, Designer, Filmemacher und technisch neugierige Kreative |
+| Quellcode | Das Repository storytold/artcraft auf GitHub |
+| Offizielle Website | [ArtCraft — Controllable AI for Artists](https://getartcraft.com/) |
+| Dokumentation | [ArtCraft Wiki](https://www.artcraft.wiki/) mit Inhalten zu Prompts, Referenzen, Animation und Open-Source-Workflows |
+| Gehostete Option | Eine browserbasierte App ist für den schnellen Zugriff ohne Installation verfügbar |
+| Eigentumsmodell | Open Source — du kannst den Code lesen, forken und verändern |
+| Bemerkenswerte Modellunterstützung | Die offizielle Website kündigte Seedance 2.0 für die Videogenerierung in der App an |
+
+Die Aufteilung zwischen einer Desktop-Version und einer gehosteten Web-Version ist wichtig. Der Desktop-Weg gibt dir lokale Dateien, lokale Kontrolle und die Möglichkeit, im Quellcode zu stöbern. Der Web-Weg ist schneller auszuprobieren, hält dich aber weiter von der Maschinerie entfernt. Keiner ist falsch — sie passen einfach zu unterschiedlichen Menschen in unterschiedlichen Momenten.
+
+## ArtCraft von GitHub herunterladen: Drei Wege auf deinen Desktop
+
+Das ArtCraft-GitHub-Repository ist die Quelle der Wahrheit für die Anwendung, aber „ArtCraft herunterladen" kann drei verschiedene Dinge bedeuten, je nachdem, wie viel Kontrolle du möchtest.
+
+| Weg | Am besten für | Was du brauchst | Kompromiss |
+|---|---|---|---|
+| Eine veröffentlichte Version installieren | Künstler, die heute mit dem Erstellen beginnen wollen | Ein unterstütztes Desktop-Betriebssystem | Du folgst dem Release-Rhythmus des Maintainers |
+| Aus dem Quellcode bauen | Bastler, Mitwirkende und alle, die das Verhalten ändern wollen | Git, einen Paketmanager und eine funktionierende Build-Toolchain | Mehr Einrichtungszeit, maximale Flexibilität |
+| Die gehostete Web-App nutzen | Das Testen des Workflows auf einem geliehenen oder gesperrten Rechner | Einen Browser und ein Konto | Weniger Kontrolle darüber, wohin Dateien geschrieben werden |
+
+### Option 1: Eine veröffentlichte Version installieren
+
+Das ist der Weg, den die meisten wollen. Besuche den Releases-Bereich des Repositories, prüfe, welcher Build derzeit für deine Plattform veröffentlicht ist, und lade ihn herunter. Lies die Release-Notes vor der Installation — sie weisen normalerweise auf Breaking Changes, neue Modellintegrationen oder bekannte Probleme hin, die dir später eine Stunde Verwirrung ersparen.
+
+### Option 2: Aus dem Quellcode bauen
+
+Aus dem Quellcode zu bauen ist der Weg, eine Version zu erhalten, die sich genau so verhält, wie du es willst. Es ist außerdem der einzige Weg, Code an das Projekt zurückzugeben.
+
+| Schritt | Aktion | Warum es wichtig ist |
+|---|---|---|
+| 1 | Git und die Laufzeitumgebung installieren, auf die das Projekt abzielt | Die Build-Skripte setzen eine moderne Toolchain voraus |
+| 2 | Das Repository in einen Ordner klonen, den du kontrollierst | Hält deinen Build getrennt von installierten Apps |
+| 3 | Abhängigkeiten mit dem dokumentierten Paketmanager installieren | Vermeidet Versionsdrift zwischen deinem Rechner und dem des Maintainers |
+| 4 | Den Entwicklungs-Build starten und ein Testbild generieren | Bestätigt, dass die Pipeline funktioniert, bevor du irgendetwas anpasst |
+| 5 | Regelmäßig Updates ziehen und neu bauen | Hält dich mit Upstream-Fixes und neuer Modellunterstützung auf dem Laufenden |
+
+### Option 3: Die gehostete Web-App nutzen
+
+Wenn du die Oberfläche verstehen möchtest, bevor du Speicherplatz opferst, ist die Browser-Version ein legitimer Ausgangspunkt. Melde dich an, führe ein paar Prompts aus und schau, ob die Steuerungsphilosophie zu deiner Arbeitsweise passt. Denk nur daran, dass die Desktop-App der Ort ist, an dem sich die Eigentumsgeschichte tatsächlich auszahlt.
+
+## Im Inneren des ArtCraft-GitHub-Repositories: Was Künstler wirklich bekommen
+
+Das Durchsuchen der ArtCraft-GitHub-Codebasis kann einschüchternd wirken, wenn du noch nie ein Repository geöffnet hast. Hier ist, was jeder Bereich des Projekts in praktischer Hinsicht bedeutet.
+
+| Bereich des Projekts | Was er dir in der Praxis gibt |
+|---|---|
+| Prompt-Steuerungssysteme | Feinkörnige Steuerung einer Generierung statt Einmal-Textfelder |
+| Referenzverarbeitung | Einspeisen vorhandener Bilder zur Steuerung von Stil, Komposition oder Motiv |
+| Animationswerkzeuge | Standbilder in Bewegung verwandeln, ohne die App zu verlassen |
+| Open-Source-Workflows | Inspizierbare Pipelines, die du anpassen kannst, statt undurchsichtiger Presets |
+| Lokale Ausgabeverarbeitung | Ergebnisse werden direkt auf deine eigene Festplatte und Ordnerstruktur geschrieben |
+| Issue-Tracker | Eine öffentliche Aufzeichnung von Fehlern, Funktionswünschen und Antworten der Maintainer |
+| Beitragsweg | Pull Requests und Diskussionen für Menschen, die das Tool verbessern wollen |
+
+Der Issue-Tracker wird unterschätzt. Bevor du einen Abend mit der Fehlersuche verbringst, durchsuche ihn. Community-Berichte über Abstürze, Modell-Downloads oder Plattform-Eigenheiten sind oft schon dokumentiert, samt Workarounds. Wenn du dann wirklich auf etwas Neues stößt, ist ein klarer Bericht mit deinem Betriebssystem, den durchgeführten Schritten und der exakten Fehlermeldung wirklich wertvoll — und es ist der schnellste Weg, einen Fix in ein zukünftiges Release zu bekommen.
+
+## Funktionen, die ArtCraft den Download wert machen
+
+Nicht jedes kreative Open-Source-Tool verdient einen dauerhaften Platz auf deinem Rechner. ArtCrafts Fall stützt sich auf Kontrolle und Kontinuität.
+
+| Funktion | Was sie tut | Wer am meisten profitiert |
+|---|---|---|
+| Steuerbare Generierung | Hält den Künstler im Entscheidungsprozess statt zu würfeln | Illustratoren und Konzeptkünstler mit einer klaren Vision |
+| Bild-zu-Video-Animation | Erweitert Standbilder zu Bewegungsclips | Storyboarder und Kurzfilm-Filmemacher |
+| Referenzgesteuertes Prompting | Verankert Ergebnisse an vorhandener Kunst oder Fotografie | Designer, die eine etablierte Bildsprache treffen wollen |
+| Local-First-Dateiverarbeitung | Ergebnisse werden auf deine Festplatte geschrieben, nicht in einer Cloud-Galerie eingesperrt | Alle mit Anforderungen an Kundenvertraulichkeit |
+| Open-Source-Erweiterbarkeit | Der Code kann geforkt, gepatcht und erweitert werden | Technische Künstler und Pipeline-Engineers |
+| Modellflexibilität | Neuere Videomodelle können integriert werden, sobald sie unterstützt werden | Kreative, die der neuesten Generierungsqualität hinterherjagen |
+
+Die Videoseite war der sichtbarste Bereich der Entwicklung. Die offizielle Website kündigte an, dass Seedance 2.0, ein schnelles Videogenerierungsmodell, in ArtCraft verfügbar ist — ein Signal, dass das Projekt mit dem Modell-Ökosystem Schritt halten will, statt auf einer einzigen Engine einzufrieren. Für Künstler, die KI als einen weiteren Pinsel statt als Spielautomaten betrachten, ist genau diese Reaktionsfähigkeit der ganze Punkt.
+
+Dahinter steckt ein praktischer Nutzen. Wenn das Tool offen und lokal ist, funktioniert eine Technik, die du heute entwickelst, auch nächsten Monat noch. Du baust dein Muskelgedächtnis nicht jedes Mal neu auf, wenn ein Anbieter eine Preisstufe ändert oder einen Modell-Endpunkt einstellt.
+
+## Tipps, um mehr aus dem ArtCraft-GitHub-Projekt herauszuholen
+
+Ein wenig Vorbereitung verwandelt eine holprige erste Installation in ein reibungsloses Arbeitssetup.
+
+- **Lies das Wiki vor dem Code.** Das ArtCraft Wiki behandelt Prompts, Referenzen, Animation und Open-Source-Workflows in verständlicher Sprache. Fang dort an, nicht im Quellbaum.
+- **Setz ein Lesezeichen auf die Releases-Seite.** Dort erfährst du von neuen Builds, Modell-Ergänzungen und Fixes. Wenn du sie monatlich prüfst, bleibst du aktuell, ohne ständig im Repository zu leben.
+- **Halte eine Referenzbibliothek bereit.** Da ArtCraft auf referenzgesteuertem Prompting aufbaut, zahlt sich ein gut organisierter Ordner mit Stil-Ankern und Kompositionsbeispielen sofort aus.
+- **Fang klein an und skaliere hoch.** Generiere kurze, kostengünstige Testrenderings, während du die Steuerungen lernst. Spar dir die ehrgeizigen Multi-Shot-Sequenzen für später auf, wenn du deinen Einstellungen vertraust.
+- **Schreib reproduzierbare Fehlerberichte.** Notiere dein Betriebssystem, deinen Build und die exakten Schritte, die das Problem ausgelöst haben. Maintainer triagieren schneller, wenn sie reproduzieren können, was du gesehen hast.
+- **Trag bei, in welcher Form auch immer es passt.** Dokumentationskorrekturen, Beispiel-Prompts und Oberflächenvorschläge sind alles legitime Beiträge, nicht nur Code-Patches.
+
+| Häufige Stolperfalle beim ersten Lauf | Praktische Lösung |
+|---|---|
+| Die Dokumentation überspringen und bei den Steuerungen raten | Verbringe zuerst fünfzehn Minuten im Wiki |
+| Aus dem Quellcode mit einer veralteten Toolchain bauen | Aktualisiere Laufzeitumgebung und Paketmanager vor dem Klonen |
+| Den Überblick über generierte Dateien verlieren | Leg einen Ausgabeordner fest, den du dir wirklich merken kannst |
+| Sofort mit einem riesigen, komplexen Prompt testen | Fang mit einem einfachen Motiv an und füge jeweils eine Variable hinzu |
+| Einen Fehler ohne Reproduktionsschritte melden | Notiere zuerst dein Betriebssystem, den Build und die exakte Abfolge |
+
+Noch eine Gewohnheit, die sich lohnt: Mach dir eigene Notizen. Wenn eine Prompt-Struktur oder Referenzkombination etwas Gutes hervorbringt, schreib auf, was du getan hast. Open-Source-Kreativtools belohnen Neugier, und ein persönliches Logbuch ist der Weg, wie diese Neugier sich zu einem erkennbaren Stil verdichtet statt zu einem Ordner voller Glückstreffer.
+
+## Häufig gestellte Fragen zum ArtCraft-GitHub-Projekt
+
+**Ist ArtCraft kostenlos von GitHub herunterzuladen?**
+
+Das Projekt ist Open Source, was bedeutet, dass der Quellcode öffentlich verfügbar ist zum Lesen, Klonen und Verändern. Wenn du die gehostete Browser-Version statt der Desktop-App nutzt, prüfe auf der offiziellen Website die aktuellen Bedingungen, da gehostete Dienste eigene Konditionen haben können, die von der offenen Codebasis getrennt sind.
+
+**Muss ich programmieren können, um das ArtCraft-GitHub-Release zu nutzen?**
+
+Nein. Eine veröffentlichte Version zu installieren ist eine normale Desktop-Software-Installation. Programmierkenntnisse werden erst relevant, wenn du aus dem Quellcode bauen, das Verhalten patchen oder Änderungen an das ArtCraft-GitHub-Repository zurückgeben möchtest.
+
+**Was kann ich mit ArtCraft tatsächlich erstellen?**
+
+Die App konzentriert sich auf KI-Bildgenerierung und Video, einschließlich Animation, die Standbilder in Bewegung erweitert. Mit referenzgesteuertem Prompting und feinkörniger Prompt-Kontrolle eignet sie sich für Konzeptkunst, Storyboards, Stilerkundung und kurze Bewegungstests.
+
+**Wie halte ich meinen ArtCraft-GitHub-Download aktuell?**
+
+Beobachte die Releases-Seite des Repositories und lies die Release-Notes vor dem Aktualisieren. Wenn du aus dem Quellcode gebaut hast, zieh regelmäßig die neuesten Änderungen und baue neu, damit du von Fixes und neu unterstützten Modellen profitierst.

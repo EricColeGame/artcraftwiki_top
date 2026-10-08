@@ -1,0 +1,131 @@
+export const metadata = {
+  title: "ArtCraft How to Use: A Beginner's Guide to AI Image and Video Generation",
+  description: "Learn ArtCraft how to use from install to final render. Step-by-step workflow, prompt control tips, reference images, and video settings for artists.",
+  category: "guide",
+  date: "2026-10-08",
+}
+
+ArtCraft is an open-source desktop application for generating AI images and video, and it was built for people who want to direct the output rather than roll the dice. If you have been searching for a clear ArtCraft how to use guide, the short version is this: install the app, choose a model, write a prompt, add references, and iterate until the frame looks right. Learning ArtCraft how to use properly matters because the gap between a throwaway render and a usable shot usually comes down to control — references, seeds, and consistent prompting rather than luck.
+
+This guide covers setup, the core workflow, prompting strategy, video generation, and the mistakes that waste the most time. Everything here is written for artists, designers, and filmmakers who want repeatable results instead of random surprises.
+
+## What ArtCraft Is and Who It's For
+
+ArtCraft describes itself as an intentional crafting engine — software where the creator stays in charge of the result. Instead of a black-box web tool, it is a desktop app you download and run yourself, which means your project files and outputs live on your own machine.
+
+The official [ArtCraft website](https://getartcraft.com/) frames it as "controllable AI for artists," and the [open-source repository on GitHub](https://github.com/storytold/artcraft) confirms the project is public and community-driven. That matters for two reasons: you can inspect how it works, and you can follow along with what other users discover.
+
+| Attribute | Details |
+|---|---|
+| What it is | Open-source desktop app for AI image and video generation |
+| Built for | Artists, designers, and filmmakers who want control |
+| Output types | Still images and AI-generated video clips |
+| Video model | Seedance 2.0 is available in ArtCraft, per the official site |
+| Licensing | Open source, developed publicly on GitHub |
+| Documentation | Community-maintained ArtCraft wiki covering downloads, prompts, and references |
+
+Community reports on the ArtCraft wiki suggest the biggest adjustment for newcomers is thinking in layers — prompt, reference, and seed — rather than typing one sentence and hoping.
+
+## Installing ArtCraft and Setting Up Your Workspace
+
+Setup is quick, but a few early decisions save hours later. The most important one is where your outputs go, because a messy output folder makes it nearly impossible to compare iterations.
+
+| Step | What to Do | Why It Matters |
+|---|---|---|
+| 1 | Download the desktop app from the official site | Ensures you get the current build |
+| 2 | Install and launch it like any desktop application | No browser tab limits or session timeouts |
+| 3 | Create or sign in to your account if prompted | Unlocks the workspace and model access |
+| 4 | Choose a dedicated output folder | Keeps renders organized by project |
+| 5 | Run one short test render | Confirms everything works before you invest time |
+
+A practical habit: create one folder per project, then subfolders for references, approved stills, and video tests. When you are learning ArtCraft how to use, being able to scroll back through ten versions of a shot is more valuable than any single prompt trick.
+
+If you plan to animate, decide your target aspect ratio and clip length before you generate a single still. Re-rendering stills later to match a video frame is one of the most common time sinks reported by new users.
+
+## ArtCraft How to Use: The Core Workflow, Step by Step
+
+Every session in ArtCraft follows roughly the same loop, whether you are making a poster or a five-second clip. The loop is: define, generate, evaluate, refine, and export.
+
+1. **Define the shot.** Write down what the image must contain — subject, framing, mood, and lighting. Vague goals produce vague results.
+2. **Select the model.** Different models handle realism, illustration, and motion differently. Match the model to the goal, not the other way around.
+3. **Write the prompt.** Put the subject first, then style, then camera and lighting. Order affects emphasis.
+4. **Add references.** Drop in an image that shows the look, character, or palette you want.
+5. **Generate a small batch.** Four to eight variations gives you a real choice without burning an hour.
+6. **Evaluate and refine.** Change one variable at a time — prompt, seed, or reference — so you know what caused the improvement.
+7. **Export and archive.** Save the winning prompt and settings alongside the file.
+
+| Workflow Stage | What You Do | Common Pitfall |
+|---|---|---|
+| Define | Write a one-line shot brief | Skipping this and improvising |
+| Generate | Run a small batch of variations | Rendering 50 images at once |
+| Evaluate | Compare side by side | Judging from thumbnails only |
+| Refine | Adjust a single variable | Changing prompt, seed, and reference together |
+| Export | Save settings with the file | Losing the prompt that worked |
+
+The one-variable rule is the single biggest reason experienced users get consistent results. When three things change at once, you learn nothing.
+
+## Prompting and Reference Control in ArtCraft
+
+Prompting in ArtCraft rewards structure. A useful mental model is to build prompts in blocks, then reorder the blocks to shift emphasis.
+
+| Prompt Block | Example Content | Effect |
+|---|---|---|
+| Subject | "a lighthouse keeper in a wool coat" | Anchors what the model draws |
+| Style | "matte painting, muted palette" | Sets rendering language |
+| Composition | "wide shot, low horizon" | Controls framing |
+| Lighting | "overcast dawn, soft rim light" | Drives mood and depth |
+| Motion (video) | "slow push-in, gentle water movement" | Guides animation, not stills |
+| Exclusions | "no text, no watermark" | Removes recurring artifacts |
+
+References do the heavy lifting for consistency. If you need the same character across ten images, a single clear reference image outperforms a paragraph of description. Lock the seed once you find a look you like, then vary only the prompt — this is how you build a coherent series rather than ten unrelated pictures.
+
+When people ask about ArtCraft how to use for professional work, the honest answer is that consistency comes from reference discipline, not secret keywords.
+
+## Generating Video: Settings That Actually Change the Result
+
+Video is where ArtCraft gets interesting and where settings matter most. The official site highlights Seedance 2.0 as a video generation option inside the app, and the general principles below apply regardless of which model you select.
+
+| Setting | Still Images | Video Clips |
+|---|---|---|
+| Aspect ratio | Set once, rarely changed | Must match your delivery format |
+| Duration | Not applicable | Keep clips short for faster iteration |
+| Motion strength | Not applicable | Low for subtle drift, high for action |
+| Seed | Lock for series consistency | Lock to keep motion style stable |
+| Reference image | Character or style anchor | First-frame anchor for the clip |
+
+A reliable approach: generate the still you want, approve it, then animate that approved frame. Starting video from an unapproved image multiplies wasted renders. Keep motion prompts simple — "slow camera push," "hair moving in wind" — because stacked motion instructions often fight each other.
+
+Community reports suggest short clips of a few seconds are far easier to control than long sequences. Build a scene from several short, approved shots rather than one long attempt.
+
+## Common Mistakes and How to Fix Them
+
+Most frustration in the first week comes from a handful of repeatable errors.
+
+| Problem | Likely Cause | Fix |
+|---|---|---|
+| Results look nothing like the idea | Prompt too vague | Add subject, style, and lighting blocks |
+| Character changes every render | No reference, unlocked seed | Add a reference image and lock the seed |
+| Outputs feel flat | No lighting direction | Specify time of day and light quality |
+| Video looks jittery | Too much motion instruction | Reduce motion strength, simplify the prompt |
+| Can't find the good version | No naming system | Save prompts and settings with every export |
+| Endless tweaking, no progress | Changing multiple variables | Adjust one thing per iteration |
+
+Three habits separate fast learners from slow ones. First, keep a running prompt log — a plain text file is enough. Second, archive your best renders with their settings. Third, stop when the image is good enough for the next step, not when it is perfect. Perfectionism at the still stage delays the part where you actually learn ArtCraft how to use the video tools.
+
+Also worth noting: because ArtCraft is open source, updates and new model support arrive through the project itself. Check the official site and repository periodically rather than assuming your installed build is current.
+
+## Frequently Asked Questions
+
+**Is ArtCraft free to use?**
+ArtCraft is an open-source project, and the software itself is publicly developed. Any account requirements, model access, or usage terms can change, so confirm the current details on the official ArtCraft website before you plan a project around it.
+
+**Do I need to be an experienced artist to learn ArtCraft how to use?**
+No. The workflow is learnable in an afternoon. What separates good results is the discipline of structured prompts, reference images, and changing one variable at a time — skills anyone can build.
+
+**Can I use my own reference images?**
+Yes. References are one of the main control mechanisms in ArtCraft. A clear, well-lit reference image is usually more effective than a long written description, especially when you need the same character or palette across multiple renders.
+
+**Should I start with images or video?**
+Start with images. Mastering stills teaches you how the prompt, seed, and reference interact. Once you can reliably produce a frame you like, animating that frame is a much shorter path to a usable clip.
+
+ArtCraft rewards planning more than button-mashing. Download the app, set up a clean output folder, and run your first batch with a structured prompt and a single reference image. From there, refine one variable at a time, lock your seeds, and archive what works. That loop — not any single setting — is the real answer to ArtCraft how to use it well.

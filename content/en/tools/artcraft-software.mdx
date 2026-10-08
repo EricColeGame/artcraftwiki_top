@@ -1,0 +1,151 @@
+export const metadata = {
+  title: "ArtCraft Software Review: Open-Source AI Image and Video for Artists",
+  description: "ArtCraft software is an open-source desktop app for AI image and video generation. See how artists control prompts, references, and animation.",
+  category: "tools",
+  date: "2026-10-08",
+}
+
+## Why Artists Are Paying Attention to ArtCraft Software
+
+ArtCraft software is an open-source desktop application for generating AI images and video, and it was built with one specific user in mind: the artist who refuses to hand creative control to a black box. Instead of hiding generation behind a browser tab and a credit meter, ArtCraft software runs on your own machine, keeps your prompts and references in your hands, and writes finished results to your own drive. That distinction matters more than ever now that AI generation has become a routine part of illustration, storyboarding, concept art, and short-form film work. If you have been looking for a workflow that treats you like a craftsperson rather than a prompt typist, this is the tool worth understanding.
+
+The project bills itself as an "intentional crafting engine" for artists, designers, and filmmakers — a description that says a lot about its priorities. Speed and spectacle are nice, but repeatability, reference control, and ownership of your files are the things that make AI generation usable in real production work.
+
+## What Is ArtCraft Software?
+
+At its core, ArtCraft is a native desktop app that bundles AI image generation and AI video generation into a single environment. It is distributed as open source, which means the code is available to inspect, modify, and build on. The official site frames the product as "controllable AI for artists," and the companion wiki documents prompt control, reference handling, animation workflows, and desktop installation.
+
+The table below summarizes the essentials.
+
+| Attribute | Details |
+|---|---|
+| Product type | Open-source desktop application |
+| Primary function | AI image and video generation |
+| Target users | Artists, designers, filmmakers, concept teams |
+| Delivery model | Downloadable desktop app |
+| Ownership | Open-source; you own your installation and your outputs |
+| Model support | Multiple generative models, including video models such as Seedance 2.0 |
+| Learning resources | Official site, project wiki, public GitHub repository |
+| Documentation | GitHub repository at storytold/artcraft |
+
+### The "Intentional Crafting Engine" Philosophy
+
+Most consumer AI tools optimize for the first result. ArtCraft optimizes for the tenth result — the one you actually ship. That means emphasis on structured prompts, reusable references, and settings you can save and return to. Community reports consistently highlight this as the main reason people stick with it after the novelty wears off.
+
+### Desktop-First, Not Cloud-First
+
+Running locally changes the practical experience in several ways. Your files land where you expect them. You are not waiting on an upload. And your library of references and outputs stays on hardware you control, which is a meaningful consideration for client work under NDA.
+
+## Why an Open, Desktop-First Workflow Wins
+
+The difference between cloud-based generators and a desktop tool is not just technical — it changes how you work day to day.
+
+| Consideration | Browser-Based Generators | ArtCraft Desktop Workflow |
+|---|---|---|
+| Where outputs live | Vendor cloud, downloaded manually | Your local drive |
+| Prompt and reference control | Limited by the web UI | Structured, saveable, reusable |
+| Model flexibility | Whatever the platform offers | Multiple models in one app |
+| Ownership of the tool | Subscription access | Open source, your copy |
+| Workflow fit | Quick one-off experiments | Repeatable production pipelines |
+| File organization | Manual downloads and renaming | Results written straight to your folders |
+
+For a solo illustrator, that last row is the difference between an afternoon of renaming files and an afternoon of drawing. For a small studio, it is the difference between a tool that fits the pipeline and a tool the pipeline has to work around.
+
+## Core Features That Give You Control
+
+### Prompt Control
+
+ArtCraft treats prompts as something you build, not something you blurt out. You can develop a prompt structure, save it, and reuse it across a series so that a character or a lighting setup stays consistent from frame to frame.
+
+### References and Consistency
+
+Reference images are central to the workflow. Instead of describing a face or a garment in prose and hoping, you supply visual anchors and let the model work from them. This is the single biggest lever for keeping a series coherent.
+
+### Animation and Video Generation
+
+Video generation is a first-class feature, not an afterthought. The project has highlighted support for models such as Seedance 2.0, which enables fast AI video generation inside the same desktop app you use for stills.
+
+### Open-Source Workflows
+
+Because the code is public, the tool can be adapted. Developers can extend it, artists can inspect how a feature behaves, and the community can document workarounds instead of waiting on a support ticket.
+
+| Feature | What It Does | Why It Matters |
+|---|---|---|
+| Structured prompts | Reusable prompt templates | Consistency across a series |
+| Reference images | Visual anchors for generation | Better likeness and style matching |
+| Animation tools | Turns stills and prompts into motion | One app for image and video |
+| Local output | Saves directly to your drive | Faster post-production |
+| Open codebase | Inspectable and modifiable | Longevity and customization |
+
+## ArtCraft Software vs. Similarly Named Tools
+
+The name "ArtCraft" is crowded. Search results mix in a lighting manufacturer, an Australian signage company, and a Singapore craft studio — none of which have anything to do with AI generation. There is also ArtCraft-X, a separate, more minimal native desktop app for AI image and video that emphasizes a single-window interface and writing results directly to your drive.
+
+| Tool | Type | Model Access | Best For |
+|---|---|---|---|
+| ArtCraft | Open-source desktop app | Multiple models, image and video | Artists wanting structured control |
+| ArtCraft-X | Minimal native desktop app | "Every model" in one window | Users who want a stripped-down interface |
+| Cloud generators | Browser-based services | Platform-dependent | Fast, disposable experiments |
+| General image editors | Traditional creative software | None built in | Post-processing finished outputs |
+
+If you are evaluating options, confirm you are on the right product page before downloading anything. The naming overlap is genuinely confusing, and it is the most common complaint in community discussions.
+
+## How to Get Started with ArtCraft Software
+
+Getting productive takes less time than most people expect. The steps below reflect the general onboarding path described in the project's documentation.
+
+| Step | Action | Tip |
+|---|---|---|
+| 1 | Download the desktop app from the official source | Verify you have the right product given the name overlap |
+| 2 | Install and launch the application | Check system requirements before you start |
+| 3 | Configure your preferred model | Start with an image model before moving to video |
+| 4 | Set an output folder | Point it at a project directory, not your desktop |
+| 5 | Build a reference library | Collect 10–20 images that define your target look |
+| 6 | Run a small batch and iterate | Change one variable at a time |
+
+### A Note on Hardware
+
+Video generation is more demanding than still image generation, which is true of every AI tool in this category. If your machine handles image generation comfortably, expect video to need more patience and possibly more VRAM. Community reports suggest starting with short clips at modest resolutions and scaling up once you understand how your hardware behaves.
+
+## Practical Tips for Better Results
+
+- **Write prompts as specifications, not wishes.** Describe subject, framing, lighting, lens, and mood in that order.
+- **Lock your references early.** Changing reference images mid-series is the fastest way to break visual consistency.
+- **Keep a prompt log.** When a generation works, you want to reproduce it, not reverse-engineer it.
+- **Batch your experiments.** Run several variations of one idea rather than one variation of several ideas.
+- **Separate exploration from production.** Use loose prompts to find a direction, then tighten them for final renders.
+- **Back up your output folder.** Local ownership is a benefit only if you also have a backup strategy.
+- **Read the documentation.** The project wiki covers prompt control and animation workflows that are not obvious from the interface alone.
+
+For developers and tinkerers, the [ArtCraft repository on GitHub](https://github.com/storytold/artcraft) is the place to follow releases, report issues, and see how the crafting engine is built. Casual users can start at the [official ArtCraft site](https://getartcraft.com/) for downloads and model announcements.
+
+## Who Should Use It — and Who Shouldn't
+
+ArtCraft software rewards users who want a repeatable pipeline. If you are producing character sheets, storyboards, mood boards, or short animated sequences, the reference and prompt-control features pay for themselves quickly.
+
+It is a weaker fit if you only need a handful of one-off images and have no interest in learning a desktop workflow. A browser tool will get you there faster for that specific job. The honest framing is this: ArtCraft is production software, and production software asks you to invest a little before it gives a lot back.
+
+| You'll Likely Love It If You... | You Might Skip It If You... |
+|---|---|
+| Work on multi-image or multi-shot projects | Only need occasional one-off images |
+| Care about file ownership and local storage | Prefer zero-install browser tools |
+| Want to combine image and video in one app | Already have a pipeline that works |
+| Enjoy customizing and inspecting your tools | Want a fully managed, hands-off service |
+
+## FAQ
+
+**Is ArtCraft software free to use?**
+
+The application is open source, so the software itself is available to download and inspect. Any costs you encounter will generally relate to the models you choose to run, your own hardware, or optional services — not to a locked license for the app.
+
+**Do I need a powerful computer to run it?**
+
+You need a machine capable of running modern generative models. Image generation is manageable on many current systems; video generation is heavier. Community reports suggest testing with short, low-resolution clips first to gauge what your hardware can handle.
+
+**Can ArtCraft software generate video, or is it images only?**
+
+It handles both. Video generation is a core part of the product, and the project has highlighted support for video models such as Seedance 2.0 alongside its image capabilities.
+
+**How is it different from browser-based AI generators?**
+
+The main differences are ownership and control. ArtCraft runs on your desktop, writes results to your drive, and gives you structured control over prompts and references — three things browser tools typically limit in exchange for convenience.

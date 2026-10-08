@@ -1,0 +1,136 @@
+export const metadata = {
+  title: "ArtCraft Getting Started: A Beginner's Guide to AI Image and Video on Desktop",
+  description: "A practical ArtCraft getting started guide: install the desktop app, write better prompts, use references, animate images, and export with control.",
+  category: "guide",
+  date: "2026-10-08",
+}
+
+ArtCraft is an open-source desktop app for generating AI images and video, and if you have ever felt boxed in by browser tools that hide their settings behind presets, it is worth your time. This ArtCraft getting started guide walks you through installation, your first prompt, reference images, and animation without assuming any prior AI experience. The whole point of ArtCraft getting started is simple: you direct the model instead of the model directing you.
+
+Below you will find checklists, step tables, prompt frameworks, and fixes for the problems that trip up almost every new user in their first week.
+
+## What ArtCraft Is (and Who It's For)
+
+ArtCraft is a native desktop application for AI image and video generation, built for artists, designers, and filmmakers who want deliberate control. The project describes itself as an "intentional crafting engine," which captures the philosophy well: you make choices, you inspect results, and you keep the files on your own machine.
+
+Because it runs as an installed app rather than a browser tab, your references, projects, and renders live in your own folders. There is also a web companion for account access, but the actual generation work happens in the desktop client. You can read the project's own framing on the [official ArtCraft site](https://getartcraft.com/), and the [open-source repository on GitHub](https://github.com/storytold/artcraft) shows exactly what the engine does under the hood.
+
+| Dimension | ArtCraft (desktop, open source) | Typical browser generator |
+|---|---|---|
+| Where it runs | Installed desktop app | Browser tab |
+| Source code | Open and community-inspectable | Closed |
+| Prompt control | Detailed, model-level settings | Simplified presets |
+| Model support | Multiple models added over time, including video models | Usually one fixed model |
+| File handling | Renders saved to your own storage | Cloud library |
+| Setup | One install plus model downloads | Instant sign-up |
+
+Who is it for? Concept artists, illustrators, motion designers, indie filmmakers, and hobbyists who enjoy experimenting. Who is it not for? Anyone hoping a single button produces a finished film. ArtCraft rewards iteration, and that is a feature, not a flaw.
+
+## ArtCraft Getting Started: The Pre-Flight Checklist
+
+Spend five minutes here and you will save an hour of frustration. Most first-day problems trace back to a machine that was not ready, not to the software itself.
+
+| Check | Why it matters | How to verify |
+|---|---|---|
+| Supported operating system | The desktop build must match your platform | Check the download page on the official site |
+| GPU and video memory | Image work is modest; video work leans hard on your graphics card | Compare your GPU against the published requirements |
+| Free disk space | Models and renders are large files | Clear a comfortable buffer before installing |
+| Stable internet | Models download the first time you use them | Wired connection or strong Wi-Fi |
+| A reference folder | References steer style and composition far better than words alone | Gather 5–10 images you love |
+| An account | Needed for the web companion and some cloud features | Register through the official app portal |
+
+Two notes from community reports: install from the official source only, since third-party mirrors can ship outdated builds, and start with image generation before you attempt video. Video rendering is dramatically heavier, and a first session spent waiting on a slow render is a bad first impression.
+
+## Your First Session, Step by Step
+
+This is the core of ArtCraft getting started, so treat it as a recipe. Follow it once and the interface stops feeling foreign.
+
+| # | Step | What you do | What success looks like |
+|---|---|---|---|
+| 1 | Download | Get the desktop build from the official site | Installer launches cleanly |
+| 2 | Install | Run the installer and let it fetch what it needs | App opens to a workspace |
+| 3 | Sign in | Log in if prompted | Your workspace loads normally |
+| 4 | Choose an image model | Resist the urge to start with video | A model is selected and ready |
+| 5 | Write a first prompt | One subject, one style, one lighting note | A preview appears in the output panel |
+| 6 | Iterate | Change one variable per render | Each attempt teaches you something specific |
+| 7 | Organize | Name files and keep a project folder | You can find yesterday's work |
+| 8 | Try motion | Switch to a video model once stills feel easy | A short clip renders |
+
+The single most common beginner mistake is changing five things at once and then guessing which one caused the improvement. Slow down. Change the lighting only. Then change the camera angle only. Within twenty renders you will have a personal mental map of how the model responds.
+
+**H3: What "done" looks like for a first render**
+
+Your first output does not need to be beautiful. It needs to be *diagnostic*: does the subject match what you described, is the composition close to what you intended, and does the style resemble the reference you attached? If two of those three are true, you are on track.
+
+## Prompting, References, and Control
+
+Prompting in ArtCraft is less about magic words and more about structure. Fill the same slots every time and your results become predictable — which is the entire reason to use a controllable tool instead of a slot machine.
+
+| Slot | What it controls | Example phrasing |
+|---|---|---|
+| Subject | Who or what is in frame | "a lone lighthouse keeper" |
+| Style | Medium and rendering | "oil painting, visible brushwork" |
+| Composition | Framing and lens | "wide shot, rule of thirds" |
+| Lighting | Mood and time of day | "overcast dawn, soft rim light" |
+| Motion (video only) | What actually moves | "slow push-in, waves breaking" |
+| Exclusions | What to avoid | "no text, no watermark, no extra limbs" |
+
+A few habits that separate people who get good results from people who give up:
+
+- **Anchor style with references, not adjectives.** One strong reference image usually outperforms three paragraphs of description.
+- **Write a prompt journal.** Paste each prompt next to the render you kept. Patterns emerge fast.
+- **Reuse settings that worked.** If the model exposes a seed or a saved preset, keep it and vary only the subject.
+- **Batch variations deliberately.** Ten quick low-resolution tests beat one slow high-resolution gamble.
+- **Keep exclusions short.** A long negative list can confuse more than it corrects.
+
+Reference images do the heavy lifting for consistency. If you are building a series — a character, a product, a location — attach the same reference set to every render so the look stays stable across the whole project.
+
+## From Still to Motion
+
+Video is where ArtCraft becomes genuinely interesting, and it is also where new users burn the most time. The mental shift is this: an image describes a moment, while a video describes a *change* over that moment.
+
+| Setting | Image generation | Video generation |
+|---|---|---|
+| Typical render time | Seconds to a couple of minutes | Notably longer per second of footage |
+| Resolution strategy | Push quality early | Start low, finish high |
+| Prompt focus | Subject, style, light | Subject, style, light, plus motion |
+| Clip length | Not applicable | Short clips first; extend later |
+| Hardware pressure | Moderate | High |
+
+ArtCraft has added video models over time — the project has promoted support for Seedance 2.0 for AI video generation — and model options tend to expand as the open-source community contributes. Check the site before assuming a specific model is available in your build.
+
+Practical motion tips from early users:
+
+- **Storyboard with stills first.** Approve the look as an image, then animate it. Fixing style in motion is expensive.
+- **Describe motion explicitly.** "Slow dolly forward" or "hair moving in wind" gives the model something to animate.
+- **Keep camera moves simple.** One move per clip. Two moves read as chaos.
+- **Start with three-second clips.** Short loops teach you more per minute of rendering than long ones.
+
+## Troubleshooting and FAQ
+
+### Quick fixes for common first-week problems
+
+| Symptom | Likely cause | Fix |
+|---|---|---|
+| Renders take forever | Video model at high resolution | Shorten the clip, lower resolution, close other GPU-heavy apps |
+| Output ignores the prompt | Prompt is overloaded | Cut back to subject, style, and lighting |
+| App will not launch | OS mismatch or a broken install | Reinstall from the official source and recheck requirements |
+| Style drifts between shots | No reference anchoring | Attach the same reference images every time |
+| Disk filling up | Unmanaged renders and cached models | Prune old outputs and set a dedicated output folder |
+| Results feel random | Too many variables changing at once | Change one setting per render |
+
+### ArtCraft Getting Started FAQ
+
+**Is ArtCraft getting started hard for a complete beginner?**
+Not if you sequence it properly. Install, generate one still image, iterate on that single image, and only then move to video. Most of the difficulty people report comes from starting with the heaviest possible task.
+
+**Do I need an expensive graphics card?**
+For image generation, a mid-range modern GPU is usually workable. For video, your hardware matters much more, and render times scale with clip length and resolution. Check the published requirements against your own machine before committing to a video workflow.
+
+**Is ArtCraft free to use?**
+The core is open source, which is a large part of its appeal for artists who want to own their tools. Licensing details for individual models can differ, so verify current terms on the official site before commercial use.
+
+**Can I sell work I make in ArtCraft?**
+That depends on the model you used, not just the app. Some model licenses permit commercial output, others restrict it. Keep a record of which model produced which asset so you can confirm rights later.
+
+Once your first render lands, the real work begins: building a reference library, keeping a prompt journal, and treating every generation as a controlled experiment. That habit — not any single setting — is what makes ArtCraft getting started feel less like learning software and more like learning a craft.

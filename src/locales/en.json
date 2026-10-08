@@ -9,7 +9,13 @@
   "nav": {
     "home": "Home",
     "menu": "Menu",
-    "toggleTheme": "Toggle theme"
+    "toggleTheme": "Toggle theme",
+    "guide": "Guide",
+    "tools": "Tools",
+    "features": "Features",
+    "downloads": "Downloads",
+    "community": "Community",
+    "comparisons": "Comparisons"
   },
   "home": {
     "meta": {
@@ -401,12 +407,36 @@
       "secondary": "Download for Windows & macOS"
     }
   },
-  "bosses": {},
+  "guide": {
+    "overviewTitle": "ArtCraft Wiki Beginner Guide",
+    "overviewDescription": "Step-by-step ArtCraft tutorials covering installation, prompting, image generation and video workflows for new users."
+  },
+  "tools": {
+    "overviewTitle": "ArtCraft Wiki Tools & Software",
+    "overviewDescription": "Guides to the ArtCraft AI suite and how its tools fit alongside Photoshop, Premiere and Illustrator workflows."
+  },
+  "features": {
+    "overviewTitle": "ArtCraft Wiki Features",
+    "overviewDescription": "Explore ArtCraft features including 3D objects, image to video, the Pixelator, glitch art and its open-source engine."
+  },
+  "downloads": {
+    "overviewTitle": "ArtCraft Wiki Downloads",
+    "overviewDescription": "Download ArtCraft for Windows, macOS and Linux, plus app, GitHub and release details for the open-source studio."
+  },
+  "community": {
+    "overviewTitle": "ArtCraft Wiki Community",
+    "overviewDescription": "Join the ArtCraft community on Discord, Reddit and YouTube, and read community reviews, showcases and discussions."
+  },
+  "comparisons": {
+    "overviewTitle": "ArtCraft Wiki Comparisons",
+    "overviewDescription": "ArtCraft vs Photoshop, ComfyUI and Higgsfield comparisons, plus open-source and Adobe alternative breakdowns."
+  },
   "shared": {
     "wikiNavigation": "Wiki Navigation",
-    "activeCodes": "Active Codes",
+    "gettingStarted": "Getting Started",
+    "beginnerGuideLink": "Read the beginner guide",
+    "downloadLink": "Download ArtCraft",
     "updated": "Updated",
-    "viewAllCodes": "View all codes",
     "playOnRoblox": "Play on Roblox",
     "inThisSection": "In this section",
     "tableOfContents": "Table of Contents",
@@ -431,11 +461,11 @@
     "officialDiscord": "Official Discord",
     "officialYoutube": "Official YouTube",
     "vvBuilder": "ArtCraft GitHub (Open Source)",
-    "beginnerGuide": "Getting Started",
-    "codesGuide": "Codes & Rewards",
-    "tierListGuide": "Tier Lists",
-    "mapsGuide": "Maps & Guides",
+    "beginnerGuide": "Beginner Guide",
     "privacyPolicy": "Privacy Policy",
-    "termsOfService": "Terms of Service"
+    "termsOfService": "Terms of Service",
+    "toolsGuide": "Tools & Software",
+    "featuresGuide": "Features",
+    "downloadsGuide": "Downloads"
   }
 }

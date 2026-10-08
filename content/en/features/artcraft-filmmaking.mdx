@@ -1,0 +1,129 @@
+export const metadata = {
+  title: "ArtCraft Filmmaking: How Artists Take Real Control of AI Video Generation",
+  description: "ArtCraft filmmaking brings AI video generation into an open-source desktop app with prompt control, reference images, and animation tools built for artists.",
+  category: "features",
+  date: "2026-10-08",
+}
+
+## Why ArtCraft Filmmaking Feels Different From Prompt-and-Pray AI Video
+
+Most AI video generators treat you like a slot machine player: type a sentence, pull the lever, hope something usable comes out. ArtCraft filmmaking starts from the opposite premise — that the person holding the camera, real or virtual, should stay in the driver's seat from first frame to final render.
+
+That matters because AI video is now good enough to use in real projects, but only if you can repeat a result, adjust one variable at a time, and keep your work on your own machine. ArtCraft is built as an intentional crafting engine for artists, designers, and filmmakers, and that intent shows up in how the tool is structured.
+
+This guide walks through what the app does, how a typical ArtCraft filmmaking workflow is organized, and where it fits compared with cloud-only alternatives.
+
+## What ArtCraft Actually Is
+
+ArtCraft is an open-source desktop application for generating AI video and images. Rather than living in a browser tab behind a subscription wall, it installs as a native app and runs on your own hardware, with results written to your local drive.
+
+The project describes itself as a crafting engine — the word choice is deliberate. The goal is not to automate creativity but to give artists precise levers: prompts you can control, reference images you can supply, and animation settings you can tune shot by shot.
+
+A companion wiki documents prompt techniques, reference workflows, animation approaches, and open-source setup, while the source code is publicly available on GitHub for anyone who wants to inspect, fork, or extend it.
+
+| Attribute | Detail |
+|---|---|
+| Product type | Open-source desktop app for AI image and video generation |
+| Built for | Artists, designers, and filmmakers |
+| Core promise | Controllable AI with real artistic intent |
+| Access | Downloadable desktop application |
+| Documentation | Community wiki covering prompts, references, animation, workflows |
+| Source code | Public repository, open for inspection and contribution |
+| Notable model support | Seedance 2.0 is available inside ArtCraft |
+
+## Core Capabilities That Shape an ArtCraft Filmmaking Workflow
+
+The feature set is organized around control rather than novelty. Each capability maps to a real decision a filmmaker makes: what the shot looks like, what moves, how long it runs, and how consistent it stays across cuts.
+
+| Capability | What it does | Why filmmakers care |
+|---|---|---|
+| Text-to-video generation | Turns a written prompt into a moving clip | Fast concept visualization before committing to a shoot |
+| Image generation | Produces stills from prompts | Storyboards, mood boards, and reference frames |
+| Reference conditioning | Uses supplied images to guide output | Keeps a character, wardrobe, or location consistent |
+| Animation controls | Defines how elements move within a shot | Separates camera motion from subject motion |
+| Prompt control | Exposes detailed prompt structure | Lets you change one variable without rebuilding the whole shot |
+| Open-source desktop workflow | Runs locally, code is inspectable | Ownership, transparency, and no lock-in |
+| Model access | Brings current video models into one window | You are not tied to a single generation engine |
+
+The practical upshot: instead of switching between five browser tabs and three subscriptions, ArtCraft filmmaking keeps generation, iteration, and file management in one place.
+
+## ArtCraft Filmmaking vs. Cloud-Only AI Video Tools
+
+Cloud tools win on convenience. Desktop, open-source tools win on control and ownership. Which matters more depends on what you are producing.
+
+| Factor | ArtCraft (open-source desktop) | Typical cloud-only AI video tool |
+|---|---|---|
+| Where work happens | On your machine, saved to your drive | On a remote server you do not control |
+| Ownership of the app | You own and can modify the software | Closed product, licensed access only |
+| Model flexibility | Multiple models reachable from one app | Usually one vendor's model family |
+| Prompt control | Detailed, structured control over output | Often simplified for ease of use |
+| Reference handling | Local reference images for consistency | Varies; sometimes limited or upload-capped |
+| Transparency | Source code is public | Black box |
+| Offline capability | Local workflow, less dependent on a browser session | Requires a live connection |
+
+For a short social clip, a cloud tool is often faster. For a short film, a client project, or anything with continuity requirements, the desktop approach usually pays off.
+
+## A Step-by-Step ArtCraft Filmmaking Process
+
+Here is how a typical shot moves from idea to finished file. Treat it as a loop, not a straight line — most of the value comes from iterating on one variable at a time.
+
+| Step | Action | Practical tip |
+|---|---|---|
+| 1. Define the shot | Write down what the camera sees, how it moves, and how long it lasts | One sentence per shot keeps prompts focused |
+| 2. Build a still first | Generate a keyframe image before animating | A strong frame is cheaper to fix than a bad clip |
+| 3. Lock references | Supply reference images for characters, wardrobe, or sets | Consistency starts before the first render |
+| 4. Write a structured prompt | Describe subject, action, camera, lighting, and style separately | Change one field per iteration |
+| 5. Generate short takes | Render brief clips and compare | Short generations are faster to evaluate |
+| 6. Animate deliberately | Adjust motion controls rather than re-rolling blindly | Isolate camera motion from subject motion |
+| 7. Save and version | Keep outputs on local storage with clear naming | Your drive is the archive |
+| 8. Assemble | Cut the best takes together in your editor | Generated footage still needs editing judgment |
+
+Community reports consistently suggest that step four is where most quality gains live. Vague prompts produce vague footage, regardless of which model is behind the curtain.
+
+## Prompt Control, References, and Animation: Where Quality Comes From
+
+If you are new to ArtCraft filmmaking, these three areas deserve the most practice. They are also the areas where the tool's design gives you the most leverage.
+
+| Technique | How to apply it | Common mistake |
+|---|---|---|
+| Structured prompting | Split the prompt into subject, action, camera, light, and style | Writing one long run-on description |
+| Iterative refinement | Change a single element between renders | Rewriting the entire prompt each time |
+| Reference locking | Reuse the same reference images across a sequence | Swapping references mid-scene and losing continuity |
+| Motion separation | Define camera movement and subject movement independently | Asking for both in one vague instruction |
+| Shot-length discipline | Generate short clips and cut them together | Requesting long clips that drift and degrade |
+| Style anchoring | Repeat a consistent style phrase across shots | Varying style language between takes |
+| Local archiving | Name and store every take | Overwriting good outputs with new renders |
+
+A useful habit: keep a plain text log of prompts that worked. Over a few projects, that log becomes more valuable than any preset library, because it encodes your own visual language.
+
+## Who Gets the Most Out of ArtCraft
+
+ArtCraft filmmaking suits a particular kind of creator — someone who wants speed but refuses to give up authorship.
+
+- **Independent filmmakers** prototyping shots before a shoot day, when reshoots are expensive.
+- **Animators and motion designers** who need reference footage or previsualization frames fast.
+- **Concept artists** building mood boards and storyboards from the same tool they use for motion.
+- **Small studios** that want a predictable, inspectable pipeline instead of per-seat cloud billing.
+- **Open-source advocates** who prefer software they can read, modify, and keep.
+
+If you fall into more than one of those categories, the desktop model tends to compound: one app, one library of references, one folder of outputs.
+
+The official [ArtCraft site](https://getartcraft.com/) is the place to start, and the [public GitHub repository](https://github.com/storytold/artcraft) is worth reading if you want to understand how the crafting engine is put together before you commit your workflow to it.
+
+## Frequently Asked Questions About ArtCraft Filmmaking
+
+**Is ArtCraft free to use?**
+
+ArtCraft is distributed as an open-source desktop application, and the project's own framing is that you own the app. Because it runs on your own machine, the practical cost profile depends on your hardware and on any models you choose to run, rather than on a per-render cloud meter. Check the official site for the current distribution and licensing details.
+
+**Do I need a powerful computer for ArtCraft filmmaking?**
+
+Because generation happens on your desktop rather than on a remote server, your machine's GPU and memory matter more than they would with a browser-based tool. That is the trade-off for local ownership: you supply the compute, and in exchange you keep the files, the settings, and the software itself.
+
+**How is ArtCraft different from a cloud AI video generator?**
+
+The biggest differences are ownership, transparency, and control. The source code is public, the workflow lives on your drive, and prompt and reference controls are exposed rather than simplified. Cloud tools often win on raw convenience; a desktop crafting engine wins when consistency and repeatability matter.
+
+**Can beginners use it, or is it only for experienced artists?**
+
+Beginners can start with text-to-video and simple stills, then layer in references and animation controls as they get comfortable. The learning curve is real, but it is mostly about learning to describe shots precisely — a skill that transfers to every other AI video tool you will ever use.

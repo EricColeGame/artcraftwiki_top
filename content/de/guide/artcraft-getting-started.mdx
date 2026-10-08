@@ -1,0 +1,136 @@
+export const metadata = {
+  title: "ArtCraft für Einsteiger: Ein Leitfaden zu KI-Bildern und -Videos auf dem Desktop",
+  description: "Ein praktischer ArtCraft-Einstiegsleitfaden: Desktop-App installieren, bessere Prompts schreiben, Referenzen nutzen, Bilder animieren und kontrolliert exportieren.",
+  category: "guide",
+  date: "2026-10-08",
+}
+
+ArtCraft ist eine Open-Source-Desktop-App zur Generierung von KI-Bildern und -Videos – und wenn Sie sich jemals von Browser-Tools eingeengt gefühlt haben, die ihre Einstellungen hinter Presets verstecken, lohnt sich die Zeit damit. Dieser ArtCraft-Einstiegsleitfaden führt Sie durch Installation, Ihren ersten Prompt, Referenzbilder und Animation, ohne Vorkenntnisse im Bereich KI vorauszusetzen. Der ganze Sinn von ArtCraft für Einsteiger ist einfach: Sie dirigieren das Modell, statt dass das Modell Sie dirigiert.
+
+Unten finden Sie Checklisten, Schritt-Tabellen, Prompt-Frameworks und Lösungen für die Probleme, die fast jeden neuen Nutzer in der ersten Woche ausbremsen.
+
+## Was ArtCraft ist (und für wen es gedacht ist)
+
+ArtCraft ist eine native Desktop-Anwendung für die KI-Generierung von Bildern und Videos, gebaut für Künstler, Designer und Filmemacher, die bewusste Kontrolle wollen. Das Projekt beschreibt sich selbst als „intentional crafting engine", was die Philosophie gut einfängt: Sie treffen Entscheidungen, Sie prüfen Ergebnisse, und Sie behalten die Dateien auf Ihrem eigenen Rechner.
+
+Weil es als installierte App läuft und nicht als Browser-Tab, liegen Ihre Referenzen, Projekte und Renderings in Ihren eigenen Ordnern. Es gibt außerdem einen Web-Begleiter für den Kontozugang, aber die eigentliche Generierungsarbeit findet im Desktop-Client statt. Die eigene Darstellung des Projekts können Sie auf der [offiziellen ArtCraft-Website](https://getartcraft.com/) nachlesen, und das [Open-Source-Repository auf GitHub](https://github.com/storytold/artcraft) zeigt genau, was die Engine unter der Haube tut.
+
+| Dimension | ArtCraft (Desktop, Open Source) | Typischer Browser-Generator |
+|---|---|---|
+| Wo es läuft | Installierte Desktop-App | Browser-Tab |
+| Quellcode | Offen und für die Community einsehbar | Geschlossen |
+| Prompt-Kontrolle | Detaillierte Einstellungen auf Modellebene | Vereinfachte Presets |
+| Modell-Unterstützung | Mehrere Modelle, die mit der Zeit hinzukommen, inklusive Videomodellen | Meist ein festes Modell |
+| Dateiverwaltung | Renderings werden in Ihrem eigenen Speicher abgelegt | Cloud-Bibliothek |
+| Einrichtung | Eine Installation plus Modell-Downloads | Sofortige Registrierung |
+
+Für wen ist es gedacht? Concept Artists, Illustratoren, Motion Designer, Independent-Filmemacher und Hobbyisten, die gern experimentieren. Für wen nicht? Für alle, die hoffen, dass ein einziger Knopfdruck einen fertigen Film produziert. ArtCraft belohnt Iteration, und das ist ein Feature, kein Mangel.
+
+## ArtCraft für Einsteiger: Die Checkliste vor dem Start
+
+Verbringen Sie hier fünf Minuten, und Sie sparen eine Stunde Frustration. Die meisten Probleme am ersten Tag gehen auf einen Rechner zurück, der nicht bereit war – nicht auf die Software selbst.
+
+| Prüfpunkt | Warum er wichtig ist | So prüfen Sie ihn |
+|---|---|---|
+| Unterstütztes Betriebssystem | Der Desktop-Build muss zu Ihrer Plattform passen | Prüfen Sie die Download-Seite auf der offiziellen Website |
+| GPU und Videospeicher | Bildarbeit ist bescheiden; Videoarbeit belastet Ihre Grafikkarte stark | Vergleichen Sie Ihre GPU mit den veröffentlichten Anforderungen |
+| Freier Speicherplatz | Modelle und Renderings sind große Dateien | Schaffen Sie vor der Installation einen großzügigen Puffer |
+| Stabile Internetverbindung | Modelle werden beim ersten Gebrauch heruntergeladen | Kabelverbindung oder starkes WLAN |
+| Ein Referenzordner | Referenzen steuern Stil und Komposition weit besser als Worte allein | Sammeln Sie 5–10 Bilder, die Sie lieben |
+| Ein Konto | Wird für den Web-Begleiter und einige Cloud-Funktionen benötigt | Registrieren Sie sich über das offizielle App-Portal |
+
+Zwei Hinweise aus Community-Berichten: Installieren Sie nur aus offizieller Quelle, da Drittanbieter-Mirrors veraltete Builds ausliefern können, und beginnen Sie mit der Bildgenerierung, bevor Sie sich an Video wagen. Video-Rendering ist dramatisch schwerer, und eine erste Sitzung, die mit Warten auf ein langsames Rendering vergeht, ist ein schlechter erster Eindruck.
+
+## Ihre erste Sitzung, Schritt für Schritt
+
+Dies ist der Kern von ArtCraft für Einsteiger, behandeln Sie es also wie ein Rezept. Folgen Sie ihm einmal, und die Oberfläche fühlt sich nicht mehr fremd an.
+
+| # | Schritt | Was Sie tun | Wie Erfolg aussieht |
+|---|---|---|---|
+| 1 | Herunterladen | Holen Sie den Desktop-Build von der offiziellen Website | Der Installer startet sauber |
+| 2 | Installieren | Führen Sie den Installer aus und lassen Sie ihn holen, was er braucht | Die App öffnet sich in einem Arbeitsbereich |
+| 3 | Anmelden | Melden Sie sich an, wenn Sie dazu aufgefordert werden | Ihr Arbeitsbereich lädt normal |
+| 4 | Ein Bildmodell wählen | Widerstehen Sie der Versuchung, mit Video zu beginnen | Ein Modell ist ausgewählt und bereit |
+| 5 | Einen ersten Prompt schreiben | Ein Motiv, ein Stil, ein Licht-Hinweis | Eine Vorschau erscheint im Ausgabebereich |
+| 6 | Iterieren | Ändern Sie pro Rendering eine Variable | Jeder Versuch bringt Ihnen etwas Konkretes bei |
+| 7 | Organisieren | Benennen Sie Dateien und führen Sie einen Projektordner | Sie finden die Arbeit von gestern wieder |
+| 8 | Bewegung ausprobieren | Wechseln Sie zu einem Videomodell, sobald Standbilder leichtfallen | Ein kurzer Clip wird gerendert |
+
+Der mit Abstand häufigste Anfängerfehler ist, fünf Dinge auf einmal zu ändern und dann zu raten, welches die Verbesserung bewirkt hat. Machen Sie langsamer. Ändern Sie nur die Beleuchtung. Dann nur den Kamerawinkel. Nach zwanzig Renderings haben Sie eine persönliche mentale Landkarte davon, wie das Modell reagiert.
+
+**H3: Wie „fertig" bei einem ersten Rendering aussieht**
+
+Ihre erste Ausgabe muss nicht schön sein. Sie muss *diagnostisch* sein: Passt das Motiv zu dem, was Sie beschrieben haben, kommt die Komposition dem nahe, was Sie beabsichtigt haben, und ähnelt der Stil der Referenz, die Sie angehängt haben? Wenn zwei dieser drei Punkte zutreffen, sind Sie auf dem richtigen Weg.
+
+## Prompting, Referenzen und Kontrolle
+
+Beim Prompting in ArtCraft geht es weniger um Zauberworte als um Struktur. Füllen Sie jedes Mal dieselben Slots, und Ihre Ergebnisse werden vorhersehbar – was genau der Grund ist, ein kontrollierbares Werkzeug statt eines Spielautomaten zu verwenden.
+
+| Slot | Was er steuert | Beispielformulierung |
+|---|---|---|
+| Motiv | Wer oder was im Bild ist | „a lone lighthouse keeper" |
+| Stil | Medium und Rendering | „oil painting, visible brushwork" |
+| Komposition | Bildausschnitt und Linse | „wide shot, rule of thirds" |
+| Beleuchtung | Stimmung und Tageszeit | „overcast dawn, soft rim light" |
+| Bewegung (nur Video) | Was sich tatsächlich bewegt | „slow push-in, waves breaking" |
+| Ausschlüsse | Was vermieden werden soll | „no text, no watermark, no extra limbs" |
+
+Ein paar Gewohnheiten, die Menschen mit guten Ergebnissen von denen trennen, die aufgeben:
+
+- **Verankern Sie den Stil mit Referenzen, nicht mit Adjektiven.** Ein starkes Referenzbild übertrifft meist drei Absätze Beschreibung.
+- **Führen Sie ein Prompt-Tagebuch.** Fügen Sie jeden Prompt neben das Rendering ein, das Sie behalten haben. Muster zeigen sich schnell.
+- **Verwenden Sie Einstellungen wieder, die funktioniert haben.** Wenn das Modell einen Seed oder ein gespeichertes Preset anbietet, behalten Sie es und variieren Sie nur das Motiv.
+- **Erzeugen Sie Variationen bewusst im Batch.** Zehn schnelle Tests in niedriger Auflösung schlagen einen langsamen Glücksgriff in hoher Auflösung.
+- **Halten Sie Ausschlüsse kurz.** Eine lange Negativliste kann mehr verwirren, als sie korrigiert.
+
+Referenzbilder übernehmen die Schwerarbeit für Konsistenz. Wenn Sie eine Serie aufbauen – eine Figur, ein Produkt, einen Ort – hängen Sie an jedes Rendering denselben Referenzsatz, damit der Look über das ganze Projekt stabil bleibt.
+
+## Vom Standbild zur Bewegung
+
+Video ist der Punkt, an dem ArtCraft wirklich interessant wird, und zugleich der Punkt, an dem neue Nutzer die meiste Zeit verbrennen. Der mentale Umschwung ist dieser: Ein Bild beschreibt einen Moment, während ein Video eine *Veränderung* über diesen Moment hinweg beschreibt.
+
+| Einstellung | Bildgenerierung | Videogenerierung |
+|---|---|---|
+| Typische Renderzeit | Sekunden bis ein paar Minuten | Deutlich länger pro Sekunde Filmmaterial |
+| Auflösungsstrategie | Qualität früh hochtreiben | Niedrig anfangen, hoch abschließen |
+| Prompt-Fokus | Motiv, Stil, Licht | Motiv, Stil, Licht plus Bewegung |
+| Clip-Länge | Nicht zutreffend | Erst kurze Clips; später verlängern |
+| Hardware-Belastung | Mäßig | Hoch |
+
+ArtCraft hat mit der Zeit Videomodelle hinzugefügt – das Projekt hat die Unterstützung für Seedance 2.0 zur KI-Videogenerierung beworben – und die Modelloptionen neigen dazu, sich zu erweitern, wenn die Open-Source-Community beiträgt. Prüfen Sie die Website, bevor Sie annehmen, dass ein bestimmtes Modell in Ihrem Build verfügbar ist.
+
+Praktische Bewegungstipps von frühen Nutzern:
+
+- **Storyboarden Sie zuerst mit Standbildern.** Geben Sie den Look als Bild frei und animieren Sie ihn dann. Stil in Bewegung zu korrigieren ist teuer.
+- **Beschreiben Sie Bewegung explizit.** „Slow dolly forward" oder „hair moving in wind" gibt dem Modell etwas zu animieren.
+- **Halten Sie Kamerabewegungen einfach.** Eine Bewegung pro Clip. Zwei Bewegungen wirken wie Chaos.
+- **Beginnen Sie mit Drei-Sekunden-Clips.** Kurze Loops bringen Ihnen pro Minute Rendering mehr bei als lange.
+
+## Fehlerbehebung und FAQ
+
+### Schnelle Lösungen für häufige Probleme in der ersten Woche
+
+| Symptom | Wahrscheinliche Ursache | Lösung |
+|---|---|---|
+| Renderings dauern ewig | Videomodell bei hoher Auflösung | Clip verkürzen, Auflösung senken, andere GPU-intensive Apps schließen |
+| Ausgabe ignoriert den Prompt | Prompt ist überladen | Auf Motiv, Stil und Beleuchtung reduzieren |
+| App startet nicht | OS-Mismatch oder defekte Installation | Aus offizieller Quelle neu installieren und Anforderungen erneut prüfen |
+| Stil driftet zwischen Einstellungen | Keine Referenzverankerung | Jedes Mal dieselben Referenzbilder anhängen |
+| Festplatte läuft voll | Unverwaltete Renderings und gecachte Modelle | Alte Ausgaben ausdünnen und einen dedizierten Ausgabeordner festlegen |
+| Ergebnisse wirken zufällig | Zu viele Variablen ändern sich gleichzeitig | Eine Einstellung pro Rendering ändern |
+
+### FAQ zu ArtCraft für Einsteiger
+
+**Ist der Einstieg in ArtCraft für einen kompletten Anfänger schwer?**
+Nicht, wenn Sie ihn richtig sequenzieren. Installieren, ein Standbild generieren, an diesem einen Bild iterieren und erst dann zu Video übergehen. Der Großteil der Schwierigkeiten, von denen Menschen berichten, entsteht dadurch, dass sie mit der schwerstmöglichen Aufgabe beginnen.
+
+**Brauche ich eine teure Grafikkarte?**
+Für die Bildgenerierung ist eine moderne Mittelklasse-GPU meist brauchbar. Bei Video spielt Ihre Hardware eine viel größere Rolle, und die Renderzeiten skalieren mit Clip-Länge und Auflösung. Prüfen Sie die veröffentlichten Anforderungen gegen Ihren eigenen Rechner, bevor Sie sich auf einen Video-Workflow festlegen.
+
+**Ist ArtCraft kostenlos nutzbar?**
+Der Kern ist Open Source, was einen großen Teil seiner Anziehungskraft für Künstler ausmacht, die ihre Werkzeuge besitzen wollen. Lizenzdetails für einzelne Modelle können abweichen, prüfen Sie also die aktuellen Bedingungen auf der offiziellen Website, bevor Sie kommerziell nutzen.
+
+**Kann ich Arbeiten verkaufen, die ich in ArtCraft erstelle?**
+Das hängt von dem Modell ab, das Sie verwendet haben, nicht nur von der App. Manche Modelllizenzen erlauben kommerzielle Ausgaben, andere schränken sie ein. Führen Sie Buch darüber, welches Modell welches Asset erzeugt hat, damit Sie die Rechte später bestätigen können.
+
+Sobald Ihr erstes Rendering sitzt, beginnt die eigentliche Arbeit: eine Referenzbibliothek aufbauen, ein Prompt-Tagebuch führen und jede Generierung als kontrolliertes Experiment behandeln. Diese Gewohnheit – nicht irgendeine einzelne Einstellung – ist es, die ArtCraft für Einsteiger weniger wie das Erlernen von Software und mehr wie das Erlernen eines Handwerks wirken lässt.

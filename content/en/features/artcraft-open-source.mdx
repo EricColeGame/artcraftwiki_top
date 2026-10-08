@@ -1,0 +1,113 @@
+export const metadata = {
+  title: "ArtCraft Open Source: Inside the Desktop AI Studio Built for Real Artistic Control",
+  description: "ArtCraft open source explained: how this desktop AI image and video studio gives artists local control, prompt precision, and true ownership.",
+  category: "features",
+  date: "2026-10-08",
+}
+
+## What "ArtCraft Open Source" Means for Working Artists
+
+If a cloud generator has ever changed its pricing overnight, throttled your render queue, or locked finished frames behind a subscription, you already understand why the ArtCraft open source model feels different. ArtCraft is a desktop application for generating AI images and video that you download, run on your own machine, and keep — and the second half of the ArtCraft open source promise is exactly that: you own the tool instead of renting access to it. For artists, designers, and filmmakers, ownership is not an ideological detail. It changes how you plan, price, and deliver a project.
+
+Notice that the important word is "open," not "free." The public repository describes the project as an intentional crafting engine for artists, designers, and filmmakers, and the [official ArtCraft site](https://getartcraft.com/) frames it the same way: a desktop app for controllable AI generation. That emphasis on intent matters. Most generators are tuned for novelty — type a phrase, get a surprising picture. ArtCraft is tuned for repetition: same look, same settings, twelve variations by Friday.
+
+Reproducibility is the real payoff. When a client approves a look on Tuesday and wants a full set on Friday, you need the same tool, the same prompt structure, and the same models. An app that lives on your drive and updates only when you say so gives you that continuity. A browser tab that silently ships a new model on Wednesday does not.
+
+| Question | Closed cloud generator | ArtCraft open source |
+|---|---|---|
+| Where does generation happen? | Vendor servers | Your desktop |
+| Can the tool change mid-project? | Yes, often without notice | Only when you update |
+| Who owns your prompt library? | Usually the platform | You, stored locally |
+| What happens if you stop paying? | Access ends | Your installed app remains |
+| Can you inspect how it works? | No | Yes, the source is public |
+| Can you work offline? | Rarely | Yes, once models are local |
+
+## Inside the Feature Set: Control, References, and Model Flexibility
+
+ArtCraft's feature list is organized around one idea: the artist stays in charge. Prompt control, reference images, animation, and model selection are not separate gimmicks — they are the levers you use to move a project from "interesting accident" to "repeatable result." The project's wiki groups these areas together because they are meant to be used together.
+
+| Feature area | What it does | Who benefits most |
+|---|---|---|
+| Prompt control | Structured, repeatable prompts with saved presets | Concept artists iterating on one style |
+| Reference images | Guides output using existing art or photos | Designers matching a brand look |
+| Image generation | Produces stills from text or references | Illustrators and storyboarders |
+| Video generation | Animates stills or generates motion from prompts | Filmmakers and motion designers |
+| Animation workflows | Builds movement with consistent subjects across frames | Animators |
+| Model flexibility | Routes work through different generation models | Anyone chasing a specific look |
+| Local output | Writes finished files straight to your drive | Teams with strict asset handling |
+
+Model flexibility is worth calling out on its own. ArtCraft has highlighted integrations such as Seedance 2.0 for fast video generation, which means the app can act as a single window onto more than one engine rather than locking you into a house model. For artists, that flexibility is the difference between adapting your style to the tool and adapting the tool to your style.
+
+### Prompt Control Tips That Actually Change Output
+
+- **Write prompts like a shot list.** Subject, action, lens, lighting, and mood as separate clauses beats one long sentence.
+- **Change one variable at a time.** If you alter lighting and framing together, you learn nothing about which one worked.
+- **Save winners as presets.** A preset is a contract with your future self, especially on multi-week projects.
+- **Use references for consistency, not for copying.** A reference image anchors a palette or a silhouette; it should not replace your own decisions.
+- **Keep a prompt journal.** Two lines per attempt — what you changed, what happened — pays off faster than any tutorial.
+
+## ArtCraft Open Source vs. Closed Cloud Generators
+
+The honest comparison is not "open beats closed." It is "different tradeoffs for different jobs." Cloud tools win on setup convenience and raw scale. A desktop app wins on control, privacy, and cost predictability. Here is how the two approaches stack up on the dimensions artists actually care about.
+
+| Dimension | Cloud-only generator | ArtCraft desktop app |
+|---|---|---|
+| Setup time | Minutes, nothing to install | One download and install |
+| Hardware needs | Any browser | A capable modern machine |
+| Privacy of source material | Uploaded to a third party | Stays on your disk |
+| Cost structure | Subscriptions or credit packs | No per-render meter |
+| Offline work | Rarely possible | Possible with local models |
+| Update timing | Vendor decides | You decide |
+| Source material reuse | Governed by platform terms | Governed by the license |
+
+For a quick one-off image, a browser tool is genuinely fine. Where the ArtCraft open source approach pulls ahead is long-form work: a music video, a short film, a product campaign with fifty deliverables. In those cases, per-render pricing and surprise model changes are not annoyances — they are budget risks.
+
+## A Practical Getting-Started Path
+
+The fastest way to judge an open desktop app is to use it for one small, real task. Do not start with your dream project. Start with something disposable, learn the interface, then scale up.
+
+| Step | Action | Why it matters |
+|---|---|---|
+| 1 | Download the desktop build from the official site | Ensures you have the current supported release |
+| 2 | Skim the ArtCraft Wiki sections on prompts and references | Cuts your first-week confusion dramatically |
+| 3 | Set a dedicated output folder | Keeps generated assets findable and backed up |
+| 4 | Run one low-cost test render | Confirms your machine and settings before a real job |
+| 5 | Save your first prompt preset | Turns a lucky result into a repeatable one |
+| 6 | Introduce one reference image | Tests how much control references actually give you |
+| 7 | Read the repository on GitHub | Understanding the project's direction helps you plan |
+
+That last step is not optional homework. Browsing the [ArtCraft repository on GitHub](https://github.com/storytold/artcraft) tells you what the maintainers are prioritizing, which is useful information when you are deciding whether to build a client workflow on top of it.
+
+## Workflow Tips From the Community
+
+Community reports from artists using open desktop generators consistently circle the same handful of workflows. These are patterns, not official documentation — treat them as starting points and verify specifics against the app's own docs.
+
+| Workflow | Best for | Community-reported tip |
+|---|---|---|
+| Reference-first stills | Brand and editorial work | Lock a reference set before generating anything |
+| Still-to-motion | Short social clips | Generate a strong still, then animate it rather than prompting motion cold |
+| Style locking | Series and campaigns | Reuse the same prompt skeleton with only the subject swapped |
+| Batch variation | Client review rounds | Produce many small variations before committing to a final render |
+| Animation passes | Character movement | Build motion in stages and review each pass before the next |
+
+One recurring theme in community discussions: open tools reward patience more than closed ones do. Because nothing is hidden behind a vendor's defaults, you get out what you put in. Artists who document their settings tend to report smoother projects than those who chase results by feel.
+
+A second theme is hardware. Desktop generation shifts the compute question from the vendor to you, so a machine that handles stills comfortably may feel slow on video. Testing video early — before you promise a client a video deliverable — is the single most common piece of advice in these threads.
+
+## Frequently Asked Questions About ArtCraft Open Source
+
+### Is ArtCraft open source actually free to use?
+
+"Open" and "free" are not the same claim. The open part refers to the code being publicly available and the app running as a desktop program you control. Any costs tied to specific generation models, compute, or optional services should be checked directly on the project's official pages, since those terms can change independently of the app itself.
+
+### Do I need a powerful computer to run it?
+
+You need a machine that can handle local generation comfortably, and video is more demanding than stills. A reasonable approach is to test with a short, low-resolution clip before committing to a longer render. If video generation feels sluggish, stills and reference-driven work may still be perfectly practical on the same machine.
+
+### Can I use ArtCraft open source for commercial client work?
+
+That depends on the license governing the project and on the terms attached to whichever generation models you use. Because the ArtCraft open source model puts you in the position of operator, you also inherit the responsibility of checking those terms before delivering paid work — something a subscription service often absorbs on your behalf.
+
+### How is it different from a browser-based generator?
+
+The biggest differences are where your files live, who can change the tool mid-project, and how you pay for it. A browser generator is faster to start and easier to share; a desktop app gives you local files, version stability, and no per-render meter. Many artists end up using both, reserving the desktop tool for projects that need consistency over many iterations.

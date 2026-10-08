@@ -1,0 +1,129 @@
+export const metadata = {
+  title: "ArtCraft-Filmmaking: Wie Künstler die echte Kontrolle über die KI-Videogenerierung übernehmen",
+  description: "ArtCraft-Filmmaking bringt KI-Videogenerierung in eine Open-Source-Desktop-App – mit Prompt-Kontrolle, Referenzbildern und Animationstools, die für Künstler entwickelt wurden.",
+  category: "features",
+  date: "2026-10-08",
+}
+
+## Warum sich ArtCraft-Filmmaking anders anfühlt als Prompt-and-Pray-KI-Video
+
+Die meisten KI-Videogeneratoren behandeln dich wie einen Spieler am einarmigen Banditen: Satz eintippen, Hebel ziehen, hoffen, dass etwas Brauchbares herauskommt. ArtCraft-Filmmaking geht von der entgegengesetzten Prämisse aus – dass die Person, die die Kamera hält, ob real oder virtuell, vom ersten Frame bis zum finalen Render am Steuer bleiben sollte.
+
+Das ist wichtig, denn KI-Video ist inzwischen gut genug für echte Projekte – aber nur, wenn du ein Ergebnis reproduzieren, jeweils eine Variable verändern und deine Arbeit auf der eigenen Maschine behalten kannst. ArtCraft ist als bewusste Crafting-Engine für Künstler, Designer und Filmemacher konzipiert, und diese Absicht zeigt sich im Aufbau des Tools.
+
+Dieser Leitfaden erklärt, was die App leistet, wie ein typischer ArtCraft-Filmmaking-Workflow aufgebaut ist und wie sie im Vergleich zu reinen Cloud-Alternativen einzuordnen ist.
+
+## Was ArtCraft tatsächlich ist
+
+ArtCraft ist eine Open-Source-Desktop-Anwendung zur Generierung von KI-Videos und -Bildern. Statt in einem Browser-Tab hinter einer Abo-Bezahlschranke zu leben, installiert sie sich als native App und läuft auf deiner eigenen Hardware – die Ergebnisse werden auf deiner lokalen Festplatte gespeichert.
+
+Das Projekt bezeichnet sich selbst als Crafting-Engine – die Wortwahl ist bewusst gewählt. Das Ziel ist nicht, Kreativität zu automatisieren, sondern Künstlern präzise Hebel in die Hand zu geben: Prompts, die du kontrollieren kannst, Referenzbilder, die du liefern kannst, und Animationseinstellungen, die du Shot für Shot justieren kannst.
+
+Ein begleitendes Wiki dokumentiert Prompt-Techniken, Referenz-Workflows, Animationsansätze und das Open-Source-Setup, während der Quellcode auf GitHub öffentlich verfügbar ist – für alle, die ihn prüfen, forken oder erweitern möchten.
+
+| Attribut | Detail |
+|---|---|
+| Produkttyp | Open-Source-Desktop-App für KI-Bild- und Videogenerierung |
+| Entwickelt für | Künstler, Designer und Filmemacher |
+| Kernversprechen | Kontrollierbare KI mit echter künstlerischer Absicht |
+| Zugang | Herunterladbare Desktop-Anwendung |
+| Dokumentation | Community-Wiki zu Prompts, Referenzen, Animation, Workflows |
+| Quellcode | Öffentliches Repository, offen für Einsicht und Beiträge |
+| Bemerkenswerte Modell-Unterstützung | Seedance 2.0 ist in ArtCraft verfügbar |
+
+## Kernfähigkeiten, die einen ArtCraft-Filmmaking-Workflow prägen
+
+Der Funktionsumfang ist um Kontrolle herum organisiert, nicht um Neuheit. Jede Fähigkeit entspricht einer echten Entscheidung, die ein Filmemacher trifft: wie der Shot aussieht, was sich bewegt, wie lange er dauert und wie konsistent er über Schnitte hinweg bleibt.
+
+| Fähigkeit | Was sie bewirkt | Warum Filmemacher sie wichtig finden |
+|---|---|---|
+| Text-zu-Video-Generierung | Verwandelt einen geschriebenen Prompt in einen bewegten Clip | Schnelle Konzeptvisualisierung, bevor du dich auf einen Dreh festlegst |
+| Bildgenerierung | Erzeugt Standbilder aus Prompts | Storyboards, Moodboards und Referenzframes |
+| Referenz-Konditionierung | Nutzt gelieferte Bilder zur Steuerung der Ausgabe | Hält Figur, Garderobe oder Drehort konsistent |
+| Animationssteuerung | Legt fest, wie sich Elemente innerhalb eines Shots bewegen | Trennt Kamerabewegung von Subjektbewegung |
+| Prompt-Kontrolle | Legt die detaillierte Prompt-Struktur offen | Erlaubt es, eine Variable zu ändern, ohne den ganzen Shot neu aufzubauen |
+| Open-Source-Desktop-Workflow | Läuft lokal, der Code ist einsehbar | Eigentum, Transparenz und kein Lock-in |
+| Modellzugriff | Bringt aktuelle Videomodelle in ein einziges Fenster | Du bist nicht an eine einzige Generierungs-Engine gebunden |
+
+Das praktische Ergebnis: Statt zwischen fünf Browser-Tabs und drei Abos hin- und herzuwechseln, hält ArtCraft-Filmmaking Generierung, Iteration und Dateiverwaltung an einem Ort.
+
+## ArtCraft-Filmmaking vs. reine Cloud-KI-Video-Tools
+
+Cloud-Tools punkten bei Bequemlichkeit. Desktop- und Open-Source-Tools punkten bei Kontrolle und Eigentum. Was mehr zählt, hängt davon ab, was du produzierst.
+
+| Faktor | ArtCraft (Open-Source-Desktop) | Typisches reines Cloud-KI-Video-Tool |
+|---|---|---|
+| Wo die Arbeit stattfindet | Auf deiner Maschine, auf deiner Festplatte gespeichert | Auf einem Remote-Server, den du nicht kontrollierst |
+| Eigentum an der App | Du besitzt die Software und kannst sie verändern | Geschlossenes Produkt, nur lizenzierter Zugang |
+| Modellflexibilität | Mehrere Modelle aus einer App erreichbar | Meist die Modellfamilie eines einzigen Anbieters |
+| Prompt-Kontrolle | Detaillierte, strukturierte Kontrolle über die Ausgabe | Oft vereinfacht für leichte Bedienung |
+| Umgang mit Referenzen | Lokale Referenzbilder für Konsistenz | Unterschiedlich; manchmal begrenzt oder mit Upload-Limits |
+| Transparenz | Der Quellcode ist öffentlich | Blackbox |
+| Offline-Fähigkeit | Lokaler Workflow, weniger abhängig von einer Browser-Sitzung | Erfordert eine aktive Verbindung |
+
+Für einen kurzen Social-Clip ist ein Cloud-Tool oft schneller. Für einen Kurzfilm, ein Kundenprojekt oder alles mit Kontinuitätsanforderungen zahlt sich der Desktop-Ansatz in der Regel aus.
+
+## Ein Schritt-für-Schritt-Prozess für ArtCraft-Filmmaking
+
+So wird ein typischer Shot von der Idee zur fertigen Datei geführt. Betrachte es als Schleife, nicht als gerade Linie – der größte Teil des Werts entsteht daraus, jeweils eine Variable nach der anderen zu iterieren.
+
+| Schritt | Aktion | Praxistipp |
+|---|---|---|
+| 1. Shot definieren | Notiere, was die Kamera sieht, wie sie sich bewegt und wie lange sie läuft | Ein Satz pro Shot hält die Prompts fokussiert |
+| 2. Zuerst ein Standbild bauen | Generiere ein Keyframe-Bild, bevor du animierst | Ein starkes Frame ist billiger zu korrigieren als ein schlechter Clip |
+| 3. Referenzen fixieren | Liefere Referenzbilder für Figuren, Garderobe oder Sets | Konsistenz beginnt vor dem ersten Render |
+| 4. Einen strukturierten Prompt schreiben | Beschreibe Subjekt, Aktion, Kamera, Licht und Stil getrennt | Ändere pro Iteration ein Feld |
+| 5. Kurze Takes generieren | Rendere kurze Clips und vergleiche | Kurze Generierungen sind schneller zu bewerten |
+| 6. Bewusst animieren | Passe die Bewegungssteuerung an, statt blind neu zu würfeln | Trenne Kamerabewegung von Subjektbewegung |
+| 7. Speichern und versionieren | Bewahre Ausgaben mit klarer Benennung im lokalen Speicher auf | Deine Festplatte ist das Archiv |
+| 8. Montieren | Schneide die besten Takes in deinem Editor zusammen | Generiertes Material braucht trotzdem redaktionelles Urteilsvermögen |
+
+Berichte aus der Community deuten durchweg darauf hin, dass Schritt vier die meisten Qualitätsgewinne bringt. Vage Prompts erzeugen vages Material – egal, welches Modell hinter dem Vorhang steckt.
+
+## Prompt-Kontrolle, Referenzen und Animation: Woher die Qualität kommt
+
+Wenn du neu im ArtCraft-Filmmaking bist, verdienen diese drei Bereiche die meiste Übung. Es sind zugleich die Bereiche, in denen dir das Design des Tools den größten Hebel gibt.
+
+| Technik | So wendest du sie an | Häufiger Fehler |
+|---|---|---|
+| Strukturiertes Prompting | Teile den Prompt in Subjekt, Aktion, Kamera, Licht und Stil auf | Eine einzige lange, dahinlaufende Beschreibung schreiben |
+| Iterative Verfeinerung | Ändere zwischen den Rendern ein einzelnes Element | Jedes Mal den gesamten Prompt neu schreiben |
+| Referenz-Fixierung | Verwende dieselben Referenzbilder über eine Sequenz hinweg | Referenzen mitten in der Szene tauschen und die Kontinuität verlieren |
+| Bewegungstrennung | Definiere Kamerabewegung und Subjektbewegung unabhängig voneinander | Beides in einer vagen Anweisung verlangen |
+| Disziplin bei der Shot-Länge | Generiere kurze Clips und schneide sie zusammen | Lange Clips anfordern, die abdriften und an Qualität verlieren |
+| Stil-Verankerung | Wiederhole eine konsistente Stilformulierung über alle Shots hinweg | Die Stilsprache zwischen den Takes variieren |
+| Lokale Archivierung | Benenne und speichere jeden Take | Gute Ausgaben mit neuen Rendern überschreiben |
+
+Eine nützliche Gewohnheit: Führe ein einfaches Textprotokoll der Prompts, die funktioniert haben. Über ein paar Projekte hinweg wird dieses Protokoll wertvoller als jede Preset-Bibliothek, weil es deine eigene Bildsprache festhält.
+
+## Wer am meisten aus ArtCraft herausholt
+
+ArtCraft-Filmmaking passt zu einer bestimmten Art von Kreativen – jemandem, der Geschwindigkeit will, aber nicht bereit ist, die Autorenschaft aufzugeben.
+
+- **Unabhängige Filmemacher**, die Shots vor dem Drehtag prototypen, wenn Nachdrehs teuer sind.
+- **Animatorinnen und Motion Designer**, die schnell Referenzmaterial oder Previsualisierungsframes brauchen.
+- **Concept Artists**, die Moodboards und Storyboards mit demselben Tool erstellen, das sie für Bewegung nutzen.
+- **Kleine Studios**, die eine planbare, einsehbare Pipeline wollen statt Cloud-Abrechnung pro Sitzplatz.
+- **Open-Source-Befürworter**, die Software bevorzugen, die sie lesen, verändern und behalten können.
+
+Wenn du in mehr als eine dieser Kategorien fällst, verstärkt sich das Desktop-Modell tendenziell: eine App, eine Referenzbibliothek, ein Ausgabeordner.
+
+Die offizielle [ArtCraft-Website](https://getartcraft.com/) ist der richtige Startpunkt, und das [öffentliche GitHub-Repository](https://github.com/storytold/artcraft) lohnt sich, wenn du verstehen willst, wie die Crafting-Engine aufgebaut ist, bevor du deinen Workflow darauf festlegst.
+
+## Häufig gestellte Fragen zum ArtCraft-Filmmaking
+
+**Ist ArtCraft kostenlos nutzbar?**
+
+ArtCraft wird als Open-Source-Desktop-Anwendung vertrieben, und die eigene Darstellung des Projekts ist, dass dir die App gehört. Da sie auf deiner eigenen Maschine läuft, hängt das praktische Kostenprofil von deiner Hardware und den Modellen ab, die du ausführen möchtest – und nicht von einem Cloud-Zähler pro Render. Aktuelle Details zu Vertrieb und Lizenzierung findest du auf der offiziellen Website.
+
+**Brauche ich einen leistungsstarken Computer für ArtCraft-Filmmaking?**
+
+Da die Generierung auf deinem Desktop und nicht auf einem Remote-Server stattfindet, sind GPU und Arbeitsspeicher deiner Maschine wichtiger als bei einem browserbasierten Tool. Das ist der Kompromiss für lokales Eigentum: Du stellst die Rechenleistung, und im Gegenzug behältst du die Dateien, die Einstellungen und die Software selbst.
+
+**Wie unterscheidet sich ArtCraft von einem Cloud-KI-Videogenerator?**
+
+Die größten Unterschiede sind Eigentum, Transparenz und Kontrolle. Der Quellcode ist öffentlich, der Workflow lebt auf deiner Festplatte, und Prompt- und Referenzsteuerung liegen offen statt vereinfacht vor. Cloud-Tools gewinnen oft bei reiner Bequemlichkeit; eine Desktop-Crafting-Engine gewinnt, wenn Konsistenz und Wiederholbarkeit zählen.
+
+**Können Anfänger es nutzen, oder ist es nur für erfahrene Künstler?**
+
+Anfänger können mit Text-zu-Video und einfachen Standbildern beginnen und dann Referenzen und Animationssteuerung hinzufügen, sobald sie sich sicherer fühlen. Die Lernkurve ist real, aber es geht vor allem darum, Shots präzise zu beschreiben – eine Fähigkeit, die auf jedes andere KI-Video-Tool übertragbar ist, das du je nutzen wirst.

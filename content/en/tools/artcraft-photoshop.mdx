@@ -1,0 +1,127 @@
+export const metadata = {
+  title: "ArtCraft Photoshop Workflow: Pairing AI Generation With Classic Editing",
+  description: "Learn how an ArtCraft Photoshop workflow combines open-source AI image and video generation with layer-based editing, plus setup steps and practical tips.",
+  category: "tools",
+  date: "2026-10-08",
+}
+
+Most artists don't throw away a favorite editor when a new tool arrives — they extend it. That's the whole idea behind an **ArtCraft Photoshop** workflow: ArtCraft produces the raw material, and Photoshop finishes it with the layer control artists already trust. If you've ever generated an image you loved but couldn't fix the hands, the lighting, or a messy background, this pairing solves exactly that problem.
+
+ArtCraft is an open-source desktop app for generating AI images and video, built for artists who want real control instead of a slot machine. Photoshop remains the standard raster editor for masking, retouching, and compositing. An **ArtCraft Photoshop** workflow connects the two, and this guide covers how to set it up, where each tool wins, and which habits waste the most time.
+
+## Why Pair ArtCraft With Photoshop at All?
+
+Generative tools are excellent at ideation and mediocre at surgical precision. ArtCraft is described by its makers as an intentional crafting engine for artists, designers, and filmmakers — a desktop application you run yourself rather than a web service holding your files. Photoshop, by contrast, is where pixels get repaired, composited, and prepared for output.
+
+Put them together and the strengths line up neatly: ArtCraft gives you volume and variety, Photoshop gives you control and consistency. You stop asking one tool to do a job it was never designed for.
+
+| Task | Where it belongs | Why |
+| --- | --- | --- |
+| Exploring concepts and style variations | ArtCraft | Fast iteration across prompts and references |
+| Locking a direction | ArtCraft | Reference images and prompt control keep output on-brief |
+| Generating motion or short clips | ArtCraft | Video generation runs inside the same desktop app |
+| Retouching faces, hands, and edges | Photoshop | Healing, clone, and masked adjustments |
+| Compositing multiple elements | Photoshop | Layer stacks, blend modes, and masks |
+| Color grading and final export | Photoshop | Profiles, curves, and print-ready output |
+
+The practical takeaway: generate broadly in ArtCraft, then narrow aggressively in Photoshop.
+
+## Setting Up an ArtCraft Photoshop Workflow, Step by Step
+
+A clean handoff starts before you ever open a prompt box. Decide your final dimensions, aspect ratio, and output type first, because regenerating a batch at the wrong ratio is the single most common time sink. Then work through the steps below in order.
+
+| Step | Action | Why it matters |
+| --- | --- | --- |
+| 1 | Define the deliverable | Prevents regenerating at the wrong size or ratio |
+| 2 | Write a controlled prompt | Repeatable results instead of lucky accidents |
+| 3 | Generate a batch, not one image | Options beat perfection on the first try |
+| 4 | Review at 100% zoom | Catch hand, eye, text, and edge errors early |
+| 5 | Export at maximum resolution | PNG or TIFF preserves detail; JPEG throws it away |
+| 6 | Import as a Smart Object | Non-destructive scaling and filtering in Photoshop |
+| 7 | Edit with adjustment layers and masks | Everything stays reversible |
+| 8 | Archive both raw output and the layered file | Keeps provenance for future revisions |
+
+A few housekeeping habits pay off fast:
+
+- Name files with the prompt ID and date so you can trace any edit back to its source.
+- Keep a plain-text log of prompts that worked; it becomes your personal style library.
+- Duplicate your Smart Object before destructive edits, not after.
+- Save one flattened reference copy so you can compare "before" and "after" side by side.
+
+Community reports from artists running similar pipelines consistently mention the same benefit: the handoff step forces you to slow down and judge an image honestly before you spend an hour retouching it.
+
+## ArtCraft vs Photoshop: Capability Comparison
+
+These tools overlap less than people assume. Understanding the split prevents the classic mistake of trying to prompt your way out of a retouching problem.
+
+| Capability | ArtCraft | Photoshop |
+| --- | --- | --- |
+| Primary purpose | AI image and video generation | Raster editing and compositing |
+| License model | Open-source desktop app | Commercial subscription software |
+| Best at | Rapid concepting, style exploration, motion | Precision retouching, typography, print prep |
+| Weak at | Pixel-perfect cleanup and typography | Generating new content from a description |
+| Typical output | Generated stills and video written to your drive | Layered documents and export-ready files |
+| Core skill | Prompt literacy and reference management | Layer, mask, and tool fluency |
+
+If your goal is a finished, print-ready layout, Photoshop is non-negotiable. If your goal is fifty directions in an afternoon, ArtCraft wins by a mile. The ArtCraft Photoshop combination isn't a competition — it's a relay.
+
+## Prompt Control, References, and Animation Techniques
+
+The quality of your final edit is capped by the quality of your generation. ArtCraft's documentation highlights prompt control, reference images, and animation as core parts of its workflow, and each one has a downstream effect on how much cleanup you'll do later.
+
+| Technique | How to use it | Payoff in Photoshop |
+| --- | --- | --- |
+| Structured prompt skeleton | Subject, action, environment, light, lens, style | Fewer anatomy and perspective errors to fix |
+| Reference images | Supply a style or character reference | Consistent characters across a series |
+| One-variable iteration | Change a single element per batch | Predictable, comparable variations |
+| Negative descriptions | List what you don't want to see | Fewer artifacts to clone out |
+| Animation pass | Generate short motion from a still | Extra frames to composite or stack |
+| Locked prompts | Reuse an approved prompt for a set | Uniform assets that match |
+
+A useful rule of thumb: every artifact you can prevent at the prompt stage saves roughly ten minutes of retouching. Spending two extra minutes refining a prompt is almost always the better trade.
+
+For video work, ArtCraft's site notes that models such as Seedance 2.0 run inside the app, which means motion clips land on your drive ready for frame-level work in Photoshop's timeline. You can read more on [the official ArtCraft site](https://getartcraft.com/) or browse the source and release notes in the [ArtCraft GitHub repository](https://github.com/storytold/artcraft).
+
+## Practical Tips and Common Mistakes
+
+Five habits separate artists who move fast from artists who fight their tools:
+
+- **Generate at a larger size than you need.** Downscaling hides small flaws; upscaling magnifies them.
+- **Batch by project, not by mood.** Keeping one prompt family together makes style consistency trivial.
+- **Edit on a duplicate layer from the first stroke.** You will change your mind.
+- **Keep a "rejects" folder.** Failed generations are excellent texture and background sources.
+- **Export a flattened proof before delivery.** It catches stray layers and invisible masks.
+
+Now the mistakes that quietly wreck an ArtCraft Photoshop pipeline:
+
+| Mistake | What it looks like | Fix |
+| --- | --- | --- |
+| Editing a compressed export | Banding, mushy edges, lost detail | Always export PNG or TIFF |
+| Prompting for a fix | Ten generations, same broken hand | Switch to Photoshop and retouch it |
+| Skipping the 100% review | Discovering flaws after hours of work | Inspect before you commit |
+| Flattening too early | No way back to the original generation | Keep layers until delivery |
+| Ignoring aspect ratio | Cropping away the best part of a frame | Set the ratio before generating |
+
+Player experience and community reports echo the same theme: the artists who get the most from this setup treat generation and editing as two distinct crafts, not one blurred process.
+
+## FAQ: ArtCraft Photoshop Questions
+
+**Is ArtCraft a Photoshop plugin?**
+
+No. ArtCraft is a standalone open-source desktop application for generating AI images and video. The ArtCraft Photoshop relationship is a file-based handoff — you generate in ArtCraft, export, then open that file in Photoshop for finishing work.
+
+**Do I need Photoshop to use ArtCraft?**
+
+Not at all. ArtCraft produces finished stills and video on its own. Photoshop simply adds precision retouching, compositing, and print preparation when a project demands it. Any layer-capable raster editor can fill the same role.
+
+**Can ArtCraft generate video, not just images?**
+
+Yes. ArtCraft handles both AI image and AI video generation in one desktop app, and its site notes that video models such as Seedance 2.0 are available inside it. That makes it possible to generate motion and stills from the same project without switching tools.
+
+**Which should a beginner learn first?**
+
+Start with ArtCraft if your bottleneck is ideas — prompt structure and reference management are quick to learn. Start with Photoshop if your bottleneck is finish quality. Most artists eventually need both, and the ArtCraft Photoshop pairing is easiest to absorb one skill at a time.
+
+**Where should generated files live?**
+
+Keep raw generations and edited layered files in separate folders, ideally on the same drive ArtCraft writes to. Backing up both means you can always rebuild an edit from the original output if a project takes an unexpected turn.

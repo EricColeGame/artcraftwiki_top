@@ -1,0 +1,125 @@
+export const metadata = {
+  title: "ArtCraft Anfänger-Leitfaden: KI-Bilder und Videos auf deinem Desktop erstellen",
+  description: "Ein praxisnaher ArtCraft Anfänger-Leitfaden zu Installation, Prompting, Bild- und Videogenerierung, Referenzen und Workflow-Tipps für neue Künstler.",
+  category: "guide",
+  date: "2026-10-08",
+}
+
+## Was ArtCraft ist und für wen es gedacht ist
+
+Wenn du nach einem ArtCraft Anfänger-Leitfaden gesucht hast, hier die Kurzfassung: ArtCraft ist eine Open-Source-Desktop-Anwendung zur Generierung von KI-Bildern und -Videos, entwickelt für Künstler, Designer und Filmemacher, die sichtbare Kontrolle statt einer Blackbox wollen. Sie installiert sich wie jedes normale Programm, statt in einem Browser-Tab zu leben, und ihre Entwickler beschreiben sie als eine bewusste Crafting-Engine — ein Werkzeug, bei dem jede Entscheidung, von der Prompt-Formulierung bis zu den Referenzbildern, in deinen Händen bleibt.
+
+Dieser ArtCraft Anfänger-Leitfaden geht davon aus, dass du die App noch nie geöffnet hast. Du brauchst keinen Machine-Learning-Hintergrund und musst nicht wissen, wie Diffusionsmodelle intern funktionieren. Was du brauchst, ist Geduld mit der Iteration: generieren, genau hinsehen, eine Variable ändern, erneut generieren. Diese Schleife ist die gesamte Fähigkeit.
+
+Hier ist die Landschaft auf einen Blick, bevor du irgendetwas installierst.
+
+| Funktion | Was sie für einen Anfänger bedeutet |
+|---|---|
+| Desktop-Anwendung | Installiert lokal; deine Sitzung verschwindet nicht, wenn ein Tab geschlossen wird |
+| Open Source | Der Code ist öffentlich, sodass die Community ihn prüfen und beitragen kann |
+| Bild- und Videogenerierung | Ein Werkzeug deckt Standbilder und Bewegung ab, statt zwei Abonnements |
+| Prompt-Kontrolle | Du schreibst und überarbeitest den Text, der jede Generierung steuert |
+| Referenz-Eingaben | Du kannst Ergebnisse mit Beispielbildern lenken, nicht nur mit Worten |
+| Dateien werden auf deine Festplatte geschrieben | Ergebnisse landen in deinen eigenen Ordnern, bereit für deine Pipeline |
+
+Der Reiz für neue Nutzer ist die Eigenverantwortung. Weil ArtCraft Open Source und Desktop-nativ ist, ist deine Arbeit nicht in der Oberfläche eines anderen gefangen. Du kannst das [offizielle ArtCraft-Repository auf GitHub](https://github.com/storytold/artcraft) durchsuchen, um genau zu sehen, was das Projekt tut und wie es gepflegt wird.
+
+## Einrichtung, ohne dein erstes Wochenende zu verschwenden
+
+### Nimm eine Desktop-First-Denkweise an
+
+Anfänger behandeln ein KI-Tool oft wie eine Website: klicken, generieren, schließen. ArtCraft belohnt die entgegengesetzte Gewohnheit. Weil es nativ läuft und Ergebnisse auf die Festplatte schreibt, solltest du entscheiden, *wo* deine Arbeit lebt, bevor du ein einziges Bild generierst. Eine einfache Struktur — `ArtCraft/projects/project-name/refs`, `/outputs`, `/prompts` — spart später Stunden des Scrollens.
+
+### Bereite zuerst diese sechs Dinge vor
+
+| Vorbereitungspunkt | Warum er wichtig ist | Anfänger-Abkürzung |
+|---|---|---|
+| Speicherplatz | Video-Output ist deutlich größer als Standbilder | Reserviere einen eigenen Ordner oder ein Laufwerk |
+| Referenzbilder | Worte allein erfassen selten einen Look | Sammle 5–10 Bilder pro Stil, der dir gefällt |
+| Eine Namenskonvention | Generierte Dateien vermehren sich schnell | Nutze `project-date-subject-v1` |
+| Prompt-Notizen | Du wirst vergessen, was funktioniert hat | Führe ein Prompt-Log als einfache Textdatei |
+| Stabile Internetverbindung | Manche Modelle oder Dienste brauchen sie | Teste deine Verbindung vor einem langen Lauf |
+| Zeitblöcke | Generierung ist nicht sofort | Arbeite in Sitzungen von 30–60 Minuten |
+
+Sobald installiert, nimm dir zehn Minuten, um jedes Panel durchzuklicken, ohne etwas zu generieren. Neue Nutzer, die zuerst die Oberfläche erkunden, erzielen in Woche eins durchweg bessere Ergebnisse, weil sie wissen, wo Referenzen, Prompt-Felder und Ausgabeeinstellungen tatsächlich liegen.
+
+## Dein erstes Bild: Prompting ohne Raten
+
+### Die Anatomie eines nützlichen Prompts
+
+Ein Anfänger-Prompt liest sich meist wie ein Wunsch: „schönes Fantasy-Schloss". Ein funktionierender Prompt liest sich wie eine Shot-Liste. Du beschreibst kein Gefühl, du spezifizierst ein Foto oder ein Frame.
+
+| Prompt-Element | Schwaches Beispiel | Starkes Beispiel |
+|---|---|---|
+| Subjekt | „ein Ritter" | „ein verwitterter Ritter in verbeulter Plattenrüstung" |
+| Handlung oder Pose | „stehend" | „kniend, eine Hand auf einem zerbrochenen Schwert" |
+| Umgebung | „draußen" | „auf einem nebelverhangenen Moor im Morgengrauen" |
+| Beleuchtung | „schönes Licht" | „tiefes Seitenlicht, kalte blaue Schatten" |
+| Komposition | (fehlt) | „weite Aufnahme, Subjekt links im Bild" |
+| Stil oder Medium | „cool" | „Ölgemälde, sichtbare Pinselstriche" |
+| Detailgrad | (fehlt) | „hoher Detailgrad bei Rüstungskratzern" |
+
+Schreibe eine Zeile pro Element und führe sie dann zu einem einzigen Absatz zusammen. Wenn das Ergebnis falsch ist, ändere eine Zeile — nicht alle sieben. Diese eine Disziplin ist die wertvollste Gewohnheit in diesem gesamten ArtCraft Anfänger-Leitfaden.
+
+### Nutze Referenzen, um die Lücke zu schließen
+
+Wenn dein Vokabular ausgeht, übernehmen Referenzen. ArtCraft unterstützt referenzgesteuerte Workflows, das heißt, du kannst dem Modell ein visuelles Ziel geben und es bitten, Komposition, Farbpalette oder Charakterdesign zu respektieren. Beginne mit einer Referenz pro Generierung. Fünf Referenzen auf einmal zu stapeln erzeugt widersprüchliche Signale und trübt das Ergebnis.
+
+## Von Standbildern zur Bewegung: Grundlagen der Videogenerierung
+
+Videogenerierung ist der Punkt, an dem Anfänger sich entweder verlieben oder entmutigt werden. Der mentale Wechsel ist einfach: Ein Bild ist eine Entscheidung, ein Video ist eine Abfolge von Entscheidungen, die konsistent bleiben müssen. Bewegung, Kameraführung und Kontinuität des Subjekts müssen über die Frames hinweg zusammenhalten.
+
+| Einstellung | Wie sie sich bei Bildern verhält | Wie sie sich bei Video verhält |
+|---|---|---|
+| Prompt-Länge | Kürzere Prompts funktionieren oft besser | Bewegungs- und Kamera-Wörter zählen mehr |
+| Referenz-Nutzung | Steuert Stil und Komposition | Steuert Charakter- und Szenenkonsistenz |
+| Generierungszeit | Sekunden bis ein paar Minuten | Deutlich länger pro Clip |
+| Iterationskosten | Günstig zum Neu-Würfeln | Teuer — plane, bevor du startest |
+| Fehlerfall | Falscher Look | Richtiger Look, kaputte Bewegung |
+
+Die App integriert im Laufe der Zeit auch externe Videomodelle; Seedance 2.0 zum Beispiel wurde ArtCraft als Option zur Videogenerierung hinzugefügt. Die Modellverfügbarkeit ändert sich, also prüfe die offizielle ArtCraft-Website oder das Community-Wiki, bevor du ein Projekt um ein einzelnes Modell herum planst.
+
+Halte deinen ersten Clip absichtlich langweilig: ein Subjekt, eine langsame Kamerabewegung, drei bis fünf Sekunden. Erziele ein sauberes Ergebnis, bevor du etwas Ehrgeiziges versuchst.
+
+## Workflow-Gewohnheiten, die eine gute Woche von einer frustrierenden trennen
+
+Die meiste Frustration bei Anfängern ist kein Talentproblem. Es ist ein Prozessproblem, und es ist behebbar.
+
+| Fehler | Wie er aussieht | Die Lösung |
+|---|---|---|
+| Alles auf einmal neu schreiben | Neuer Prompt bei jedem Versuch, kein Lernen | Ändere eine Variable pro Lauf |
+| Kein Prompt-Log | „Was habe ich gestern getippt?" | Speichere jeden Prompt mit seinem Output |
+| Perfektion beim ersten Versuch jagen | 40 Generierungen, nichts gespeichert | Speichere das Beste von jeweils fünf |
+| Referenzen ignorieren | Endloses Stil-Driften | Fixiere eine Referenz pro Projekt |
+| Outputs horten | Tausende unbenannte Dateien | Lösche gnadenlos, behalte zehn pro Projekt |
+
+Eine strukturierte erste Woche hilft mehr als jeder einzelne Tipp.
+
+| Tag | Fokus | Ziel |
+|---|---|---|
+| 1 | Installieren und die Oberfläche erkunden | Wissen, wo alles liegt |
+| 2 | Prompt-Anatomie | Ein bewusst komponiertes Bild erzeugen |
+| 3 | Referenzen | Einen bestimmten Look aus einer Referenz reproduzieren |
+| 4 | Iterationsdisziplin | Ein Bild über fünf Läufe hinweg verbessern |
+| 5 | Erster Video-Clip | Ein sauberer Drei-Sekunden-Bewegungstest |
+| 6 | Organisation | Ein ordentlicher Ordner und ein Prompt-Log |
+| 7 | Persönliches Projekt | Alles auf deine eigene Idee anwenden |
+
+Community-Berichte legen durchweg nahe, dass neue Nutzer, die Prompts protokollieren, weit schneller besser werden als diejenigen, die nur aus dem Instinkt heraus generieren. Die Erfahrung von Anwendern weist auch auf eine andere Wahrheit hin: Die ersten zwanzig Outputs sind Übung, keine Portfolio-Stücke. Behandle sie so, und der Druck verschwindet.
+
+## Häufig gestellte Fragen
+
+**Brauche ich einen teuren Computer, um anzufangen?**
+Nicht unbedingt. ArtCraft ist eine Desktop-App, also hängt die Leistung davon ab, welche Modelle und Funktionen du nutzt. Die Generierung von Standbildern ist in der Regel leichter als Videoarbeit. Beginne mit Bildern, miss das Verhalten deines eigenen Rechners und rüste erst auf, wenn eine bestimmte Funktion unbrauchbar wird.
+
+**Ist dieser ArtCraft Anfänger-Leitfaden relevant, wenn ich noch nie KI-Tools verwendet habe?**
+Ja — genau für diese Zielgruppe ist er geschrieben. Lerne die Prompt-Struktur-Tabelle, nutze eine Referenz nach der anderen und widerstehe der Versuchung, alles auf einmal zu ändern. Diese drei Regeln tragen die meisten Anfänger durch ihren ersten Monat.
+
+**Sollte ich zuerst Bilder oder Video lernen?**
+Immer zuerst Bilder. Die Bildgenerierung lehrt dich Prompting, Referenzen und Iteration zu geringen Kosten. Video vervielfacht jeden Fehler, den du noch nicht zu beheben gelernt hast, deshalb ist die Reihenfolge wichtig.
+
+**Wo bekomme ich Hilfe, wenn etwas nicht funktioniert?**
+Beginne mit der offiziellen ArtCraft-Website und dem Community-Wiki, die Downloads, Prompt-Kontrolle, Referenzen, Animation und Open-Source-Workflows abdecken. Für tiefergehende Fragen sind die Issues und Diskussionen des GitHub-Repositories der zuverlässigste Ort, um zu sehen, was andere Nutzer bereits gelöst haben.
+
+**Wie lange dauert es, bis ich etwas mache, das mir tatsächlich gefällt?**
+Die meisten Menschen produzieren innerhalb ihrer ersten Woche bewusster Übung ein Ergebnis, das sie behalten wollen, und innerhalb eines Monats ein kleines Portfolio. Die Geschwindigkeit hängt weniger vom Talent ab als davon, ob du ein Prompt-Log führst und jeweils eine Variable nach der anderen änderst.

@@ -1,0 +1,133 @@
+export const metadata = {
+  title: "ArtCraft GitHub: Download the Open-Source AI Image and Video Desktop App",
+  description: "Learn how the ArtCraft GitHub project works, how to download the open-source desktop app, and what artists gain from its controllable AI tools.",
+  category: "downloads",
+  date: "2026-10-08",
+}
+
+## Why the ArtCraft GitHub Project Deserves a Place on Your Drive
+
+If you have ever wanted an AI image and video tool you can actually inspect, modify, and own, the ArtCraft GitHub repository is the place to begin. ArtCraft is an open-source desktop application built for artists, designers, and filmmakers who want real control over generation instead of a black-box web form. Tracking down the ArtCraft GitHub project is the first step toward a workflow where prompts, references, and finished renders all live on your own machine.
+
+Most AI creative tools hide their models behind a subscription and a browser tab. ArtCraft takes the opposite approach: the code is public, the app runs natively on your desktop, and your outputs land in folders you choose. That combination explains why the ArtCraft GitHub repo keeps attracting attention from people who care about ownership as much as output quality.
+
+This guide walks through what ArtCraft actually is, every route to a working install, what lives inside the repository, and the habits that separate a frustrating first session from a productive one.
+
+## What Is ArtCraft, Exactly?
+
+ArtCraft presents itself as an intentional crafting engine for artists, designers, and filmmakers rather than a single-purpose generator. In practice, that means a desktop workspace for producing AI images and video with an emphasis on controllable, repeatable results. The project is maintained under the storytold organization on GitHub, while the official site describes it as an open desktop app that you own.
+
+| Attribute | Details |
+|---|---|
+| What it is | Open-source desktop app for AI image and video generation |
+| Primary audience | Artists, designers, filmmakers, and technically curious creators |
+| Source code | The storytold/artcraft repository on GitHub |
+| Official site | [ArtCraft — Controllable AI for Artists](https://getartcraft.com/) |
+| Documentation | [ArtCraft Wiki](https://www.artcraft.wiki/) covering prompts, references, animation, and open-source workflows |
+| Hosted option | A browser-based app is available for quick access without installing |
+| Ownership model | Open source — you can read, fork, and modify the code |
+| Notable model support | The official site announced Seedance 2.0 for video generation inside the app |
+
+The split between a desktop build and a hosted web version matters. The desktop route gives you local files, local control, and the ability to poke at the source. The web route is faster to try but keeps you further from the machinery. Neither is wrong — they simply suit different people at different moments.
+
+## Downloading ArtCraft From GitHub: Three Routes to Your Desktop
+
+The ArtCraft GitHub repository is the source of truth for the application, but "downloading ArtCraft" can mean three different things depending on how much control you want.
+
+| Route | Best for | What you need | Trade-off |
+|---|---|---|---|
+| Install a published release | Artists who want to start creating today | A supported desktop operating system | You follow the maintainer's release cadence |
+| Build from source | Tinkerers, contributors, and anyone modifying behavior | Git, a package manager, and a working build toolchain | More setup time, maximum flexibility |
+| Use the hosted web app | Testing the workflow on a borrowed or locked-down machine | A browser and an account | Less control over where files are written |
+
+### Option 1: Install a Published Release
+
+This is the path most people want. Visit the repository's releases area, check what build is currently published for your platform, and download it. Read the release notes before installing — they usually flag breaking changes, new model integrations, or known issues that will save you an hour of confusion later.
+
+### Option 2: Build From Source
+
+Building from source is how you get a version that behaves exactly the way you want. It is also the only way to contribute code back to the project.
+
+| Step | Action | Why it matters |
+|---|---|---|
+| 1 | Install Git and the runtime the project targets | The build scripts assume a modern toolchain |
+| 2 | Clone the repository to a folder you control | Keeps your build separate from installed apps |
+| 3 | Install dependencies using the documented package manager | Avoids version drift between your machine and the maintainer's |
+| 4 | Launch the development build and generate a test image | Confirms the pipeline works before you customize anything |
+| 5 | Pull updates regularly and rebuild | Keeps you aligned with upstream fixes and new model support |
+
+### Option 3: Use the Hosted Web App
+
+If you want to understand the interface before committing disk space, the browser version is a legitimate starting point. Sign in, run a few prompts, and see whether the control philosophy matches how you like to work. Just remember that the desktop app is where the ownership story actually pays off.
+
+## Inside the ArtCraft GitHub Repository: What Artists Actually Get
+
+Browsing the ArtCraft GitHub codebase can feel intimidating if you have never opened a repository before. Here is what each area of the project translates to in practical terms.
+
+| Area of the project | What it gives you in practice |
+|---|---|
+| Prompt control systems | Fine-grained steering of a generation instead of one-shot text boxes |
+| Reference handling | Feeding in existing images to guide style, composition, or subject matter |
+| Animation tools | Turning still frames into motion without leaving the app |
+| Open-source workflows | Inspectable pipelines you can adapt rather than opaque presets |
+| Local output handling | Results written straight to your own drive and folder structure |
+| Issue tracker | A public record of bugs, feature requests, and maintainer responses |
+| Contribution path | Pull requests and discussions for people who want to improve the tool |
+
+The issue tracker is underrated. Before you spend an evening debugging something, search it. Community reports about crashes, model downloads, or platform quirks are often already documented, with workarounds attached. When you do hit something new, a clear report with your operating system, the steps you took, and the exact error message is genuinely valuable — and it is the fastest way to get a fix into a future release.
+
+## Features That Make ArtCraft Worth the Download
+
+Not every open-source creative tool earns a permanent spot on your machine. ArtCraft's case rests on control and continuity.
+
+| Feature | What it does | Who benefits most |
+|---|---|---|
+| Controllable generation | Keeps the artist in the decision loop instead of rolling the dice | Illustrators and concept artists with a specific vision |
+| Image-to-video animation | Extends still work into motion clips | Storyboarders and short-form filmmakers |
+| Reference-driven prompting | Anchors outputs to existing art or photography | Designers matching an established visual language |
+| Local-first file handling | Outputs are written to your drive, not trapped in a cloud gallery | Anyone with client confidentiality requirements |
+| Open-source extensibility | The code can be forked, patched, and extended | Technical artists and pipeline engineers |
+| Model flexibility | Newer video models can be integrated as they are supported | Creators chasing the latest generation quality |
+
+The video side has been the most visible area of movement. The official site announced that Seedance 2.0, a fast video generation model, is available inside ArtCraft — a signal that the project intends to keep pace with the model ecosystem rather than freezing on a single engine. For artists who treat AI as one more brush rather than a slot machine, that responsiveness is the whole point.
+
+There is a practical payoff to all of this. When the tool is open and local, a technique you develop today still works next month. You are not rebuilding your muscle memory every time a vendor changes a pricing tier or retires a model endpoint.
+
+## Tips for Getting More Out of the ArtCraft GitHub Project
+
+A little preparation turns a rocky first install into a smooth working setup.
+
+- **Read the wiki before the code.** The ArtCraft Wiki covers prompts, references, animation, and open-source workflows in plain language. Start there, not in the source tree.
+- **Bookmark the releases page.** That is where you learn about new builds, model additions, and fixes. Checking it monthly keeps you current without living in the repository.
+- **Keep a reference library.** Since ArtCraft leans on reference-driven prompting, a well-organized folder of style anchors and composition examples pays for itself immediately.
+- **Start small and scale up.** Generate short, low-cost test renders while you learn the controls. Save the ambitious multi-shot sequences for after you trust your settings.
+- **Write reproducible bug reports.** Note your operating system, your build, and the exact steps that triggered the problem. Maintainers triage faster when they can reproduce what you saw.
+- **Contribute in whatever form fits.** Documentation fixes, example prompts, and interface suggestions are all legitimate contributions, not just code patches.
+
+| Common first-run pitfall | Practical fix |
+|---|---|
+| Skipping the documentation and guessing at controls | Spend fifteen minutes in the wiki first |
+| Building from source on a stale toolchain | Update your runtime and package manager before cloning |
+| Losing track of generated files | Set an output folder you will actually remember |
+| Testing on a huge, complex prompt immediately | Start with a simple subject and add one variable at a time |
+| Reporting a bug with no reproduction steps | Record your OS, build, and exact sequence first |
+
+One more habit worth building: keep your own notes. When a prompt structure or reference combination produces something good, write down what you did. Open-source creative tools reward curiosity, and a personal log is how that curiosity compounds into a recognizable style instead of a folder of lucky accidents.
+
+## Frequently Asked Questions About the ArtCraft GitHub Project
+
+**Is ArtCraft free to download from GitHub?**
+
+The project is open source, which means the source code is publicly available to read, clone, and modify. If you use the hosted browser version instead of the desktop app, check the official site for its current terms, since hosted services can carry their own conditions separate from the open codebase.
+
+**Do I need to know how to code to use the ArtCraft GitHub release?**
+
+No. Installing a published release is a normal desktop software install. Coding knowledge only becomes relevant if you want to build from source, patch behavior, or contribute changes back to the ArtCraft GitHub repository.
+
+**What can I actually create with ArtCraft?**
+
+The app focuses on AI image generation and video, including animation that extends still images into motion. With reference-driven prompting and fine-grained prompt control, it suits concept art, storyboards, style exploration, and short motion tests.
+
+**How do I keep my ArtCraft GitHub download up to date?**
+
+Watch the repository's releases page and read the release notes before updating. If you built from source, pull the latest changes and rebuild periodically so you benefit from fixes and newly supported models.

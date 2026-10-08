@@ -1,0 +1,137 @@
+export const metadata = {
+  title: "ArtCraft 3D Objects: Using Dimensional References for AI Image and Video",
+  description: "Learn how ArtCraft 3D objects work as references for AI image and video generation, plus prep tips, workflows, and common mistakes to avoid.",
+  category: "features",
+  date: "2026-10-08",
+}
+
+## Why 3D Objects Change the AI Generation Equation
+
+Most AI images fall apart the moment you need the same subject from a second angle. ArtCraft 3D objects solve that problem directly: instead of hoping a text prompt behaves, you hand the model a real, dimensional reference you can rotate, light, and match frame by frame. ArtCraft 3D objects turn a guessing game into a controllable craft.
+
+ArtCraft itself is an open-source desktop application for generating AI images and video, built for artists who want genuine control over the output rather than a slot machine. Because it runs natively on your machine and writes results straight to your drive, it fits into an existing 3D pipeline instead of replacing it. That matters, because the artists getting the most consistent results are the ones feeding the generator geometry rather than adjectives.
+
+The core idea is simple: a 3D object carries information a prompt cannot — exact proportions, camera-relative perspective, occlusion, and silhouette. Once that structure is in the loop, your job shifts from fighting randomness to directing it.
+
+| What a text prompt gives you | What a 3D object reference gives you |
+| --- | --- |
+| Vague shape described in words | Exact geometry and proportions |
+| Inconsistent look between shots | Repeatable subject across angles |
+| No camera awareness | Real perspective and depth cues |
+| Hard to revise precisely | Editable, re-renderable source |
+| Style drifts with each seed | Style locked to your reference |
+
+## What Counts as a 3D Object Reference in ArtCraft
+
+Not every 3D asset needs to be a finished hero model. In practice, artists use several levels of fidelity, and the right choice depends on how much control you need versus how much time you have.
+
+| Reference type | What it controls | Best used for |
+| --- | --- | --- |
+| Blocked-out mesh | Scale, proportion, camera framing | Pre-visualization and shot planning |
+| Mid-poly sculpt | Overall form and silhouette | Character and creature consistency |
+| High-poly asset | Surface detail and micro-shape | Hero shots and close-ups |
+| Depth pass render | Spatial layering and focus falloff | Compositing-friendly outputs |
+| Silhouette / matte render | Edge shape and negative space | Stylized and graphic looks |
+| Turntable sequence | Multi-angle consistency | Animation and shot-to-shot continuity |
+
+Community reports from artists working with open-source generation tools suggest that a clean depth or matte render often outperforms a fully textured model as a control input. Textures can confuse a generator that is trying to invent its own lighting; geometry alone gives it room to work. Your mileage will vary with the model you select, so test both on a short sequence before committing to a long render.
+
+It is also worth noting that ArtCraft is under active development, and the exact handling of reference inputs evolves with releases. Check [the official ArtCraft site](https://getartcraft.com/) for the current feature set rather than relying on older tutorials.
+
+## Preparing 3D Objects for a Clean Result
+
+Most failed generations trace back to the reference, not the prompt. A model that arrives with flipped normals, a wild scale, or a camera that does not match your intended shot will fight you the entire way. Ten minutes of cleanup saves an hour of rerolling.
+
+### The pre-flight checklist
+
+| Check | Why it matters | Quick fix |
+| --- | --- | --- |
+| Correct world scale | Wrong scale skews perspective and depth cues | Rescale to real-world units before export |
+| Clean normals | Flipped faces read as holes in renders | Recalculate normals outside |
+| Origin at a sensible pivot | Rotation and framing stay predictable | Move origin to base center |
+| Camera matched to shot | Mismatched lens creates impossible geometry | Match focal length and height to your plate |
+| Neutral background | Busy backgrounds leak into the reference | Render on a flat matte color |
+| Single object per pass | Overlapping subjects blur the control signal | Split complex scenes into separate passes |
+| Consistent naming | You will lose track of which pass is which | Use a strict file-naming convention |
+
+### Choose the right output format for the job
+
+A depth pass, a normal pass, and a beauty render all tell the generator different things. Depth is the workhorse for spatial control. Normals are useful when you want the generator to interpret surface direction without inheriting your lighting. A clay or matte render sits in the middle — it communicates form while staying stylistically neutral.
+
+If you are working with animation, exporting a short turntable or camera move rather than a still gives the model a motion reference. This is where ArtCraft 3D objects pay off most clearly: a fifteen-second orbit can anchor an entire sequence.
+
+## A Step-by-Step ArtCraft 3D Objects Workflow
+
+The following workflow assumes you already have a desktop build installed. It is deliberately tool-agnostic on the 3D side — Blender, Maya, Cinema 4D, or any DCC app that exports stills and image sequences will do.
+
+| Step | Action | Output |
+| --- | --- | --- |
+| 1. Block the shot | Rough out geometry and camera position | Low-detail scene file |
+| 2. Render control passes | Export depth, matte, or clay versions | Reference image set |
+| 3. Import references | Load passes into your ArtCraft project | Controlled generation setup |
+| 4. Write a lean prompt | Describe style, light, and mood — not shape | Short, focused prompt |
+| 5. Generate a test batch | Produce a small number of variations | Sample frames |
+| 6. Compare against the reference | Check silhouette, proportion, and framing | Pass or revise decision |
+| 7. Refine and repeat | Adjust geometry or prompt, then regenerate | Tightened result |
+| 8. Push to motion | Apply the same setup to a video pass | Animated sequence |
+
+The single biggest efficiency gain in this loop is step six. Artists who compare output against the reference systematically — rather than eyeballing it — catch proportion drift early, before it compounds across a sequence.
+
+| Prompt discipline | Weak approach | Strong approach |
+| --- | --- | --- |
+| Shape description | "A tall spindly robot with long arms" | Omit — geometry handles it |
+| Style direction | Buried in a paragraph | One clear stylistic clause |
+| Lighting | Contradicts the reference pass | Matches or deliberately overrides |
+| Length | 80+ words | 15–30 words |
+
+## ArtCraft 3D Objects vs. Text-Only Prompting
+
+It is fair to ask whether the extra setup is worth it. For one-off concept sketches, plain prompting is faster. For anything that needs to hold together across multiple shots, the geometry-first approach wins.
+
+| Scenario | Text-only prompting | 3D object reference |
+| --- | --- | --- |
+| Single throwaway concept | Fast and sufficient | Overkill |
+| Character across 5+ shots | High drift risk | Consistent by design |
+| Product or prop accuracy | Unreliable | Precise |
+| Client revision rounds | Re-prompt from scratch | Adjust geometry and re-render |
+| Animation continuity | Very difficult | Practical |
+| Stylized abstraction | Often fine | Optional but useful |
+
+A useful rule of thumb from working artists: if you would be embarrassed to show two versions side by side, use a reference. Consistency is the feature people actually pay for, and ArtCraft 3D objects are the most direct route to it.
+
+## Common Mistakes and How to Avoid Them
+
+| Mistake | Symptom | Fix |
+| --- | --- | --- |
+| Over-describing shape in the prompt | Output ignores your reference | Strip shape language from the prompt |
+| Using a textured beauty render as control | Generator inherits your lighting badly | Switch to depth or matte passes |
+| Wrong camera in the 3D scene | Perspective looks physically impossible | Match lens and height to the intended shot |
+| One pass for a multi-object scene | Subjects merge or swap | Split into separate passes |
+| Skipping test batches | Expensive rerenders later | Always generate a small sample first |
+| Ignoring file organization | Wasted hours hunting assets | Adopt naming conventions early |
+
+A few practical habits separate smooth projects from frustrating ones:
+
+- **Version your references.** Keep the 3D scene that produced each pass so you can regenerate after a change.
+- **Keep a reference library.** A folder of reusable depth passes for common props and body types saves hours over a year.
+- **Work at the lowest fidelity that solves the problem.** Blockouts are cheap; high-poly assets are not.
+- **Document what worked.** A short note on prompt length and pass type for each shot pays off on the next project.
+- **Stay current.** Because ArtCraft is open source and iterating quickly, workflows that were optimal a few months ago may not be today. The [GitHub repository for ArtCraft](https://github.com/storytold/artcraft) is the place to watch changes.
+
+## Frequently Asked Questions
+
+**Do I need to be a 3D artist to use ArtCraft 3D objects?**
+
+No, but you need basic comfort with a 3D viewport. You can get most of the benefit from simple blockouts — boxes, spheres, and a matched camera — without ever sculpting a detailed model. The skill that matters most is camera matching, not modeling.
+
+**What file or render type works best as a reference?**
+
+Community reports consistently favor depth and matte passes over fully textured renders, because they communicate form without forcing lighting decisions onto the generator. Start with a neutral clay render, then experiment with depth if you need tighter spatial control.
+
+**Can ArtCraft 3D objects help with video, not just stills?**
+
+Yes, and this is where the approach shines. Exporting a short camera move or turntable gives the generator a motion reference, which dramatically improves continuity between frames compared with prompting alone.
+
+**Is this workflow slower than just writing prompts?**
+
+For a single image, yes. For any project with more than a couple of shots, it is usually faster overall, because you spend time refining geometry instead of rerolling prompts and discarding near-misses. The break-even point typically arrives around the third or fourth shot that needs to match.

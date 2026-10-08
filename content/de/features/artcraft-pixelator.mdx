@@ -1,0 +1,120 @@
+export const metadata = {
+  title: "ArtCraft Pixelator: KI-Bilder und Videos in saubere Pixel Art verwandeln",
+  description: "Der ArtCraft Pixelator verwandelt KI-Renderings in gestochen scharfe Pixel Art. Lernen Sie die Einstellungen, den Workflow und die Tipps kennen, mit denen Sprites scharf und lesbar bleiben.",
+  category: "features",
+  date: "2026-10-08",
+}
+
+Pixel Art erlebt eine zweite Blüte, und der Grund ist einfach: Ein gestochen scharfes Bild mit niedriger Auflösung ist bei jeder Größe sofort lesbar, vom 16-Pixel-App-Symbol bis zum Poster an der Wand. Wenn Sie KI-Bilder oder -Videos generieren, ist der **ArtCraft Pixelator** der Teil des Workflows, der ein weiches, hochauflösendes Rendering in ein bewusstes Raster aus farbigen Quadraten verwandelt. Dieser Unterschied ist wichtiger, als er klingt. Die meisten Diffusions- und Videomodelle sind darauf trainiert, weiche Verläufe, ausgefranste Kanten und Anti-Aliasing-Kurven zu erzeugen – genau das, was ein Pixelkünstler stundenlang von Hand entfernt. Der ArtCraft Pixelator gibt Ihnen das Raster zurück, und das, ohne dass Sie irgendetwas neu zeichnen müssen.
+
+ArtCraft selbst ist eine Open-Source-Desktop-App zur Generierung von KI-Bildern und -Videos, die auf der Idee aufbaut, dass Künstler die Kontrolle über den Prozess behalten sollten, anstatt ihn einer Blackbox zu überlassen. Der Pixelator ist ein Ausdruck dieser Philosophie: Sie entscheiden, wie grob, wie begrenzt und wie texturiert das Endergebnis sein soll.
+
+## Was der ArtCraft Pixelator tatsächlich macht
+
+Im Kern führt das Tool drei Operationen nacheinander aus. Jede verändert das Bild auf sichtbare, vorhersehbare Weise, und sie separat zu verstehen ist der schnellste Weg zu Ergebnissen, die Ihnen tatsächlich gefallen.
+
+### Downsampling: Das Raster aufbauen
+
+Downsampling verwirft Details absichtlich. Das Bild wird auf ein festes Pixelraster gesetzt – 32×32 für einen winzigen Sprite, 64×64 oder 128×128 für etwas mit besser lesbaren Formen. Jeder weiche Verlauf wird zu einem Stapel flacher Bänder, und jede Kurve wird zu einer Treppe.
+
+### Quantisierung: Die Palette verkleinern
+
+Echtes Pixel Art aus der 8-Bit- und 16-Bit-Ära verwendete selten mehr als ein paar Dutzend Farben gleichzeitig. Die Quantisierung reduziert Ihr Rendering auf eine begrenzte Palette, und genau das erzeugt diesen unverwechselbaren flachen, plakatartigen Look. Zu wenige Farben und Formen zerfallen zu Brei; zu viele, und Sie verlieren den Retro-Charakter völlig.
+
+### Dithering: Die Zwischenfarben vortäuschen
+
+Dithering nähert einen fehlenden Farbton an, indem es Pixel in einem Muster verstreut. Es ist der Trick, mit dem alte Hardware einen Sonnenuntergang mit vier Farben andeuten konnte. Gut eingesetzt fügt es Textur hinzu. Schlecht eingesetzt verwandelt es saubere Kunst in visuelles Rauschen.
+
+| Vorgang | Was sich ändert | Was Sie sehen |
+|---|---|---|
+| Downsampling | Räumliche Details | Harte Kanten, blockige Formen |
+| Palettenquantisierung | Farbanzahl | Flache Bereiche, Retro-Töne |
+| Dithering | Farbübergänge | Schachbrett- oder punktierte Textur |
+| Nearest-Neighbor-Skalierung | Anzeigegröße | Große, saubere Quadrate ohne Unschärfe |
+
+Die Reihenfolge ist wichtig. Zuerst Downsampling, dann Quantisierung, zuletzt Dithering. Eine andere Reihenfolge erzeugt meist matschige Ergebnisse, die kein noch so großes Nachjustieren rettet.
+
+## Warum Künstler zum ArtCraft Pixelator greifen
+
+Berichte aus der Community weisen immer wieder auf dieselben wenigen Aufgaben hin, bei denen der ArtCraft Pixelator Stunden spart. Das Muster: Man hat bereits ein generiertes Bild, das einem gefällt – die Komposition, die Beleuchtung, die Figur – und braucht es in viel kleinerer Größe weiterhin lesbar.
+
+| Anwendungsfall | Typisches Raster | Warum Pixelierung hilft |
+|---|---|---|
+| Game-Sprites und -Tiles | 16×16 bis 64×64 | Lesbar in Engine-Größe, keine Unschärfeartefakte |
+| Icons und Avatare | 32×32 bis 128×128 | Bleibt in jeder App und jedem Browser-Tab scharf |
+| Album- und Poster-Art | 256×256 und größer | Starke Silhouette, begrenzte Palette lässt sich gut drucken |
+| Animierte Loops | Entspricht dem Sprite-Raster | Konsistenter Look über jedes Frame hinweg |
+| Storyboards und Pitch-Decks | 128×128 | Schnell zu erstellen, optisch klar von Stockmaterial unterscheidbar |
+| Social-Media-Thumbnails | 64×64 bis 256×256 | Übersteht aggressive Komprimierung |
+
+Es gibt auch ein praktisches Argument. Ein pixeliertes Rendering ist deutlich günstiger zu speichern und schneller in der Vorschau als ein Full-Resolution-Frame, was zählt, wenn Sie Dutzende Varianten durchiterieren. Pixelierung ist außerdem eine Form der Stilisierung, die die kleinen anatomischen und Beleuchtungsfehler verbirgt, die KI-Ausgaben verraten – im Raster ist einfach kein Platz dafür.
+
+Die Erfahrung von Anwendern mit Animationen ist erwähnenswert. Wenn Sie einen Videoclip pixelieren, wird jedes Frame unabhängig quantisiert, und kleine Änderungen in der Quelle lassen die Palette von Frame zu Frame kippen. Dieses Flackern ist die häufigste Beschwerde in Community-Threads, und die Lösung besteht meist darin, eine Palette zu sperren oder das Sprite-Sheet aus einem einzigen Referenzbild zu erzeugen.
+
+## So führen Sie den ArtCraft Pixelator aus: Schritt für Schritt
+
+Der Workflow ist kurz, aber die Reihenfolge der Operationen entscheidet darüber, ob ein sauberes Ergebnis oder ein Chaos entsteht. Arbeiten Sie von einer guten Quelle aus, halten Sie das Raster konsistent und widerstehen Sie der Versuchung, zu viel nachzujustieren.
+
+| Schritt | Aktion | Worauf Sie achten sollten |
+|---|---|---|
+| 1 | Ein sauberes Quellbild in ArtCraft generieren | Hoher Kontrast, klare Silhouette, einfacher Hintergrund |
+| 2 | Eng um das Motiv zuschneiden | Zuschneiden nach der Pixelierung verschwendet Ihr Raster |
+| 3 | Ziel-Rastergröße festlegen | Wählen Sie eine Standardgröße; 32, 64 und 128 sind sichere Defaults |
+| 4 | Palettengröße wählen | Begrenzt beginnen, erst lockern, wenn Formen verschmelzen |
+| 5 | Dithering sparsam einsetzen | Aus für Sprites, leicht für Himmel und Verläufe |
+| 6 | Mit Nearest-Neighbor hochskalieren | Niemals weiche Interpolation für Pixel Art verwenden |
+| 7 | Exportieren und bei 100 % Zoom prüfen | Lesbarkeit in tatsächlicher Größe prüfen, nicht hineingezoomt |
+
+Zwei Gewohnheiten machen einen echten Unterschied. Erstens: Legen Sie die Rastergröße fest, bevor Sie irgendetwas generieren, denn ein 512 Pixel breites Rendering und ein 64 Pixel breiter Sprite brauchen unterschiedlich viel Detail im Prompt. Zweitens: Bewahren Sie eine Kopie des Bildes vor der Pixelierung auf. Sobald Sie quantisieren und dittern, sind Informationen verloren, und ein erneuter Durchlauf vom Original ist fast immer schneller, als eine schlechte Konvertierung reparieren zu wollen.
+
+Weil ArtCraft lokal auf Ihrem Desktop läuft, ist diese Iterationsschleife schnell und privat. Sie laden keine Kundenarbeit zu einem Webdienst hoch und zahlen nicht pro Konvertierung. Das ist wichtig für Studios, die unter NDA oder unter engen Deadlines arbeiten.
+
+## Einstellungen, die Ihre Pixel-Ausgabe prägen
+
+Nicht jede Einstellung ist in jedem Build verfügbar, aber dies sind die wichtigsten Regler und wie Sie über sie nachdenken sollten.
+
+| Einstellung | Was sie steuert | Sinnvoller Ausgangspunkt |
+|---|---|---|
+| Rastergröße | Gesamte Pixelabmessungen | 64×64 für Sprites, 256×256 für Artwork |
+| Palettengröße | Anzahl der unterschiedlichen Farben | 16 bis 32 für einen Retro-Look |
+| Dithering-Modus | Muster für Übergänge | Keines für Figuren, geordnet für Hintergründe |
+| Dithering-Stärke | Wie viel Textur aufgetragen wird | Niedrig; nur erhöhen, wenn Banding offensichtlich ist |
+| Alpha-Behandlung | Wie Transparenz behandelt wird | Für Sprites erhalten, für Szenen verwerfen |
+| Skalierungsmethode | Wie das kleine Bild vergrößert wird | Nearest-Neighbor, immer |
+| Frame-Palettensperre | Ob Animation eine Palette teilt | An, für jede animierte Sequenz |
+
+Eine schnelle Diagnose: Wenn das Gesicht Ihres Motivs zu einem unkenntlichen Fleck geworden ist, ist Ihr Raster zu klein oder Ihre Palette zu knapp. Wenn das Bild wie ein normales Foto mit sichtbaren Quadraten aussieht, ist Ihr Raster zu groß. Ändern Sie jeweils nur eine Variable, und Sie finden den Sweet Spot in drei oder vier Versuchen.
+
+## Tipps, Fallstricke und ehrliche Grenzen
+
+- **Auf Formen prompten, nicht auf Details.** Eine Quelle mit kräftiger Silhouette und drei oder vier großen Formen lässt sich wunderbar pixelieren. Eine Quelle mit feiner Spitze, Haarsträhnen oder unruhiger Textur nicht.
+- **Den Hintergrund zuerst vereinfachen.** Ein flacher oder entfernter Hintergrund gibt dem Quantisierer weniger Farben zum Verschwenden.
+- **Prüfen Sie Ihre Linienführung.** In Pixel Art definiert eine ein Pixel breite Kontur die gesamte Figur. Wenn der Konverter sie fallen lässt, fügen Sie sie von Hand wieder hinzu.
+- **Ähnliche Bilder zusammen bündeln.** Dieselbe Palette für eine Reihe von Sprites wiederzuverwenden, lässt ein Projekt absichtlich zusammengestellt statt zusammengewürfelt wirken.
+- **In ganzzahligem Vielfachen exportieren.** Verdoppeln oder Verdreifachen des Pixelrasters hält die Quadrate perfekt gleichmäßig; beliebige Zoomstufen tun das nicht.
+
+| Problem | Wahrscheinliche Ursache | Lösung |
+|---|---|---|
+| Unscharfe oder weiche Kanten | Weiche Interpolation beim Export | Auf Nearest-Neighbor-Skalierung umstellen |
+| Farbbanding in Himmeln | Zu wenige Paletteneinträge | Farben hinzufügen oder leichtes geordnetes Dithering aktivieren |
+| Flackern in Animationen | Palettenwechsel pro Frame | Palette über alle Frames hinweg sperren |
+| Motiv unlesbar | Raster zu klein für das Detail | Raster erhöhen oder Quelle vereinfachen |
+| Ausgewaschene Farben | Aggressive Quantisierung | Palettenreduzierung verringern oder zuerst Kontrast erhöhen |
+
+Es lohnt sich, ehrlich über die Grenzen zu sein. Der ArtCraft Pixelator ist ein Konverter, kein Pixelkünstler. Er wird keine schwache Komposition retten, keine saubere Kontur zeichnen, wo die Quelle keine hat, und nicht die Handwerkskunst eines Menschen erreichen, der jeden Pixel bewusst setzt. Was er extrem gut kann, ist, ein generiertes Bild in Sekunden in eine kohärente, stilisierte Form zu komprimieren – ideal für Prototyping, Mockups und schnelle Iteration. Für finale Produktions-Sprites sollten Sie die Ausgabe als starken ersten Entwurf betrachten und eine Aufräum-Session einplanen.
+
+Wenn Sie das Tool selbst erkunden möchten, beginnen Sie auf der [offiziellen ArtCraft-Website](https://getartcraft.com/) für Downloads und Feature-Dokumentation, und im [ArtCraft-GitHub-Repository](https://github.com/storytold/artcraft), wenn Sie den Quellcode lesen oder beitragen möchten.
+
+## FAQ
+
+**Funktioniert der ArtCraft Pixelator sowohl mit Videos als auch mit Bildern?**
+Ja. Dieselbe Downsampling- und Quantisierungslogik wird pro Frame angewendet, sodass Sie einen generierten Clip in eine Pixel-Art-Animation verwandeln können. Der wichtigste Vorbehalt ist Konsistenz: Sperren Sie die Palette über die Frames hinweg, sonst verschieben sich die Farben, während sich das Motiv bewegt.
+
+**Mit welcher Rastergröße sollte ich beginnen?**
+Für Figuren und Sprites sind 32×32 oder 64×64 der übliche Ausgangspunkt. Für eigenständiges Artwork oder Thumbnails geben Ihnen 128×128 bis 256×256 mehr Raum für erkennbares Detail, ohne den Pixel-Look zu verlieren.
+
+**Warum sieht mein pixeliertes Bild matschig aus?**
+Fast immer, weil die Quelle zu viele feine Details hatte. Pixelierung verstärkt Unruhe. Generieren Sie ein einfacheres Bild mit großen Formen und starkem Kontrast und lassen Sie den ArtCraft Pixelator erneut laufen – der Unterschied ist meist dramatisch.
+
+**Kann ich eine Konvertierung rückgängig machen, die mir nicht gefällt?**
+Nur wenn Sie das Original behalten haben. Quantisierung und Dithering verwerfen Informationen dauerhaft, also speichern Sie immer das Rendering vor der Pixelierung zusammen mit dem Ergebnis. Ein erneuter Durchlauf von der sauberen Quelle dauert Sekunden und liefert ein wirklich anderes Ergebnis statt eines notdürftig geflickten.
